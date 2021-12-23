@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/style.css";
+import Header from "./component/common";
+
+import {Route} from "react-router-dom";
+
+import Department from "./sub/Department";
+import Board from "./sub/Board";
+import Gallery from "./sub/Gallery";
+import Location from "./sub/Location";
+import Membership from "./sub/Membership";
+import Youtube from "./sub/Youtube";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<figure>
+				<Header></Header>
+
+			</figure>
+		</div>
+	);
 }
 
 export default App;

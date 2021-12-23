@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+figure {
+  width: 100%; }
+  figure header {
+    width: 100%; }
+    figure header .inner {
+      width: 100%;
+      position: relative; }
+      figure header .inner .title {
+        width: 25vw;
+        height: 100vh;
+        background-color: #333;
+        padding: 3%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff; }
+        figure header .inner .title a {
+          color: #fff; }
+        figure header .inner .title h1 {
+          text-align: center;
+          color: #fff; }
+        figure header .inner .title address {
+          text-align: center; }
+      figure header .inner .menu {
+        width: 75vw;
+        height: 13vh;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        figure header .inner .menu ul {
+          margin-top: 80px;
+          float: right;
+          padding-right: 5%; }
+          figure header .inner .menu ul li {
+            float: left; }
+            figure header .inner .menu ul li a {
+              padding: 20px 30px;
+              font: bold 17px/1 "arial";
+              color: #fff; }
+      figure header .inner .three {
+        padding-right: 5.5%;
+        background-color: #333;
+        position: absolute;
+        top: 30px;
+        right: 0; }
+        figure header .inner .three li {
+          float: left;
+          padding-left: 40px; }
+          figure header .inner .three li a {
+            font: bold 16px/1 "arial";
+            color: #fff; }
+  figure .content {
+    padding: 150px 0px; }
+    figure .content .inner {
+      width: 1180px;
+      margin: 0 auto; }
+      figure .content .inner h1 {
+        font: normal 30px/1 "arial";
+        color: #555;
+        margin-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */
