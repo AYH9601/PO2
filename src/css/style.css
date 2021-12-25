@@ -12,63 +12,59 @@ a {
 figure {
   width: 100%; }
   figure header {
-    width: 100%; }
+    width: 100%;
+    height: 100px;
+    background: #333; }
     figure header .inner {
-      width: 100%;
+      width: 1180px;
+      height: 100%;
+      margin: 0 auto;
       position: relative; }
-      figure header .inner .title {
-        width: 25vw;
-        height: 100vh;
-        background-color: #333;
-        padding: 3%;
+      figure header .inner h1 {
+        text-align: center;
         position: absolute;
-        top: 0;
-        left: 0;
-        color: #fff; }
-        figure header .inner .title a {
+        top: 25px;
+        left: 0px; }
+        figure header .inner h1 a {
+          font: bold 30px/1 "arial";
           color: #fff; }
-        figure header .inner .title h1 {
-          text-align: center;
-          color: #fff; }
-        figure header .inner .title address {
-          text-align: center; }
       figure header .inner .menu {
-        width: 75vw;
-        height: 13vh;
-        background-color: #333;
         position: absolute;
-        top: 0;
-        right: 0; }
+        top: 40px;
+        left: 200px; }
         figure header .inner .menu ul {
-          margin-top: 80px;
-          float: right;
-          padding-right: 5%; }
+          float: right; }
           figure header .inner .menu ul li {
             float: left; }
             figure header .inner .menu ul li a {
               padding: 20px 30px;
               font: bold 17px/1 "arial";
-              color: #fff; }
+              color: #fff;
+              transition: 0.3s; }
+              figure header .inner .menu ul li a:hover {
+                color: red;
+                transition: 0.3s; }
       figure header .inner .three {
-        padding-right: 5.5%;
-        background-color: #333;
         position: absolute;
-        top: 30px;
+        top: 40px;
         right: 0; }
         figure header .inner .three li {
           float: left;
           padding-left: 40px; }
           figure header .inner .three li a {
             font: bold 16px/1 "arial";
-            color: #fff; }
-  figure .content {
-    padding: 150px 0px; }
-    figure .content .inner {
-      width: 1180px;
-      margin: 0 auto; }
-      figure .content .inner h1 {
-        font: normal 30px/1 "arial";
-        color: #555;
-        margin-bottom: 30px; }
+            color: #fff;
+            transition: 0.3s; }
+            figure header .inner .three li a:hover {
+              color: red;
+              transition: 0.3s; }
+  figure .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 113vh; }
+    figure .content .inner h1 {
+      font: normal 30px/1 "arial";
+      color: #555;
+      margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */

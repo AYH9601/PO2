@@ -6,19 +6,12 @@ function Header(){
         <>
         <header>
             <div className="inner">
-                <nav className="title">
-                    <h1>
-                        <NavLink exact to="/main">
-                            <img src="" alt="" />
-                            <span>UMBRELLA</span>
-                            <p>CORPORATION</p>
-                        </NavLink>
-                    </h1>
-                    <address>
-                        BIOLOGICAL PROTECTION <br></br>
-                        ALL RIGHTS RESERVED.
-                    </address>
-                </nav>
+                <h1>
+                    <NavLink exact to="/main">
+                        <img src="" alt="" />
+                        <span>UMBRELLA</span>
+                    </NavLink>
+                </h1>
 
                 <nav className="menu">
                     <ul>
