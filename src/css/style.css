@@ -110,16 +110,16 @@ figure {
           color: #fff;
           transition: 0.2s; }
     figure .main .two {
-      height: 800px; }
+      height: 750px; }
+      figure .main .two::after {
+        content: "";
+        display: block;
+        clear: both; }
       figure .main .two h3 {
         font: bold 18px "poppins";
         letter-spacing: 1px;
         color: #333;
         margin-bottom: 40px; }
-        figure .main .two h3::after {
-          content: "";
-          display: block;
-          clear: both; }
       figure .main .two .twoLeft {
         float: left;
         width: 45%;
@@ -132,6 +132,7 @@ figure {
         float: left;
         width: 55%; }
         figure .main .two .twoRight h4 {
+          cursor: pointer;
           font: bold 40px/1.2 "poppins";
           color: crimson;
           margin-bottom: 30px; }
@@ -150,6 +151,90 @@ figure {
           color: crimson;
           transition: 0.2s; }
           figure .main .two .twoRight button:hover {
+            background-color: crimson;
+            color: #fff;
+            transition: 0.2s; }
+    figure .main .three {
+      height: 500px; }
+      figure .main .three::after {
+        content: "";
+        display: block;
+        clear: both; }
+      figure .main .three h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+      figure .main .three .threeLeft {
+        float: left;
+        width: 45%;
+        height: 315px;
+        background-image: url(../../public/img/ebook.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .three .threeRight {
+        padding: 0px 25px 0px 25px;
+        float: left;
+        width: 55%; }
+        figure .main .three .threeRight h4 {
+          font: bold 40px/1.2 "poppins";
+          color: #000;
+          margin-bottom: 30px; }
+        figure .main .three .threeRight p {
+          font: bold 18px/1.8 "poppins";
+          color: #000;
+          margin-bottom: 20px; }
+        figure .main .three .threeRight button {
+          cursor: pointer;
+          width: 500px;
+          height: 70px;
+          background: none;
+          border: 2px solid crimson;
+          border-radius: 35px;
+          font: bold 17px/1 "poppins";
+          color: crimson;
+          transition: 0.2s; }
+          figure .main .three .threeRight button:hover {
+            background-color: crimson;
+            color: #fff;
+            transition: 0.2s; }
+    figure .main .four {
+      height: 600px; }
+      figure .main .four::after {
+        content: "";
+        display: block;
+        clear: both; }
+      figure .main .four h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+      figure .main .four .fourLeft {
+        float: left;
+        width: 45%;
+        height: 415px;
+        background-image: url(../../public/img/goods.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .four .fourRight {
+        padding: 0px 0px 0px 120px;
+        float: left;
+        width: 55%; }
+        figure .main .four .fourRight h4 {
+          font: bold 30px/1.2 "poppins";
+          color: #000;
+          margin-bottom: 30px; }
+        figure .main .four .fourRight button {
+          cursor: pointer;
+          width: 350px;
+          height: 70px;
+          background: none;
+          border: 2px solid crimson;
+          border-radius: 35px;
+          font: bold 17px/1 "poppins";
+          color: crimson;
+          transition: 0.2s; }
+          figure .main .four .fourRight button:hover {
             background-color: crimson;
             color: #fff;
             transition: 0.2s; }
