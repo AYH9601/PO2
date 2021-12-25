@@ -1,9 +1,8 @@
 import {NavLink} from "react-router-dom";
 
 function Header(){
-    const active = {color:"red"}
+    const active = {color:"crimson"}
     return (
-        <>
         <header>
             <div className="inner">
                 <h1>
@@ -40,8 +39,62 @@ function Header(){
                 </nav>
             </div>
         </header>
-        </>
     )
 }
 
-export default Header;
+function Footer(){
+    return (
+        <footer>
+            <div className="inner">
+                <div className="upper">
+                    <ul>
+                        <li>
+                            <div className="pic"></div>
+                        </li>
+                        <li>
+                            <a><NavLink  exact to="/Department">Department</NavLink></a>
+                            <a><NavLink  exact to="/Board">Board</NavLink></a>
+                            <a><NavLink  exact to="/Gallery">Gallery</NavLink></a>
+                            <a><NavLink  exact to="/Youtube">Youtube</NavLink></a>
+                            <a><NavLink  exact to="/Membership">Membership</NavLink></a>
+                        </li>
+                        <li>
+                            <p>Privacy Statement</p>
+                            <p>Terms of Use</p>
+                            <p>Grant Seekers</p>
+                            <p>Health Care Professionals</p>
+                        </li>
+                        <li>
+                            <p>Venture Investments</p>
+                            <p>Umbrella CenterOne</p>
+                            <p>Business to Business</p>
+                            <p>Merchandise</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="lower">
+                    <ul>
+                        <li className="lowerLeft">
+                            <a href="#">
+                                <i className="fas fa-globe-americas"></i>
+                                United States
+                            </a>
+                            <span>&copy; 2022 Umbrella Inc. All rights reserved</span>
+                        </li>
+                        <li className="lowerRight">
+                            <i className="fab fa-twitter-square"></i>
+                            <i className="fab fa-facebook-square"></i>
+                            <i className="fab fa-instagram-square"></i>
+                            <i className="fab fa-linkedin"></i>
+                            <i className="fab fa-youtube-square"></i>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </footer>
+    )
+}
+
+export {Header, Footer};

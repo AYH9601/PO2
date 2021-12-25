@@ -1,0 +1,72 @@
+header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+
+    .inner {
+        width: 1180px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        h1 {
+            text-align: center;
+            position: absolute;
+            top: 25px;
+            left: 0px;
+
+            a {
+                font: bold 30px/1 "arial";
+                color: #000;
+            }
+        }
+
+
+        .menu {
+            position: absolute;
+            top: 40px; left: 200px;
+
+            ul {
+                float: right;
+
+                li {
+                    float: left;
+
+                    a {
+                        padding: 20px 30px;
+                        font: bold 17px/1 "arial";
+                        color: #000;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: crimson;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .three {
+            position: absolute;
+            top: 40px; right: 0;
+
+            li {
+                float: left;
+                padding-left: 40px;
+
+                a {
+                    font: bold 16px/1 "arial";
+                    color: #000;
+                    transition: 0.3s;
+
+                    
+                    &:hover {
+                        color: red;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}

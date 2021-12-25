@@ -1,5 +1,5 @@
 import "./css/style.css";
-import Header from "./component/common";
+import {Header, Footer} from "./component/common";
 import Main from "./component/Main"
 
 import {Route} from "react-router-dom";
@@ -27,6 +27,7 @@ function App() {
 				<Route exact path="/youtube" component={Youtube}></Route>
 				<Route exact path="/membership" component={Membership}></Route>
 
+				<Footer></Footer>
 			</figure>
 		</div>
 	);
