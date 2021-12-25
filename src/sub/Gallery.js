@@ -108,12 +108,12 @@ function Gallery(){
                             <li className="LSArticle">
                                 The FDA has authorized Umbrella's COVID-20 oral treatment for emergency use.</li>
                         </ul>
-                        <div className="articlepic">
-                            <div className="pic">
-                                <img src="" />
+                        <div className="LSPic">
+                            <div className="articlePic1">
                             </div>
                         </div>
                     </article>
+
                     <article>
                         <h4>Our<br></br>Products</h4>
                         <ul>
@@ -121,21 +121,20 @@ function Gallery(){
                             <li className="LSArticle">
                                 After the efforts of many scientists, we have created a treatment using a new virus.</li>
                         </ul>
-                        <div className="articlepic">
-                            <div className="pic">
-                                <img src="" />
+                        <div className="LSPic">
+                            <div className="articlePic2">
                             </div>
                         </div>
                     </article>
+
                     <article>
                         <h4>Our<br></br>Purpose</h4>
                         <ul>
                             <li className="LSTitle">Umbrella's Institue Vision</li>
                             <li className="LSArticle">We will protect humanity with an umbrella.</li>
                         </ul>
-                        <div className="articlepic">
-                            <div className="pic">
-                                <img src="" />
+                        <div className="LSPic">
+                            <div className="articlePic3">
                             </div>
                         </div>
                     </article>

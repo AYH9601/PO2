@@ -429,21 +429,31 @@ figure {
             font: bold 18px/1.5 "poppins";
             letter-spacing: 1px;
             color: #444; }
-        figure .gallery .latestStories article .articlepic {
+        figure .gallery .latestStories article .LSPic {
           float: left;
           width: 35%;
           height: 220px; }
-          figure .gallery .latestStories article .articlepic .pic {
-            background-color: lightpink;
+          figure .gallery .latestStories article .LSPic .articlePic1 {
             width: 100%;
             height: 220px;
-            object-fit: cover;
+            background-image: url(../../public/img/virusArticle.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             margin-bottom: 20px; }
-            figure .gallery .latestStories article .articlepic .pic img {
-              width: 100%;
-              height: 220px;
-              border-radius: 10px;
-              object-fit: cover; }
+          figure .gallery .latestStories article .LSPic .articlePic2 {
+            width: 100%;
+            height: 220px;
+            background-image: url(../../public/img/TvirusArticle.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 20px; }
+          figure .gallery .latestStories article .LSPic .articlePic3 {
+            width: 100%;
+            height: 220px;
+            background-image: url(../../public/img/unboxingArticle.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 20px; }
   figure footer {
     width: 100%;
     padding-top: 100px; }
