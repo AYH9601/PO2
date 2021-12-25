@@ -31,28 +31,43 @@ function Gallery(){
                 <div className="galleryLower">
                     <article id="searchBox">
                         <input type="text" id="search" placeholder="Search for an article or story" />
-                        <button className="btnSearch"><i className="fas fa-arrow-right"></i></button>
+                        <button className="btnSearch">
+                            <div className="arrowCircle">
+                                <i className="fas fa-arrow-right"></i>
+                            </div>
+                        </button>
                     </article>
 
+                    <article id="imgBox">
+                        <h2>Category</h2>
+                        <div className="categoryBox">
+                            <ul>
+                                <li>Science</li>
+                                <li>Our people</li>
+                                <li>Our Purpose</li>
+                                <li>Our Products</li>
+                                <li>Your Health</li>
+                                <li>Career</li>
+                            </ul>
+                        </div>
 
+                        <ul className="list">
+                            {
+                                items.map((item, index)=>{
+                                    const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`
 
-
-
-                    <ul className="list">
-                        {
-                            items.map((item, index)=>{
-                                const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`
-
-                                return (
-                                    <li key={index}>
-                                        <div className="pic">
-                                            <img src={imgSrc} />
-                                        </div>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
+                                    return (
+                                        <li key={index}>
+                                            <div className="pic">
+                                                <img src={imgSrc} />
+                                            </div>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </article>
+                    
                 </div>
             </div>
         </section>
