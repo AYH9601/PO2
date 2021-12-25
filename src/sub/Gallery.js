@@ -5,7 +5,7 @@ function Gallery(){
     const baseURL = "https://www.flickr.com/services/rest/?";
     const method1 = "flickr.interestingness.getList";
     const key= "2fb9756d5c2a17287d72e1361294b949";
-    const count = 10;
+    const count = 6; //3의 배수
     const url = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1`;
 
     let [items, setItems] = useState([]);
@@ -61,13 +61,51 @@ function Gallery(){
                                             <div className="pic">
                                                 <img src={imgSrc} />
                                             </div>
+
+                                            <p>{item.title}</p>
+                                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellendus maiores distinctio adipisci, in laborum neque ducimus voluptas reprehenderit quasi, voluptates eos doloribus debitis quae beatae voluptatibus, reiciendis quisquam vero aliquid odit? Nihil voluptates,
+                                            </span>
+
+                                            <div className="tagBox">
+                                                <h4>Vaccines</h4>
+                                                <h4>T-virus</h4>
+                                            </div>
                                         </li>
                                     )
                                 })
                             }
                         </ul>
+
+                        <div className="pagination">
+                            <p>
+                                <div className="leftCircle">
+                                    <i className="fas fa-arrow-left"></i>
+                                </div>
+                            </p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                            <p>
+                                <div className="rightCircle">
+                                    <i className="fas fa-arrow-right"></i>
+                                </div>
+                            </p>
+                        </div>
                     </article>
-                    
+                </div>
+
+                <div className="LatestStories">
+                    <ariticle>
+                        <h4>Science</h4>
+                    </ariticle>
+                    <ariticle>
+                        <h4>Our<br></br>Products</h4>
+                    </ariticle>
+                    <ariticle>
+                        <h4>Our<br></br>Purpose</h4>
+                    </ariticle>
                 </div>
             </div>
         </section>
