@@ -26,11 +26,12 @@ footer {
                     }
 
                     &:nth-of-type(1) {
-                        .pic {
+                        .footerPic {
                             width: 150px;
                             height: 150px;
-                            background: lightpink;
-                            background-image: url(../../public/img/umbrella.png) no-repeat center/cover;
+                            background-image: url(../../public/img/umbrella.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
                         }
                     }
 
@@ -46,7 +47,7 @@ footer {
             }
 
         }
-        
+
         .lower {
             background-color: #fff;
             padding-top: 90px;

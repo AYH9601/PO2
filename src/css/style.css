@@ -12,7 +12,7 @@ a {
 
 .content .inner {
   width: 1180px;
-  padding-top: 210px;
+  padding-top: 100px;
   margin: 0 auto; }
   .content .inner h1 {
     font: normal 30px/1 "arial";
@@ -38,13 +38,19 @@ figure {
         position: absolute;
         top: 25px;
         left: 0px; }
+        figure header .inner h1 .headerPic {
+          width: 200px;
+          height: 50px;
+          background-image: url(../../public/img/headerLogo2.png);
+          background-repeat: no-repeat;
+          background-size: cover; }
         figure header .inner h1 a {
           font: bold 30px/1 "arial";
           color: #000; }
       figure header .inner .menu {
         position: absolute;
         top: 40px;
-        left: 200px; }
+        left: 220px; }
         figure header .inner .menu ul {
           float: right; }
           figure header .inner .menu ul li {
@@ -71,210 +77,288 @@ figure {
             figure header .inner .three li a:hover {
               color: red;
               transition: 0.3s; }
-  figure .gallery .galleryUpper p {
-    font: bold 18px/1 "poppins";
-    margin-bottom: 60px; }
-  figure .gallery .galleryUpper h1 {
-    font: bold 40px/1.3 "poppins";
-    letter-spacing: 0.5px;
-    color: #000;
-    margin-bottom: 145px; }
-  figure .gallery .galleryLower #searchBox {
-    width: 515px;
-    border-bottom: 1px solid #000;
-    margin-bottom: 55px; }
-    figure .gallery .galleryLower #searchBox input[type=text] {
-      border: none;
-      width: 460px;
-      height: 40px; }
-    figure .gallery .galleryLower #searchBox input::placeholder {
-      font: bold 30px/1 "poppins";
-      color: #c8c8c8;
-      letter-spacing: 0.5px; }
-    figure .gallery .galleryLower #searchBox .btnSearch {
-      border: none;
-      font-size: 25px;
-      color: #999;
-      background-color: #fff;
-      transform: translateY(-10px);
-      cursor: pointer; }
-      figure .gallery .galleryLower #searchBox .btnSearch .arrowCircle {
-        width: 55px;
-        height: 55px;
-        border: 2px solid #999;
-        border-radius: 50%;
-        margin-bottom: 5px; }
-        figure .gallery .galleryLower #searchBox .btnSearch .arrowCircle i {
-          transform: translate(1px, 11px); }
-  figure .gallery .galleryLower #imgBox h2 {
-    font: bold 20px/1 "poppins";
-    color: #000;
-    letter-spacing: 1px;
-    margin-bottom: 20px; }
-  figure .gallery .galleryLower #imgBox .categoryBox ul li {
-    display: inline-block;
-    margin-right: 10px;
-    font: bold 17px/1 "poppins";
-    background-color: #ffd9de;
-    color: #000;
-    padding: 7px 15px 7px 15px;
-    border-radius: 17px;
-    transition: 0.3s;
-    margin-bottom: 40px;
-    cursor: pointer; }
-    figure .gallery .galleryLower #imgBox .categoryBox ul li:hover {
-      background-color: crimson;
-      color: #fff;
-      transition: 0.3s; }
-  figure .gallery .galleryLower #imgBox .list::after {
-    content: "";
-    display: block;
-    clear: both; }
-  figure .gallery .galleryLower #imgBox .list > li {
-    float: left;
-    width: 31%;
-    height: 550px;
-    margin-right: 30px;
-    margin-bottom: 15px; }
-    figure .gallery .galleryLower #imgBox .list > li .pic {
-      background-color: lightseagreen;
+  figure .main {
+    position: relative; }
+    figure .main .one {
+      padding-top: 220px;
+      text-align: center;
       width: 100%;
-      height: 220px;
-      object-fit: cover;
-      margin-bottom: 20px; }
-      figure .gallery .galleryLower #imgBox .list > li .pic img {
-        width: 100%;
-        height: 220px;
-        border-radius: 10px;
-        object-fit: cover; }
-    figure .gallery .galleryLower #imgBox .list > li p {
-      font: bold 27px/1 "poppins";
-      line-height: 1.5;
-      color: crimson;
-      margin-bottom: 20px; }
-    figure .gallery .galleryLower #imgBox .list > li span {
-      font: bold 15px/1 "poppins";
-      color: #999; }
-    figure .gallery .galleryLower #imgBox .list > li .tagBox {
-      margin-top: 30px; }
-      figure .gallery .galleryLower #imgBox .list > li .tagBox h4 {
-        display: inline-block;
-        margin-right: 10px;
-        font: bold 17px/1 "poppins";
-        background-color: #ffd9de;
+      height: 800px;
+      background-image: url(../../public/img/virus.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      figure .main .one h1 {
+        font: bold 90px/1.2 "poppins";
         color: #000;
-        padding: 7px 15px 7px 15px;
-        border-radius: 17px;
-        transition: 0.3s;
-        cursor: pointer; }
-        figure .gallery .galleryLower #imgBox .list > li .tagBox h4:hover {
+        margin-bottom: 30px; }
+      figure .main .one p {
+        font: bold 22px/1.8 "poppins";
+        color: #000;
+        margin-bottom: 35px; }
+      figure .main .one button {
+        cursor: pointer;
+        width: 240px;
+        height: 70px;
+        background: none;
+        border: 2px solid crimson;
+        border-radius: 35px;
+        font: bold 17px/1 "poppins";
+        color: crimson;
+        transition: 0.2s; }
+        figure .main .one button:hover {
           background-color: crimson;
           color: #fff;
-          transition: 0.3s; }
-    figure .gallery .galleryLower #imgBox .list > li:nth-of-type(3n) {
-      margin-right: 0px; }
-  figure .gallery .galleryLower #imgBox .pagination {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center; }
-    figure .gallery .galleryLower #imgBox .pagination p {
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      cursor: pointer;
-      margin-right: 15px;
-      margin-left: 15px;
-      font: bold 15px/1 "poppins";
-      color: #999; }
-      figure .gallery .galleryLower #imgBox .pagination p:hover {
-        color: crimson;
-        font-size: 16px; }
-      figure .gallery .galleryLower #imgBox .pagination p:nth-of-type(2) {
-        margin-left: 40px; }
-      figure .gallery .galleryLower #imgBox .pagination p:nth-of-type(6) {
-        margin-right: 20px; }
-    figure .gallery .galleryLower #imgBox .pagination .leftCircle, figure .gallery .galleryLower #imgBox .pagination .rightCircle {
-      font-size: 25px;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #000;
-      color: #000;
-      border-radius: 50%;
-      line-height: 40px;
-      transition: 0.2s;
-      transform: translateY(3px); }
-      figure .gallery .galleryLower #imgBox .pagination .leftCircle:hover, figure .gallery .galleryLower #imgBox .pagination .rightCircle:hover {
-        color: #fff;
-        border-bottom: none;
-        border: 2px solid #555;
-        background-color: #555;
-        transition: 0.2s; }
-  figure .gallery .latestStories {
-    margin-top: 100px; }
-    figure .gallery .latestStories h3 {
-      font: bold 18px "poppins";
-      letter-spacing: 1px;
-      color: #333;
-      margin-bottom: 40px; }
-    figure .gallery .latestStories article {
-      width: 100%;
-      border-top: 1.5px solid #c9c9c9;
-      padding-top: 40px;
-      padding-bottom: 40px; }
-      figure .gallery .latestStories article::after {
-        content: "";
-        display: block;
-        clear: both; }
-      figure .gallery .latestStories article:last-child {
-        border-top: none;
-        text-align: center; }
-        figure .gallery .latestStories article:last-child button {
+          transition: 0.2s; }
+    figure .main .two {
+      height: 800px; }
+      figure .main .two h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+        figure .main .two h3::after {
+          content: "";
+          display: block;
+          clear: both; }
+      figure .main .two .twoLeft {
+        float: left;
+        width: 45%;
+        height: 600px;
+        background-image: url(../../public/img/Art.png);
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .two .twoRight {
+        padding: 0px 25px 0px 25px;
+        float: left;
+        width: 55%; }
+        figure .main .two .twoRight h4 {
+          font: bold 40px/1.2 "poppins";
+          color: crimson;
+          margin-bottom: 30px; }
+        figure .main .two .twoRight p {
+          font: bold 18px/1.8 "poppins";
+          color: #000;
+          margin-bottom: 20px; }
+        figure .main .two .twoRight button {
           cursor: pointer;
-          display: inline-block;
-          background-color: #fff;
+          width: 240px;
+          height: 70px;
+          background: none;
           border: 2px solid crimson;
           border-radius: 35px;
-          width: 170px;
-          height: 70px;
-          font: bold 18px/1 "poppins";
+          font: bold 17px/1 "poppins";
           color: crimson;
-          transition: 0.3s; }
-          figure .gallery .latestStories article:last-child button:hover {
+          transition: 0.2s; }
+          figure .main .two .twoRight button:hover {
+            background-color: crimson;
+            color: #fff;
+            transition: 0.2s; }
+  figure .gallery {
+    padding-top: 100px; }
+    figure .gallery .galleryUpper p {
+      font: bold 18px/1 "poppins";
+      margin-bottom: 60px; }
+    figure .gallery .galleryUpper h1 {
+      font: bold 40px/1.3 "poppins";
+      letter-spacing: 0.5px;
+      color: #000;
+      margin-bottom: 145px; }
+    figure .gallery .galleryLower #searchBox {
+      width: 515px;
+      border-bottom: 1px solid #000;
+      margin-bottom: 55px; }
+      figure .gallery .galleryLower #searchBox input[type=text] {
+        border: none;
+        width: 460px;
+        height: 40px; }
+      figure .gallery .galleryLower #searchBox input::placeholder {
+        font: bold 30px/1 "poppins";
+        color: #c8c8c8;
+        letter-spacing: 0.5px; }
+      figure .gallery .galleryLower #searchBox .btnSearch {
+        border: none;
+        font-size: 25px;
+        color: #999;
+        background-color: #fff;
+        transform: translateY(-10px);
+        cursor: pointer; }
+        figure .gallery .galleryLower #searchBox .btnSearch .arrowCircle {
+          width: 55px;
+          height: 55px;
+          border: 2px solid #999;
+          border-radius: 50%;
+          margin-bottom: 5px; }
+          figure .gallery .galleryLower #searchBox .btnSearch .arrowCircle i {
+            transform: translate(1px, 11px); }
+    figure .gallery .galleryLower #imgBox h2 {
+      font: bold 20px/1 "poppins";
+      color: #000;
+      letter-spacing: 1px;
+      margin-bottom: 20px; }
+    figure .gallery .galleryLower #imgBox .categoryBox ul li {
+      display: inline-block;
+      margin-right: 10px;
+      font: bold 17px/1 "poppins";
+      background-color: #ffd9de;
+      color: #000;
+      padding: 7px 15px 7px 15px;
+      border-radius: 17px;
+      transition: 0.3s;
+      margin-bottom: 40px;
+      cursor: pointer; }
+      figure .gallery .galleryLower #imgBox .categoryBox ul li:hover {
+        background-color: crimson;
+        color: #fff;
+        transition: 0.3s; }
+    figure .gallery .galleryLower #imgBox .list::after {
+      content: "";
+      display: block;
+      clear: both; }
+    figure .gallery .galleryLower #imgBox .list > li {
+      float: left;
+      width: 31%;
+      height: 550px;
+      margin-right: 30px;
+      margin-bottom: 15px; }
+      figure .gallery .galleryLower #imgBox .list > li .pic {
+        background-color: lightseagreen;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        margin-bottom: 20px; }
+        figure .gallery .galleryLower #imgBox .list > li .pic img {
+          width: 100%;
+          height: 220px;
+          border-radius: 10px;
+          object-fit: cover; }
+      figure .gallery .galleryLower #imgBox .list > li p {
+        font: bold 27px/1 "poppins";
+        line-height: 1.5;
+        color: crimson;
+        margin-bottom: 20px; }
+      figure .gallery .galleryLower #imgBox .list > li span {
+        font: bold 15px/1 "poppins";
+        color: #999; }
+      figure .gallery .galleryLower #imgBox .list > li .tagBox {
+        margin-top: 30px; }
+        figure .gallery .galleryLower #imgBox .list > li .tagBox h4 {
+          display: inline-block;
+          margin-right: 10px;
+          font: bold 17px/1 "poppins";
+          background-color: #ffd9de;
+          color: #000;
+          padding: 7px 15px 7px 15px;
+          border-radius: 17px;
+          transition: 0.3s;
+          cursor: pointer; }
+          figure .gallery .galleryLower #imgBox .list > li .tagBox h4:hover {
             background-color: crimson;
             color: #fff;
             transition: 0.3s; }
-      figure .gallery .latestStories article h4 {
-        float: left;
-        width: 18%;
-        font: bold 18px "poppins";
-        color: #444; }
-      figure .gallery .latestStories article ul {
-        float: left;
-        width: 47%; }
-        figure .gallery .latestStories article ul .LSTitle {
-          font: bold 40px/1.5 "poppins";
-          margin-bottom: 20px;
+      figure .gallery .galleryLower #imgBox .list > li:nth-of-type(3n) {
+        margin-right: 0px; }
+    figure .gallery .galleryLower #imgBox .pagination {
+      margin-top: 50px;
+      width: 100%;
+      text-align: center; }
+      figure .gallery .galleryLower #imgBox .pagination p {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-left: 15px;
+        font: bold 15px/1 "poppins";
+        color: #999; }
+        figure .gallery .galleryLower #imgBox .pagination p:hover {
           color: crimson;
-          cursor: pointer; }
-        figure .gallery .latestStories article ul .LSArticle {
-          font: bold 18px/1.5 "poppins";
-          letter-spacing: 1px;
+          font-size: 16px; }
+        figure .gallery .galleryLower #imgBox .pagination p:nth-of-type(2) {
+          margin-left: 40px; }
+        figure .gallery .galleryLower #imgBox .pagination p:nth-of-type(6) {
+          margin-right: 20px; }
+      figure .gallery .galleryLower #imgBox .pagination .leftCircle, figure .gallery .galleryLower #imgBox .pagination .rightCircle {
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 50%;
+        line-height: 40px;
+        transition: 0.2s;
+        transform: translateY(3px); }
+        figure .gallery .galleryLower #imgBox .pagination .leftCircle:hover, figure .gallery .galleryLower #imgBox .pagination .rightCircle:hover {
+          color: #fff;
+          border-bottom: none;
+          border: 2px solid #555;
+          background-color: #555;
+          transition: 0.2s; }
+    figure .gallery .latestStories {
+      margin-top: 100px; }
+      figure .gallery .latestStories h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+      figure .gallery .latestStories article {
+        width: 100%;
+        border-top: 1.5px solid #c9c9c9;
+        padding-top: 40px;
+        padding-bottom: 40px; }
+        figure .gallery .latestStories article::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .gallery .latestStories article:last-child {
+          border-top: none;
+          text-align: center; }
+          figure .gallery .latestStories article:last-child button {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            width: 170px;
+            height: 70px;
+            font: bold 18px/1 "poppins";
+            color: crimson;
+            transition: 0.3s; }
+            figure .gallery .latestStories article:last-child button:hover {
+              background-color: crimson;
+              color: #fff;
+              transition: 0.3s; }
+        figure .gallery .latestStories article h4 {
+          float: left;
+          width: 18%;
+          font: bold 18px "poppins";
           color: #444; }
-      figure .gallery .latestStories article .articlepic {
-        float: left;
-        width: 35%;
-        height: 220px; }
-        figure .gallery .latestStories article .articlepic .pic {
-          background-color: lightpink;
-          width: 100%;
-          height: 220px;
-          object-fit: cover;
-          margin-bottom: 20px; }
-          figure .gallery .latestStories article .articlepic .pic img {
+        figure .gallery .latestStories article ul {
+          float: left;
+          width: 47%; }
+          figure .gallery .latestStories article ul .LSTitle {
+            font: bold 40px/1.5 "poppins";
+            margin-bottom: 20px;
+            color: crimson;
+            cursor: pointer; }
+          figure .gallery .latestStories article ul .LSArticle {
+            font: bold 18px/1.5 "poppins";
+            letter-spacing: 1px;
+            color: #444; }
+        figure .gallery .latestStories article .articlepic {
+          float: left;
+          width: 35%;
+          height: 220px; }
+          figure .gallery .latestStories article .articlepic .pic {
+            background-color: lightpink;
             width: 100%;
             height: 220px;
-            border-radius: 10px;
-            object-fit: cover; }
+            object-fit: cover;
+            margin-bottom: 20px; }
+            figure .gallery .latestStories article .articlepic .pic img {
+              width: 100%;
+              height: 220px;
+              border-radius: 10px;
+              object-fit: cover; }
   figure footer {
     width: 100%;
     padding-top: 100px; }
@@ -297,11 +381,12 @@ figure {
             font: bold 16px/2 "Poppins";
             letter-spacing: 1px;
             cursor: pointer; }
-          figure footer .inner .upper ul li:nth-of-type(1) .pic {
+          figure footer .inner .upper ul li:nth-of-type(1) .footerPic {
             width: 150px;
             height: 150px;
-            background: lightpink;
-            background-image: url(../../public/img/umbrella.png) no-repeat center/cover; }
+            background-image: url(../../public/img/umbrella.png);
+            background-repeat: no-repeat;
+            background-size: cover; }
           figure footer .inner .upper ul li:nth-of-type(2) a {
             display: block;
             font: bold 16px/2 "poppins";

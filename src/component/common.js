@@ -7,8 +7,8 @@ function Header(){
             <div className="inner">
                 <h1>
                     <NavLink exact to="/main">
-                        <img src="" alt="" />
-                        <span>UMBRELLA</span>
+                        <div className="headerPic"></div>
+                        {/* <span>UMBRELLA</span> */}
                     </NavLink>
                 </h1>
 
@@ -49,7 +49,9 @@ function Footer(){
                 <div className="upper">
                     <ul>
                         <li>
-                            <div className="pic"></div>
+                            <NavLink exact to="/main">
+                                <div className="footerPic"></div>
+                            </NavLink>
                         </li>
                         <li>
                             <a><NavLink  exact to="/Department">Department</NavLink></a>
