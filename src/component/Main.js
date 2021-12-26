@@ -89,7 +89,7 @@ function Main(){
                     <div className="fourLeft"></div>
                     <div className="fourRight">
                         <h4>
-                            Show Your Pfizer Pride! Shop and share the collection.Available in the U.S. only.<br></br> <br></br>All profits from The Umbrella Store will be donated to charity.
+                            Show Your Umbrella Pride! Shop and share the collection.Available in the U.S. only.<br></br> <br></br>All profits from The Umbrella Store will be donated to charity.
                         </h4>
                         <button>Shop The Umbrella Collection</button>
                     </div>
