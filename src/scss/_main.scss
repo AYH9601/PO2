@@ -301,4 +301,119 @@
         }
 
     }
+
+    .five {
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        span {
+            display: block;
+            font: bold 40px/1.5 "poppins";
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        button {
+            cursor: pointer;
+            width: 250px;
+            height: 70px;
+            background: none;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            font: bold 17px/1 "poppins";
+            color: crimson;
+            transition: 0.2s;
+            margin-bottom: 100px;
+
+            &:hover {
+                background-color: crimson; 
+                color: #fff;
+                transition: 0.2s;
+            }
+        }
+
+        .fiveLower {
+            overflow: hidden;
+
+            ul {
+                &::after{content: ""; display: block; clear: both;}
+                width: 1700px;
+                li {
+                    float: left;
+                    width: 400px;
+                    height: 600px;
+                    margin-right: 25px;
+                    &:last-child{margin-right: none;}
+                    &:nth-of-type(1){.fivePic {background-image: url(../../public/img/covid1.jpg);}}
+                    &:nth-of-type(2){.fivePic {background-image: url(../../public/img/covid2.jpg);}}
+                    &:nth-of-type(3){.fivePic {background-image: url(../../public/img/covid3.jpg);}}
+                    &:nth-of-type(4){.fivePic {background-image: url(../../public/img/covid4.jpg);}}
+
+                    .fivePic {
+                        width: 400px;
+                        height: 220px;
+                        border-radius: 10px;
+                        margin-bottom: 30px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    h1 {
+                        font: bold 30px/1.3 "poppins";
+                        color: #000;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font: bold 20px/1.7 "poppins";
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+                    strong {
+                        font: bold 20px/1 "poppins";
+                        color: crimson;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            margin-top: 20px;
+            margin-bottom: 100px;
+            padding-top: 40px;
+            border-top: 3px solid rgb(201, 201, 201);
+            width: 95%;
+            
+            .leftCircle, .rightCircle {
+                display: inline-block;
+                margin-right: 15px;
+                font-size: 25px;
+                width: 40px;
+                height: 40px;
+                border: 2px solid #000;
+                color: #000;
+                border-radius: 50%;
+                // line-height: 40px;
+                transition: 0.2s;
+
+                transform: translateY(3px);
+
+                i {
+                    margin-left: 7px;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-bottom: none;
+                    border: 2px solid #555;
+                    background-color: #555;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
 }
