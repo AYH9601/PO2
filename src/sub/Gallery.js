@@ -16,7 +16,7 @@ function Gallery(){
         .then(json=>{
             setItems(json.data.photos.photo)
         })
-    })
+    },[]);
 
     return (
         <section className="content gallery">

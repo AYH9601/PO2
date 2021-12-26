@@ -1,4 +1,20 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+
+
 function Main(){
+    //seven
+    let [posts,setPosts] = useState([]);
+
+    useEffect(()=>{
+        axios
+            .get("../../public/dbs/science.json")
+            .then(data=>{
+                setPosts(data.data.data);
+            })
+    },[])
+
     return (
         <section className="content main">
             <div className="one">
@@ -149,6 +165,38 @@ function Main(){
                         Headlines, releases, hot topics, and more. Stay informed, knowledge is power. 
                     </span>
                     <button>Explore News</button>
+                </div>
+
+                <div className="seven">
+                    <h3>Science</h3>
+                    <div className="sevenLeft">
+                        <p>
+                            Biotechnology is our foundation. Benefiting patients is our goal. Innovation, pharmaceutical development, and the most dedicated team of clinical researchers is how we do it. 
+                        </p>
+                        <button>Explore Our Science</button>
+                    </div>
+                    <div className="sevenRight">
+                        <ul>
+                            <li>
+                                <div className="sevenPic"></div>
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                            <li>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

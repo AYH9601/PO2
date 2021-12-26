@@ -386,7 +386,7 @@
             margin-bottom: 100px;
             padding-top: 40px;
             border-top: 3px solid rgb(201, 201, 201);
-            width: 95%;
+            width: 100%;
             
             .leftCircle, .rightCircle {
                 display: inline-block;
@@ -411,6 +411,80 @@
                     border-bottom: none;
                     border: 2px solid #555;
                     background-color: #555;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+    .six {
+        border-bottom: 1px solid rgb(201, 201, 201);
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        span {
+            display: block;
+            font: bold 40px/1.5 "poppins";
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        button {
+            cursor: pointer;
+            width: 200px;
+            height: 70px;
+            background: none;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            font: bold 17px/1 "poppins";
+            color: crimson;
+            transition: 0.2s;
+            margin-bottom: 80px;
+
+            &:hover {
+                background-color: crimson; 
+                color: #fff;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .seven {
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 50px;
+            margin-top: 70px;
+        }
+
+        .sevenLeft {
+            width: 50%;
+            p {
+                font: bold 40px/1.5 "poppins";
+                color: #000;
+                margin-bottom: 40px;
+            }
+    
+            button {
+                cursor: pointer;
+                width: 200px;
+                height: 60px;
+                background: none;
+                border: 2px solid crimson;
+                border-radius: 35px;
+                font: bold 14px/1 "poppins";
+                color: crimson;
+                transition: 0.2s;
+                margin-bottom: 80px;
+    
+                &:hover {
+                    background-color: crimson; 
+                    color: #fff;
                     transition: 0.2s;
                 }
             }
