@@ -9,7 +9,7 @@ function Main(){
 
     useEffect(()=>{
         axios
-            .get("../../public/dbs/science.json")
+            .get("./dbs/science.json")
             .then(data=>{
                 setPosts(data.data.data);
             })
@@ -177,24 +177,17 @@ function Main(){
                     </div>
                     <div className="sevenRight">
                         <ul>
-                            <li>
-                                <div className="sevenPic"></div>
-                            </li>
-                            <li>
-
-                            </li>
-                            <li>
-
-                            </li>
-                            <li>
-
-                            </li>
-                            <li>
-
-                            </li>
-                            <li>
-
-                            </li>
+                            {
+                                posts.map((data, index)=>{
+                                    return (
+                                        <li key={index} className="science">
+                                            <div className="sevenPic"></div>
+                                            <h1>{data.tag}</h1>
+                                            <h2>{data.title}</h2>
+                                        </li>
+                                    )
+                                })
+                            }
                         </ul>
                     </div>
                 </div>
