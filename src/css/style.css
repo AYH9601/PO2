@@ -565,6 +565,9 @@ figure {
           cursor: pointer;
           float: left;
           margin-right: 25px; }
+          figure .main .seven .sevenRight ul li:hover h4 {
+            display: inline-block;
+            border-bottom: 2px solid #000; }
           figure .main .seven .sevenRight ul li .sevenPic {
             background-image: url(../../public/img/virus2.jpg);
             background-repeat: no-repeat;
@@ -631,9 +634,254 @@ figure {
       width: 1574px;
       height: 800px;
       background-color: lightpink; }
+      figure .department .profileSection::after {
+        content: "";
+        display: block;
+        clear: both; }
       figure .department .profileSection article {
-        width: 393px;
-        height: 500px; }
+        width: 100%;
+        float: left;
+        height: 100%; }
+      figure .department .profileSection .pagination {
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        padding-top: 40px;
+        border-top: 3px solid #c9c9c9;
+        width: 1180px; }
+        figure .department .profileSection .pagination .leftCircle, figure .department .profileSection .pagination .rightCircle {
+          cursor: pointer;
+          display: inline-block;
+          margin-right: 15px;
+          font-size: 25px;
+          width: 40px;
+          height: 40px;
+          border: 2px solid #000;
+          color: #000;
+          border-radius: 50%;
+          transition: 0.2s;
+          transform: translateY(3px); }
+          figure .department .profileSection .pagination .leftCircle i, figure .department .profileSection .pagination .rightCircle i {
+            margin-left: 7px; }
+          figure .department .profileSection .pagination .leftCircle:hover, figure .department .profileSection .pagination .rightCircle:hover {
+            color: #fff;
+            border-bottom: none;
+            border: 2px solid #555;
+            background-color: #555;
+            transition: 0.2s; }
+    figure .department .know {
+      margin-bottom: 100px; }
+      figure .department .know::after {
+        content: "";
+        display: block;
+        clear: both; }
+      figure .department .know h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+      figure .department .know .knowLeft {
+        float: left;
+        width: 50%;
+        padding-right: 30px; }
+        figure .department .know .knowLeft h2 {
+          font: bold 35px/1.5 "poppins"; }
+      figure .department .know .knowRight {
+        float: left;
+        width: 50%; }
+        figure .department .know .knowRight ul li {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          font: bold 35px/1 "poppins";
+          padding: 15px 0 15px 0;
+          border-top: 1px solid #000;
+          transition: 0.2s; }
+          figure .department .know .knowRight ul li i {
+            transform: translateY(5px);
+            font-size: 25px;
+            color: #000;
+            transition: 0.2s; }
+          figure .department .know .knowRight ul li:hover {
+            color: crimson;
+            transition: 0.2s; }
+            figure .department .know .knowRight ul li:hover i {
+              transform: translate(15px, 5px);
+              color: crimson;
+              transition: 0.2s; }
+    figure .department .careers {
+      padding-bottom: 120px;
+      border-bottom: 1px solid #c9c9c9; }
+      figure .department .careers h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+      figure .department .careers .careersUpper {
+        margin-bottom: 100px; }
+        figure .department .careers .careersUpper h1 {
+          font: bold 35px/1.3 "poppins";
+          letter-spacing: 0.5px;
+          color: #000;
+          margin-bottom: 30px; }
+        figure .department .careers .careersUpper button {
+          cursor: pointer;
+          display: inline-block;
+          background-color: #fff;
+          border: 2px solid crimson;
+          border-radius: 35px;
+          width: 250px;
+          height: 70px;
+          font: bold 18px/1 "poppins";
+          color: crimson;
+          transition: 0.3s; }
+          figure .department .careers .careersUpper button:hover {
+            background-color: crimson;
+            color: #fff;
+            transition: 0.3s; }
+      figure .department .careers .careersLower {
+        width: 100%; }
+        figure .department .careers .careersLower ul {
+          width: 100%; }
+          figure .department .careers .careersLower ul::after {
+            content: "";
+            display: block;
+            clear: both; }
+          figure .department .careers .careersLower ul li {
+            float: left;
+            width: 32%;
+            margin-right: 23px; }
+            figure .department .careers .careersLower ul li:last-child {
+              margin-right: 0px; }
+            figure .department .careers .careersLower ul li .careersPic {
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;
+              height: 250px;
+              border-radius: 10px;
+              margin-bottom: 30px; }
+            figure .department .careers .careersLower ul li:nth-of-type(1) .careersPic {
+              background-image: url(../../public/img/career1.jpg); }
+            figure .department .careers .careersLower ul li:nth-of-type(2) .careersPic {
+              background-image: url(../../public/img/career2.jpg); }
+            figure .department .careers .careersLower ul li:nth-of-type(3) .careersPic {
+              background-image: url(../../public/img/career3.jpg); }
+            figure .department .careers .careersLower ul li p {
+              font: bold 27px/1.5 "poppins";
+              color: #000;
+              margin-bottom: 20px; }
+            figure .department .careers .careersLower ul li span {
+              display: block;
+              font: bold 18px/1.8 "poppins";
+              color: #333;
+              margin-bottom: 20px; }
+            figure .department .careers .careersLower ul li em {
+              cursor: pointer;
+              font: bold 19px/1 "poppins";
+              color: crimson; }
+    figure .department .investors::after {
+      content: "";
+      display: block;
+      clear: both; }
+    figure .department .investors h3 {
+      font: bold 18px "poppins";
+      letter-spacing: 1px;
+      color: #333;
+      margin-bottom: 50px;
+      margin-top: 70px; }
+    figure .department .investors .investorsLeft {
+      float: left;
+      width: 50%;
+      padding-right: 30px; }
+      figure .department .investors .investorsLeft p {
+        font: bold 35px/1.5 "poppins";
+        color: #000;
+        margin-bottom: 40px; }
+      figure .department .investors .investorsLeft button {
+        cursor: pointer;
+        width: 180px;
+        height: 60px;
+        background: none;
+        border: 2px solid crimson;
+        border-radius: 35px;
+        font: bold 15px/1 "poppins";
+        color: crimson;
+        transition: 0.2s;
+        margin-bottom: 80px; }
+        figure .department .investors .investorsLeft button:hover {
+          background-color: crimson;
+          color: #fff;
+          transition: 0.2s; }
+    figure .department .investors .investorsRight {
+      float: left;
+      width: 50%;
+      height: 870px; }
+      figure .department .investors .investorsRight ul {
+        height: 900px;
+        width: 4000px; }
+        figure .department .investors .investorsRight ul::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .department .investors .investorsRight ul li {
+          cursor: pointer;
+          float: left;
+          margin-right: 25px; }
+          figure .department .investors .investorsRight ul li:hover h3 {
+            display: inline-block;
+            border-bottom: 2px solid #000; }
+          figure .department .investors .investorsRight ul li .investorsPic {
+            background-image: url(../../public/img/investors1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 590px;
+            height: 750px;
+            border-radius: 10px; }
+          figure .department .investors .investorsRight ul li:nth-of-type(2) .investorsPic {
+            background-image: url(../../public/img/investors2.jpg); }
+          figure .department .investors .investorsRight ul li:nth-of-type(3) .investorsPic {
+            background-image: url(../../public/img/investors3.jpg); }
+          figure .department .investors .investorsRight ul li:nth-of-type(4) .investorsPic {
+            background-image: url(../../public/img/investors4.jpg); }
+          figure .department .investors .investorsRight ul li:nth-of-type(5) .investorsPic {
+            background-image: url(../../public/img/investors5.jpg); }
+          figure .department .investors .investorsRight ul li:nth-of-type(6) .investorsPic {
+            background-image: url(../../public/img/investors6.jpg); }
+          figure .department .investors .investorsRight ul li h3 {
+            font: bold 25px/1 "poppins";
+            letter-spacing: 1px;
+            color: #000;
+            margin-top: 50px; }
+    figure .department .investors .pagination {
+      float: left;
+      width: 100%;
+      border-top: 3px solid #c9c9c9;
+      margin-top: 10px;
+      padding-top: 40px; }
+      figure .department .investors .pagination .leftCircle, figure .department .investors .pagination .rightCircle {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 50%;
+        transition: 0.2s;
+        transform: translateY(3px); }
+        figure .department .investors .pagination .leftCircle i, figure .department .investors .pagination .rightCircle i {
+          margin-left: 7px; }
+        figure .department .investors .pagination .leftCircle:hover, figure .department .investors .pagination .rightCircle:hover {
+          color: #fff;
+          border-bottom: none;
+          border: 2px solid #555;
+          background-color: #555;
+          transition: 0.2s; }
+    figure .department .latestStories h3 {
+      display: none; }
+    figure .department .latestStories article:last-child button {
+      display: none; }
   figure .gallery {
     padding-top: 100px; }
     figure .gallery .galleryUpper p {

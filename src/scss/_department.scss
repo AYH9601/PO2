@@ -18,10 +18,336 @@
         width: 1574px; // 1개당393px
         height: 800px;
         background-color: lightpink;
+        &::after {content: ""; display: block; clear: both;}
 
         article {
-            width: 393px;
-            height: 500px;
+            // 임시 구조물
+            width: 100%;
+            float: left;
+            height: 100%;
+        }
+
+        .pagination {
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 80px;
+            padding-top: 40px;
+            border-top: 3px solid rgb(201, 201, 201);
+            width: 1180px;
+            
+            .leftCircle, .rightCircle {
+                cursor: pointer;
+                display: inline-block;
+                margin-right: 15px;
+                font-size: 25px;
+                width: 40px;
+                height: 40px;
+                border: 2px solid #000;
+                color: #000;
+                border-radius: 50%;
+                // line-height: 40px;
+                transition: 0.2s;
+
+                transform: translateY(3px);
+
+                i {
+                    margin-left: 7px;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-bottom: none;
+                    border: 2px solid #555;
+                    background-color: #555;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+    .know {
+        margin-bottom: 100px;
+        &::after{content: ""; display: block; clear: both;}
+
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .knowLeft {
+            float: left;
+            width: 50%;
+            padding-right: 30px;
+
+            h2 {
+                font: bold 35px/1.5 "poppins";
+            }
+        }
+
+        .knowRight {
+            float: left;
+            width: 50%;
+            
+            ul {
+                li {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    font: bold 35px/1 "poppins";
+                    padding: 15px 0 15px 0;
+                    border-top: 1px solid #000;
+                    transition: 0.2s;
+
+                    i {
+                        transform: translateY(5px);
+                        font-size: 25px;
+                        color: #000;
+                        transition: 0.2s;
+                    }
+
+                    &:hover {
+                        color: crimson;
+                        transition: 0.2s;
+
+                        i {
+                            transform: translate(15px, 5px);
+                            color: crimson;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    } 
+
+    .careers {
+        padding-bottom: 120px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .careersUpper {
+            margin-bottom: 100px;
+
+            h1 {
+                font: bold 35px/1.3 "poppins";
+                letter-spacing: 0.5px;
+                color: #000;
+                margin-bottom: 30px;
+            }
+
+            button {
+                cursor: pointer;
+                display: inline-block;
+                background-color: #fff;
+                border: 2px solid crimson;
+                border-radius: 35px;
+                width: 250px;
+                height: 70px;
+                font: bold 18px/1 "poppins";
+                color: crimson;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: crimson;
+                    color: #fff;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .careersLower {
+            width: 100%;
+
+            ul {
+                width: 100%;
+                &::after {content: ""; display: block; clear: both;}
+
+                li {
+                    float: left;
+                    width: 32%;
+                    margin-right: 23px;
+                    &:last-child {margin-right: 0px;}
+
+                    .careersPic {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 100%;
+                        height: 250px;
+                        border-radius: 10px;
+                        margin-bottom: 30px;
+                    }
+                    &:nth-of-type(1){.careersPic {background-image: url(../../public/img/career1.jpg);}}
+                    &:nth-of-type(2){.careersPic {background-image: url(../../public/img/career2.jpg);}}
+                    &:nth-of-type(3){.careersPic {background-image: url(../../public/img/career3.jpg);}}
+
+                    p {
+                        font: bold 27px/1.5 "poppins";
+                        color: #000;
+                        margin-bottom: 20px;
+                    }
+
+                    span {
+                        display: block;
+                        font: bold 18px/1.8 "poppins";
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+
+                    em {
+                        cursor: pointer;
+                        font: bold 19px/1 "poppins";
+                        color: crimson;
+                    }
+                }
+            }
+        }
+    }
+
+    .investors {
+        &::after {content: ""; display: block; clear: both;}
+
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 50px;
+            margin-top: 70px;
+        }
+
+        .investorsLeft {
+            float: left;
+            width: 50%;
+            padding-right: 30px;
+            p {
+                font: bold 35px/1.5 "poppins";
+                color: #000;
+                margin-bottom: 40px;
+            }
+    
+            button {
+                cursor: pointer;
+                width: 180px;
+                height: 60px;
+                background: none;
+                border: 2px solid crimson;
+                border-radius: 35px;
+                font: bold 15px/1 "poppins";
+                color: crimson;
+                transition: 0.2s;
+                margin-bottom: 80px;
+    
+                &:hover {
+                    background-color: crimson; 
+                    color: #fff;
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        .investorsRight {
+            float: left;
+            width:50%;
+            height: 870px;
+
+            ul {
+                height: 900px;
+                width: 4000px;
+                &::after {content: ""; display: block; clear: both;}
+
+                li {
+                    cursor: pointer;
+                    float: left;
+                    margin-right: 25px;
+
+                    &:hover {
+                        h3 {
+                            display: inline-block;
+                            border-bottom: 2px solid #000;
+                        }
+                    }
+
+                    .investorsPic{
+                        background-image: url(../../public/img/investors1.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 590px;
+                        height: 750px;
+                        border-radius: 10px;
+                    }
+                    &:nth-of-type(2){.investorsPic {background-image: url(../../public/img/investors2.jpg);}}
+                    &:nth-of-type(3){.investorsPic {background-image: url(../../public/img/investors3.jpg);}}
+                    &:nth-of-type(4){.investorsPic {background-image: url(../../public/img/investors4.jpg);}}
+                    &:nth-of-type(5){.investorsPic {background-image: url(../../public/img/investors5.jpg);}}
+                    &:nth-of-type(6){.investorsPic {background-image: url(../../public/img/investors6.jpg);}}
+
+                    h3 {
+                        font: bold 25px/1 "poppins";
+                        letter-spacing: 1px;
+                        color: #000;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            float: left;
+            width: 100%;
+            border-top: 3px solid rgb(201, 201, 201);
+            margin-top: 10px;
+            padding-top: 40px;
+            
+            .leftCircle, .rightCircle {
+                cursor: pointer;
+                display: inline-block;
+                margin-right: 15px;
+                font-size: 25px;
+                width: 40px;
+                height: 40px;
+                border: 2px solid #000;
+                color: #000;
+                border-radius: 50%;
+                // line-height: 40px;
+                transition: 0.2s;
+
+                transform: translateY(3px);
+
+                i {
+                    margin-left: 7px;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-bottom: none;
+                    border: 2px solid #555;
+                    background-color: #555;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+    .latestStories {
+        h3 {
+            display: none;
+        }
+
+        article {
+            &:last-child {
+                button {
+                    display: none;
+                }
+            }
         }
     }
 }

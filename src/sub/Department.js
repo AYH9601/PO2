@@ -37,6 +37,8 @@ function Department(){
                         })
                     }
 
+                    {/* 임시 구조물 */}
+                    <article>a</article> 
                     <div className="pagination">
                         <div className="leftCircle">
                             <i className="fas fa-arrow-left"></i>
@@ -47,7 +49,6 @@ function Department(){
                     </div>
                 </div>
                 
-
                 <div className="know">
                     <h3>Get to Know Us</h3>
                     
@@ -76,12 +77,14 @@ function Department(){
 
                 <div className="careers">
                     <h3>Our Careers</h3>
+                    
                     <div className="careersUpper">
                         <h1>
                             Incredible things can happen when people come together with one shared goal. The future of medicine is happening here, and we’re eager to work alongside inspired and inspirational people who want to improve health around the world.
                         </h1>
                         <button>Explore our Careers</button>
                     </div>
+
                     <div className="careersLower">
                         <ul>
                             <li>

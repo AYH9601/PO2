@@ -510,6 +510,13 @@
                     float: left;
                     margin-right: 25px;
 
+                    &:hover {
+                        h4 {
+                            display: inline-block;
+                            border-bottom: 2px solid #000;
+                        }
+                    }
+
                     .sevenPic{
                         background-image: url(../../public/img/virus2.jpg);
                         background-repeat: no-repeat;
