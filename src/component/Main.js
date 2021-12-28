@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import { LatestStories } from "../component/common";
 
 
 function Main(){
@@ -40,53 +40,7 @@ function Main(){
                     </div>
                 </div>
 
-                <div className="latestStories">
-                    <h3>Latest Stories</h3>
-
-                    <article>
-                        <h4>Science</h4>
-                        <ul>
-                            <li className="LSTitle">
-                                How Does a Virus Inhibitor Work
-                            </li>
-                            <li className="LSArticle">
-                                The FDA has authorized Umbrella's COVID-20 oral treatment for emergency use.</li>
-                        </ul>
-                        <div className="LSPic">
-                            <div className="articlePic1">
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <h4>Our<br></br>Products</h4>
-                        <ul>
-                            <li className="LSTitle">Finally, A Cure For Progeria Has Been Completed.</li>
-                            <li className="LSArticle">
-                                After the efforts of many scientists, we have created a treatment using a new virus.</li>
-                        </ul>
-                        <div className="LSPic">
-                            <div className="articlePic2">
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <h4>Our<br></br>Purpose</h4>
-                        <ul>
-                            <li className="LSTitle">Umbrella's Institue Vision</li>
-                            <li className="LSArticle">We will protect humanity with an umbrella.</li>
-                        </ul>
-                        <div className="LSPic">
-                            <div className="articlePic3">
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <button>See More News</button>
-                    </article>
-                </div>
+                <LatestStories></LatestStories>
 
                 <div className="three">
                     <h3>eBook</h3>
@@ -177,7 +131,7 @@ function Main(){
                     </div>
                     <div className="sevenRight">
                         <ul>
-                            {
+                            {/* {
                                 posts.map((data, index)=>{
                                     return (
                                         <li key={index} className="science">
@@ -187,8 +141,47 @@ function Main(){
                                         </li>
                                     )
                                 })
-                            }
+                            } */}
+                            <li>
+                                <div className="sevenPic"></div>
+                                <h3>Oncology</h3>
+                                <h4>Conquering Cancer</h4>
+                            </li>
+                            <li>
+                                <div className="sevenPic"></div>
+                                <h3>Inflammation & Immunology</h3>
+                                <h4>Innovation, Research & Development</h4>
+                            </li>
+                            <li>
+                                <div className="sevenPic"></div>
+                                <h3>Vaccines</h3>
+                                <h4>Driven to Discover the Cure</h4>
+                            </li>
+                            <li>
+                                <div className="sevenPic"></div>
+                                <h3>Rare Disease</h3>
+                                <h4>Our Approach to Gene Therapy and More</h4>
+                            </li>
+                            <li>
+                                <div className="sevenPic"></div>
+                                <h3>Internal Mdeicine</h3>
+                                <h4>Advancing the Fight</h4>
+                            </li>
+                            <li>
+                                <div className="sevenPic"></div>
+                                <h3>Anti Infectives</h3>
+                                <h4>New Drugs, Medicines & Therapies</h4>
+                            </li>
                         </ul>
+                    </div>
+
+                    <div className="pagination">
+                        <div className="leftCircle">
+                            <i className="fas fa-arrow-left"></i>
+                        </div>
+                        <div className="rightCircle">
+                            <i className="fas fa-arrow-right"></i>
+                        </div>
                     </div>
                 </div>
             </div>

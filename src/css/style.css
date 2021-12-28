@@ -10,14 +10,96 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
-.content .inner {
-  width: 1180px;
-  padding-top: 100px;
-  margin: 0 auto; }
-  .content .inner h1 {
-    font: normal 30px/1 "arial";
-    color: #555;
-    margin-bottom: 30px; }
+.content {
+  overflow: hidden; }
+  .content .inner {
+    width: 1180px;
+    padding-top: 100px;
+    margin: 0 auto; }
+    .content .inner h1 {
+      font: normal 30px/1 "arial";
+      color: #555;
+      margin-bottom: 30px; }
+    .content .inner .latestStories {
+      margin-top: 100px;
+      margin-bottom: 50px; }
+      .content .inner .latestStories h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 40px; }
+      .content .inner .latestStories article {
+        width: 100%;
+        border-top: 1.5px solid #c9c9c9;
+        padding-top: 40px;
+        padding-bottom: 40px; }
+        .content .inner .latestStories article::after {
+          content: "";
+          display: block;
+          clear: both; }
+        .content .inner .latestStories article:last-child {
+          border-top: none;
+          text-align: center; }
+          .content .inner .latestStories article:last-child button {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            width: 170px;
+            height: 70px;
+            font: bold 18px/1 "poppins";
+            color: crimson;
+            transition: 0.3s; }
+            .content .inner .latestStories article:last-child button:hover {
+              background-color: crimson;
+              color: #fff;
+              transition: 0.3s; }
+        .content .inner .latestStories article h4 {
+          float: left;
+          width: 18%;
+          font: bold 18px "poppins";
+          color: #444; }
+        .content .inner .latestStories article ul {
+          float: left;
+          width: 47%; }
+          .content .inner .latestStories article ul .LSTitle {
+            font: bold 40px/1.5 "poppins";
+            margin-bottom: 20px;
+            color: crimson;
+            cursor: pointer; }
+          .content .inner .latestStories article ul .LSArticle {
+            font: bold 18px/1.5 "poppins";
+            letter-spacing: 1px;
+            color: #444; }
+        .content .inner .latestStories article .LSPic {
+          float: left;
+          width: 35%;
+          height: 220px; }
+          .content .inner .latestStories article .LSPic .articlePic1 {
+            width: 100%;
+            height: 220px;
+            background-image: url(../../public/img/virusArticle.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px; }
+          .content .inner .latestStories article .LSPic .articlePic2 {
+            width: 100%;
+            height: 220px;
+            background-image: url(../../public/img/TvirusArticle.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px; }
+          .content .inner .latestStories article .LSPic .articlePic3 {
+            width: 100%;
+            height: 220px;
+            background-image: url(../../public/img/unboxingArticle.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            margin-bottom: 20px; }
 
 figure {
   width: 100%; }
@@ -389,6 +471,7 @@ figure {
       border-top: 3px solid #c9c9c9;
       width: 100%; }
       figure .main .five .pagination .leftCircle, figure .main .five .pagination .rightCircle {
+        cursor: pointer;
         display: inline-block;
         margin-right: 15px;
         font-size: 25px;
@@ -434,50 +517,123 @@ figure {
           background-color: crimson;
           color: #fff;
           transition: 0.2s; }
-    figure .main .seven {
-      height: 1100px;
-      background-color: lightcyan; }
-      figure .main .seven h3 {
-        font: bold 18px "poppins";
-        letter-spacing: 1px;
-        color: #333;
-        margin-bottom: 50px;
-        margin-top: 70px; }
-      figure .main .seven .sevenLeft {
-        float: left;
-        width: 50%; }
-        figure .main .seven .sevenLeft p {
-          font: bold 40px/1.5 "poppins";
-          color: #000;
-          margin-bottom: 40px; }
-        figure .main .seven .sevenLeft button {
+    figure .main .seven::after {
+      content: "";
+      display: block;
+      clear: both; }
+    figure .main .seven h3 {
+      font: bold 18px "poppins";
+      letter-spacing: 1px;
+      color: #333;
+      margin-bottom: 20px;
+      margin-top: 70px; }
+    figure .main .seven .sevenLeft {
+      padding-top: 50px;
+      float: left;
+      width: 50%; }
+      figure .main .seven .sevenLeft p {
+        font: bold 40px/1.5 "poppins";
+        color: #000;
+        margin-bottom: 40px; }
+      figure .main .seven .sevenLeft button {
+        cursor: pointer;
+        width: 200px;
+        height: 60px;
+        background: none;
+        border: 2px solid crimson;
+        border-radius: 35px;
+        font: bold 14px/1 "poppins";
+        color: crimson;
+        transition: 0.2s;
+        margin-bottom: 80px; }
+        figure .main .seven .sevenLeft button:hover {
+          background-color: crimson;
+          color: #fff;
+          transition: 0.2s; }
+    figure .main .seven .sevenRight {
+      float: left;
+      width: 50%;
+      height: 900px; }
+      figure .main .seven .sevenRight ul {
+        height: 900px;
+        width: 4000px; }
+        figure .main .seven .sevenRight ul::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .main .seven .sevenRight ul li {
           cursor: pointer;
-          width: 200px;
-          height: 60px;
-          background: none;
-          border: 2px solid crimson;
-          border-radius: 35px;
-          font: bold 14px/1 "poppins";
-          color: crimson;
-          transition: 0.2s;
-          margin-bottom: 80px; }
-          figure .main .seven .sevenLeft button:hover {
-            background-color: crimson;
-            color: #fff;
-            transition: 0.2s; }
-      figure .main .seven .sevenRight {
-        float: left;
-        background-color: lightcoral;
-        width: 50%;
-        height: 800px;
-        overflow: hidden; }
-        figure .main .seven .sevenRight ul {
-          background-color: lightgreen;
-          width: 4000px; }
+          float: left;
+          margin-right: 25px; }
           figure .main .seven .sevenRight ul li .sevenPic {
-            background-color: lightpink;
+            background-image: url(../../public/img/virus2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             width: 590px;
-            height: 800px; }
+            height: 750px;
+            border-radius: 10px; }
+          figure .main .seven .sevenRight ul li:nth-of-type(2) .sevenPic {
+            background-image: url(../../public/img/virus7.png); }
+          figure .main .seven .sevenRight ul li:nth-of-type(3) .sevenPic {
+            background-image: url(../../public/img/virus3.jpg); }
+          figure .main .seven .sevenRight ul li:nth-of-type(4) .sevenPic {
+            background-image: url(../../public/img/virus6.jpg); }
+          figure .main .seven .sevenRight ul li:nth-of-type(5) .sevenPic {
+            background-image: url(../../public/img/virus5.jpg); }
+          figure .main .seven .sevenRight ul li:nth-of-type(6) .sevenPic {
+            background-image: url(../../public/img/virus8.png); }
+          figure .main .seven .sevenRight ul li h3 {
+            font: bold 18px/1 "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-top: 30px; }
+          figure .main .seven .sevenRight ul li h4 {
+            font: bold 25px/1 "poppins";
+            color: #000; }
+    figure .main .seven .pagination {
+      float: left;
+      width: 100%;
+      border-top: 3px solid #c9c9c9;
+      margin-top: 10px;
+      padding-top: 40px;
+      margin-bottom: 80px; }
+      figure .main .seven .pagination .leftCircle, figure .main .seven .pagination .rightCircle {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 25px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 50%;
+        transition: 0.2s;
+        transform: translateY(3px); }
+        figure .main .seven .pagination .leftCircle i, figure .main .seven .pagination .rightCircle i {
+          margin-left: 7px; }
+        figure .main .seven .pagination .leftCircle:hover, figure .main .seven .pagination .rightCircle:hover {
+          color: #fff;
+          border-bottom: none;
+          border: 2px solid #555;
+          background-color: #555;
+          transition: 0.2s; }
+  figure .department {
+    padding-top: 100px; }
+    figure .department .departmentUpper p {
+      font: bold 18px/1 "poppins";
+      margin-bottom: 60px; }
+    figure .department .departmentUpper h1 {
+      font: bold 40px/1.3 "poppins";
+      letter-spacing: 0.5px;
+      color: #000;
+      margin-bottom: 80px; }
+    figure .department .profileSection {
+      width: 1574px;
+      height: 800px;
+      background-color: lightpink; }
+      figure .department .profileSection article {
+        width: 393px;
+        height: 500px; }
   figure .gallery {
     padding-top: 100px; }
     figure .gallery .galleryUpper p {
@@ -560,7 +716,6 @@ figure {
         transition: 0.3s; }
     figure .gallery .galleryLower #imgBox .list {
       opacity: 0;
-      transform: translateX(200px);
       transition: 0.5s; }
       figure .gallery .galleryLower #imgBox .list::after {
         content: "";
@@ -580,7 +735,8 @@ figure {
           width: 100%;
           height: 220px;
           object-fit: cover;
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          cursor: pointer; }
           figure .gallery .galleryLower #imgBox .list > li .pic img {
             width: 100%;
             height: 220px;
@@ -590,7 +746,8 @@ figure {
           font: bold 27px/1 "poppins";
           line-height: 1.5;
           color: crimson;
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          cursor: pointer; }
         figure .gallery .galleryLower #imgBox .list > li span {
           font: bold 15px/1 "poppins";
           color: #999; }

@@ -4,6 +4,7 @@ a {text-decoration: none;}
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@200&display=swap');
 
 .content {
+    overflow: hidden;
     .inner {
         width: 1180px;
         padding-top: 100px;
@@ -14,6 +15,111 @@ a {text-decoration: none;}
             font: normal 30px/1 "arial";
             color: #555;
             margin-bottom: 30px;
+        }
+
+        .latestStories {
+            margin-top: 100px;
+            margin-bottom: 50px;
+    
+            h3 {
+                font: bold 18px "poppins";
+                letter-spacing: 1px;
+                color: #333;
+                margin-bottom: 40px;
+            }
+    
+            article {
+                width: 100%;
+                border-top: 1.5px solid rgb(201, 201, 201); 
+                padding-top: 40px;
+                padding-bottom: 40px;
+    
+                &::after{content: ""; display: block; clear: both;}
+    
+                &:last-child {
+                    border-top: none;
+                    text-align: center;
+    
+                    button {
+                        cursor: pointer;
+                        display: inline-block;
+                        background-color: #fff;
+                        border: 2px solid crimson;
+                        border-radius: 35px;
+                        width: 170px;
+                        height: 70px;
+                        font: bold 18px/1 "poppins";
+                        color: crimson;
+                        transition: 0.3s;
+    
+                        &:hover {
+                            background-color: crimson;
+                            color: #fff;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+    
+                h4 {
+                    float: left;
+                    width: 18%;
+                    font: bold 18px "poppins";
+                    color: #444;
+                }
+    
+                ul {
+                    float: left;
+                    width: 47%;
+    
+                    .LSTitle {
+                        font: bold 40px/1.5 "poppins";
+                        margin-bottom: 20px;
+                        color: crimson;
+                        cursor: pointer;
+                    }
+                    .LSArticle {
+                        font: bold 18px/1.5 "poppins";
+                        letter-spacing: 1px;
+                        color: #444;
+                    }
+                }
+    
+                .LSPic {
+                    float: left;
+                    width: 35%;
+                    height: 220px;
+    
+                    .articlePic1 {
+                        width: 100%;
+                        height: 220px;
+                        background-image: url(../../public/img/virusArticle.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+                    }
+    
+                    .articlePic2 {
+                        width: 100%;
+                        height: 220px;
+                        background-image: url(../../public/img/TvirusArticle.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+                    }
+    
+                    .articlePic3 {
+                        width: 100%;
+                        height: 220px;
+                        background-image: url(../../public/img/unboxingArticle.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
     }
 }

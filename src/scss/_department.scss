@@ -1,0 +1,27 @@
+.department {
+    padding-top: 100px;
+    .departmentUpper {
+        p {
+            font: bold 18px/1 "poppins";
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font: bold 40px/1.3 "poppins";
+            letter-spacing: 0.5px;
+            color: #000;
+            margin-bottom: 80px;
+        }
+    }
+
+    .profileSection {
+        width: 1574px; // 1개당393px
+        height: 800px;
+        background-color: lightpink;
+
+        article {
+            width: 393px;
+            height: 500px;
+        }
+    }
+}

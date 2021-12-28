@@ -114,7 +114,7 @@
 
             .list {
                 opacity: 0;
-                transform: translateX(200px);
+                // transform: translateX(200px);
                 transition: 0.5s;
 
                 &::after {content: ""; display: block; clear: both;}
@@ -138,6 +138,7 @@
                         height: 220px;
                         object-fit: cover;
                         margin-bottom: 20px;
+                        cursor: pointer;
 
                         img {
                             width: 100%;
@@ -152,6 +153,7 @@
                         line-height: 1.5;
                         color: crimson;
                         margin-bottom: 20px;
+                        cursor: pointer;
                     }
 
                     span {
