@@ -1,21 +1,22 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function Gallery(){
     const baseURL = "https://www.flickr.com/services/rest/?";
-    const method1 = "flickr.interestingness.getList";
+    // const method1 = "flickr.interestingness.getList";
+    const method1 = "flickr.photos.search";
     const key= "2fb9756d5c2a17287d72e1361294b949";
     const count = 6; //3의 배수
-    const url = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1`;
+    const url = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1&tags=vaccine`;
+
+    // let tag = input.value
 
     let [items, setItems] = useState([]);
 
+    let list = useRef(null);
+
     useEffect(()=>{
-        axios
-        .get(url)
-        .then(json=>{
-            setItems(json.data.photos.photo)
-        })
+        getFlickr()
     },[]);
 
     return (
@@ -51,7 +52,7 @@ function Gallery(){
                             </ul>
                         </div>
 
-                        <ul className="list">
+                        <ul className="list" ref={list}>
                             {
                                 items.map((item, index)=>{
                                     const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`
@@ -143,9 +144,50 @@ function Gallery(){
                         <button>News Hub</button>
                     </article>
                 </div>
+
+                <div className="media">
+                    <h3>Media Resources & Contact Information</h3>
+                    <div className="mediaLeft">
+                        <ul>
+                            <li>
+                                Media Contacts
+                                <i className="fas fa-arrow-right"></i>    
+                            </li>
+                            <li>
+                                Press Kits
+                                <i className="fas fa-arrow-right"></i>
+                            </li>
+                            <li>
+                                Company Fact Sheet
+                                <i className="fas fa-arrow-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mediaRight">
+                        <h2>
+                            Anyone may view our press releases, press statements, and press kits. However, to ensure that customers, investors, and others receive the appropriate attention, Pfizer Media Contacts may only respond to calls and emails from professional journalists.
+                        </h2>
+                    </div>
+                </div>
             </div>
         </section>
     )
+
+    async function getFlickr(){
+        await axios
+        .get(url)
+        .then(json=>{
+            setItems(json.data.photos.photo)
+        },[])
+
+        setTimeout(()=>{
+            list.current.classList.add("on")
+        },100)
+    }
+
+    // function search(){
+    //     const url_search = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
+    // }
 }
 
 export default Gallery;

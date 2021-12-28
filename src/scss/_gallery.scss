@@ -20,6 +20,21 @@
             border-bottom: 1px solid #000;
             margin-bottom: 55px;
 
+            /*
+            &:hover {
+                .btnSearch {
+                    color: #fff;
+                    transition: -0.2s;
+
+                    .arrowCircle {
+                        background-color: crimson;
+                        border: 2px solid crimson;
+                        transition: 0.2s;
+                    }
+                }
+            }
+            */
+
             input[type=text] {
                 border: none;
                 width: 460px;
@@ -38,6 +53,7 @@
                 background-color: #fff;
                 transform: translateY(-10px);
                 cursor: pointer;
+                transition: 0.2s;
 
                 .arrowCircle {
                     width: 55px;
@@ -45,9 +61,21 @@
                     border: 2px solid #999;
                     border-radius: 50%;
                     margin-bottom: 5px;
+                    transition: 0.2s;
                     
                     i {
                         transform: translate(1px, 11px);
+                    }
+                }
+
+                &:hover {
+                    color: #fff;
+                    transition: -0.2s;
+
+                    .arrowCircle {
+                        background-color: crimson;
+                        border: 2px solid crimson;
+                        transition: 0.2s;
                     }
                 }
             }
@@ -85,7 +113,16 @@
             }
 
             .list {
+                opacity: 0;
+                transform: translateX(200px);
+                transition: 0.5s;
+
                 &::after {content: ""; display: block; clear: both;}
+                &.on {
+                    opacity: 1;
+                    transform: translateX(0px);
+                    // transition: 0.5s;
+                }
 
                 >li {
                     float: left;
@@ -93,6 +130,7 @@
                     height: 550px;
                     margin-right: 30px;
                     margin-bottom: 15px;
+                    overflow: hidden;
                     
                     .pic {
                         // background-color: lightseagreen;
@@ -164,7 +202,6 @@
 
                     &:hover {
                         color: crimson;
-                        font-size: 16px;
                         // border-bottom: 2px solid crimson;
                     }
 
@@ -198,6 +235,7 @@
 
     .latestStories {
         margin-top: 100px;
+        margin-bottom: 50px;
 
         h3 {
             font: bold 18px "poppins";
@@ -296,6 +334,63 @@
                     border-radius: 10px;
                     margin-bottom: 20px;
                 }
+            }
+        }
+    }
+
+    .media {
+        margin-bottom: 50px;
+        &::after{content: ""; display: block; clear: both;}
+
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .mediaLeft {
+            float: left;
+            width: 50%;
+            
+            ul {
+                li {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    font: bold 35px/1 "poppins";
+                    padding: 15px 0 15px 0;
+                    border-top: 1px solid #000;
+                    transition: 0.2s;
+
+                    i {
+                        transform: translateY(5px);
+                        font-size: 25px;
+                        color: #000;
+                        transition: 0.2s;
+                    }
+
+                    &:hover {
+                        color: crimson;
+                        transition: 0.2s;
+
+                        i {
+                            transform: translate(15px, 5px);
+                            color: crimson;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mediaRight {
+            float: left;
+            width: 50%;
+            padding-left: 100px;
+            
+            h2 {
+                font: bold 25px/1.5 "poppins";
             }
         }
     }
