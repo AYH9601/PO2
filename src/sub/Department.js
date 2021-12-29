@@ -8,7 +8,7 @@ function Department(){
 
     useEffect(()=>{
         axios
-            .get("./dbs/department.json")
+            .get("process.env.PUBLIC_URL/dbs/department.json")
             .then(data=>{
                 setPosts(data.data.data);
             })
