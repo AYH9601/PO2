@@ -123,6 +123,7 @@
             }
 
             .list {
+                min-height: 500px;
                 opacity: 0;
                 // transform: translateX(200px);
                 transition: 0.5s;
