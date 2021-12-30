@@ -2,9 +2,6 @@ import axios from "axios";
 import { useEffect, useState, useRef } from "react";
 import { LatestStories } from "../component/common";
 
-
-
-
 const path = process.env.PUBLIC_URL;
 
 function Gallery(){

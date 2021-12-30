@@ -1,5 +1,7 @@
 .department {
     padding-top: 100px;
+    overflow: hidden;
+    
     .departmentUpper {
         p {
             font: bold 18px/1 "poppins";
@@ -15,16 +17,57 @@
     }
 
     .profileSection {
-        width: 1574px; // 1개당393px
-        height: 800px;
-        background-color: lightpink;
-        &::after {content: ""; display: block; clear: both;}
+        width: 1180px;
+        overflow: hidden;
 
-        article {
-            // 임시 구조물
-            width: 100%;
-            float: left;
-            height: 100%;
+        .profileInner {
+            width: 1576px; // 1개당393px
+
+            // background-color: lightpink;
+            &::after {content: ""; display: block; clear: both;}
+    
+            article {
+                float: left;
+                width: 394px;
+                height: 450px;
+                
+    
+                .pic {
+                    cursor: pointer;
+                    width: 393px;
+                    height: 220px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-bottom: 30px;
+                }
+                &:nth-of-type(1){.pic {background-image: url(../../public/img/department1.jpg);}}
+                &:nth-of-type(2){.pic {background-image: url(../../public/img/department2.jpg);}}
+                &:nth-of-type(3){.pic {background-image: url(../../public/img/department3.jpg);}}
+                &:nth-of-type(4){.pic {background-image: url(../../public/img/department4.jpg);}}
+                &:nth-of-type(5){.pic {background-image: url(../../public/img/department5.jpg);}}
+                &:nth-of-type(6){.pic {background-image: url(../../public/img/department6.jpg);}}
+                &:nth-of-type(7){.pic {background-image: url(../../public/img/department7.jpg);}}
+                &:nth-of-type(8){.pic {background-image: url(../../public/img/department8.jpg);}}
+
+                h2 {
+                    font: bold 30px/1 "poppins";
+                    color: #000;
+                    margin-bottom: 15px;
+                }
+
+                strong {
+                    display: block;
+                    font: bold 17px/2 "poppins";
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    cursor: pointer;
+                    font: bold 17px/1 "poppins";
+                    color: crimson;
+                }
+            }
         }
 
         .pagination {

@@ -5,10 +5,12 @@ import { LatestStories } from "../component/common";
 
 function Department(){
     let [posts,setPosts] = useState([]);
+    const path = process.env.PUBLIC_URL;
+    const url = `${path}/dbs/department.json`
 
     useEffect(()=>{
         axios
-            .get("process.env.PUBLIC_URL/dbs/department.json")
+            .get(url)
             .then(data=>{
                 setPosts(data.data.data);
             })
@@ -23,22 +25,23 @@ function Department(){
                         Meet the executive leadership team, our senior-most leadership and decision-making management body who focus on major financial, strategic, and operational decisions for the entire company.
                     </h1>
                 </div>
-
+                
                 <div className="profileSection">
-                    {
-                        posts.map((data, index)=>{
-                            return (
-                                <article key={index} className="profile">
-                                    <h2>{data.Name}</h2>
-                                    <strong>{data.position}</strong>
-                                    <span>Learn more</span>
-                                </article>
-                            )
-                        })
-                    }
+                    <div className="profileInner">
+                        {
+                            posts.map((data, index)=>{
+                                return (
+                                    <article key={index} className="profile">
+                                        <div className="pic"></div>
+                                        <h2>{data.Name}</h2>
+                                        <strong>{data.position}</strong>
+                                        <span>Learn more</span>
+                                    </article>
+                                )
+                            })
+                        }
+                    </div>
 
-                    {/* 임시 구조물 */}
-                    <article>a</article> 
                     <div className="pagination">
                         <div className="leftCircle">
                             <i className="fas fa-arrow-left"></i>

@@ -621,7 +621,8 @@ figure {
           background-color: #555;
           transition: 0.2s; }
   figure .department {
-    padding-top: 100px; }
+    padding-top: 100px;
+    overflow: hidden; }
     figure .department .departmentUpper p {
       font: bold 18px/1 "poppins";
       margin-bottom: 60px; }
@@ -631,17 +632,54 @@ figure {
       color: #000;
       margin-bottom: 80px; }
     figure .department .profileSection {
-      width: 1574px;
-      height: 800px;
-      background-color: lightpink; }
-      figure .department .profileSection::after {
-        content: "";
-        display: block;
-        clear: both; }
-      figure .department .profileSection article {
-        width: 100%;
-        float: left;
-        height: 100%; }
+      width: 1180px;
+      overflow: hidden; }
+      figure .department .profileSection .profileInner {
+        width: 1576px; }
+        figure .department .profileSection .profileInner::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .department .profileSection .profileInner article {
+          float: left;
+          width: 394px;
+          height: 450px; }
+          figure .department .profileSection .profileInner article .pic {
+            cursor: pointer;
+            width: 393px;
+            height: 220px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 30px; }
+          figure .department .profileSection .profileInner article:nth-of-type(1) .pic {
+            background-image: url(../../public/img/department1.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(2) .pic {
+            background-image: url(../../public/img/department2.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(3) .pic {
+            background-image: url(../../public/img/department3.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(4) .pic {
+            background-image: url(../../public/img/department4.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(5) .pic {
+            background-image: url(../../public/img/department5.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(6) .pic {
+            background-image: url(../../public/img/department6.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(7) .pic {
+            background-image: url(../../public/img/department7.jpg); }
+          figure .department .profileSection .profileInner article:nth-of-type(8) .pic {
+            background-image: url(../../public/img/department8.jpg); }
+          figure .department .profileSection .profileInner article h2 {
+            font: bold 30px/1 "poppins";
+            color: #000;
+            margin-bottom: 15px; }
+          figure .department .profileSection .profileInner article strong {
+            display: block;
+            font: bold 17px/2 "poppins";
+            color: #333;
+            margin-bottom: 10px; }
+          figure .department .profileSection .profileInner article span {
+            cursor: pointer;
+            font: bold 17px/1 "poppins";
+            color: crimson; }
       figure .department .profileSection .pagination {
         float: left;
         margin-top: 20px;
