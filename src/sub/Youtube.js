@@ -22,8 +22,11 @@ function Youtube(){
 
     return (
         <main className="youtube">
-            <div className="inner">
+            <div className="content inner">
                 <p>Umbrella Media Center</p>
+                <h1>
+                    Go behind the breakthroughs and explore the stories of the work we do at Umbrella, in conversations with the scientists and leaders who make it happen. Listen to recent episodes and subscribe using your favorite podcast platform. 
+                </h1>
 
                 <section className="frame">
                     {
@@ -37,21 +40,24 @@ function Youtube(){
                             return (
                                 <article key={index}>
                                     <div className="inner">
-                                        <div className="txt">
-                                            <h2>
-                                                {(tit_len > 40) ? tit = tit.substr(0, 40)+"..." : tit}
-                                            </h2>
-                                            <p>
-                                                {(desc_len > 150) ? desc = desc.substr(0, 150)+"..." : desc}
-                                            </p>
-                                        </div>
-
                                         <div className="pic" onClick={()=>{
-                                            setIsPop(true);
-                                            setIndex(index)
+                                                setIsPop(true);
+                                                setIndex(index)
                                         }}>
                                             <img src={item.snippet.thumbnails.medium.url} />
                                         </div>
+
+                                        <div className="txt">
+                                            <h2>
+                                                {(tit_len > 50) ? tit = tit.substr(0, 50)+"..." : tit}
+                                            </h2>
+                                            <i className="fas fa-play-circle"></i>
+                                            <p>
+                                                {(desc_len > 250) ? desc = desc.substr(0, 250)+"..." : desc}
+                                            </p>
+                                        </div>
+
+
                                     </div>
                                 </article>
                             )
