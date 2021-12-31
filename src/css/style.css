@@ -1365,35 +1365,93 @@ figure {
         font: bold 40px/1.3 "poppins";
         letter-spacing: 0.5px;
         color: #000;
-        margin-bottom: 145px; }
+        margin-bottom: 100px; }
       figure .youtube .inner .frame article > .inner {
-        background: lightgreen;
-        padding: 10px; }
+        width: 96%;
+        margin-right: 4%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        margin-bottom: 20px;
+        transition: 0.2s; }
         figure .youtube .inner .frame article > .inner::after {
           content: "";
           display: block;
           clear: both; }
+        figure .youtube .inner .frame article > .inner:hover {
+          box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.4);
+          transition: 0.2s; }
         figure .youtube .inner .frame article > .inner .pic {
           float: left;
           width: 35%;
-          background: lightblue; }
+          height: 225px; }
           figure .youtube .inner .frame article > .inner .pic img {
             width: 400px; }
         figure .youtube .inner .frame article > .inner .txt {
           float: left;
           width: 65%;
-          background: lightcoral;
-          padding-left: 20px; }
+          height: 225px;
+          padding-top: 10px;
+          padding-left: 20px;
+          padding-right: 20px; }
+          figure .youtube .inner .frame article > .inner .txt em {
+            display: inline-block;
+            font: bold 17px/1 "poppins";
+            background-color: #ffd9de;
+            color: #000;
+            padding: 7px 15px 7px 15px;
+            border-radius: 17px;
+            transition: 0.3s;
+            margin-bottom: 20px;
+            cursor: pointer; }
+            figure .youtube .inner .frame article > .inner .txt em:hover {
+              background-color: crimson;
+              color: #fff;
+              transition: 0.3s; }
           figure .youtube .inner .frame article > .inner .txt h2 {
             width: 100%;
+            font: bold 25px/1 "poppins";
+            color: #000;
             margin-bottom: 40px; }
           figure .youtube .inner .frame article > .inner .txt i {
+            cursor: pointer;
+            padding-top: 10px;
             float: left;
             font-size: 50px;
-            width: 10%; }
+            color: #999;
+            width: 10%;
+            transition: 0.2s; }
+            figure .youtube .inner .frame article > .inner .txt i:hover {
+              color: crimson;
+              transition: 0.2s; }
           figure .youtube .inner .frame article > .inner .txt p {
             float: left;
-            width: 90%; }
+            width: 90%;
+            font: 18px/1.5 "poppins";
+            color: #555; }
+    figure .youtube .pop {
+      z-index: 20;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 5vw; }
+      figure .youtube .pop iframe {
+        border: none;
+        width: 100%;
+        height: 100%; }
+      figure .youtube .pop span {
+        cursor: pointer;
+        font-size: 50px;
+        color: #fff;
+        position: absolute;
+        top: 0.7vw;
+        right: 5vw;
+        transition: 0.3s; }
+        figure .youtube .pop span:hover {
+          color: crimson;
+          transition: 0.3s; }
   figure footer {
     width: 100%;
     padding-top: 100px; }

@@ -1,6 +1,8 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
 
+const body = document.querySelector("body");
+
 function Youtube(){
     let [data, setData] = useState([]);
     let [isPop, setIsPop] = useState(false);
@@ -40,24 +42,23 @@ function Youtube(){
                             return (
                                 <article key={index}>
                                     <div className="inner">
-                                        <div className="pic" onClick={()=>{
-                                                setIsPop(true);
-                                                setIndex(index)
-                                        }}>
+                                        <div className="pic">
                                             <img src={item.snippet.thumbnails.medium.url} />
                                         </div>
 
                                         <div className="txt">
+                                            <em>BIOHAZARD</em>
                                             <h2>
                                                 {(tit_len > 50) ? tit = tit.substr(0, 50)+"..." : tit}
                                             </h2>
-                                            <i className="fas fa-play-circle"></i>
+                                            <i className="fas fa-play-circle" onClick={()=>{
+                                                setIsPop(true);
+                                                setIndex(index)
+                                            }}></i>
                                             <p>
-                                                {(desc_len > 250) ? desc = desc.substr(0, 250)+"..." : desc}
+                                                {(desc_len > 150) ? desc = desc.substr(0, 150)+"..." : desc}
                                             </p>
                                         </div>
-
-
                                     </div>
                                 </article>
                             )
@@ -71,12 +72,19 @@ function Youtube(){
     )
 
     function Pop(){
+        useEffect(()=>{
+            body.style.overflow = "hidden";
+            return ()=>{
+                body.style.overflow = "auto";
+            }
+        },[])
+
         return(
             <aside className="pop">
                 <iframe src={"https://www.youtube.com/embed/"+data[index].snippet.resourceId.videoId}  width="100%" height="100%" allowFullscreen></iframe>
                 <span onClick={()=>{
                     setIsPop(false)
-                }}>Close</span>
+                }}><i className="far fa-times-circle"></i></span>
             </aside>
         )
     }
