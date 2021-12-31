@@ -123,7 +123,7 @@ figure {
         figure header .inner h1 .headerPic {
           width: 200px;
           height: 50px;
-          background-image: url(../../public/img/headerLogo2.png);
+          background-image: url(../../public/img/headerLogo3.png);
           background-repeat: no-repeat;
           background-size: cover; }
         figure header .inner h1 a {
@@ -987,6 +987,7 @@ figure {
       figure .board .inner .boardInner .boardRight .boardDown {
         transition: 0.2s; }
         figure .board .inner .boardInner .boardRight .boardDown:hover {
+          background: #f8f8f8;
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
           transition: 0.2s; }
           figure .board .inner .boardInner .boardRight .boardDown:hover .boardDownPost .boardDownNum {
@@ -1322,6 +1323,35 @@ figure {
         padding-left: 100px; }
         figure .gallery .media .mediaRight h2 {
           font: bold 25px/1.5 "poppins"; }
+    figure .gallery .pop {
+      z-index: 20;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 5vw; }
+      figure .gallery .pop img {
+        width: 100%;
+        height: 95%;
+        margin-bottom: 15px;
+        object-fit: contain; }
+      figure .gallery .pop p {
+        font: 14px/1.2 "arial";
+        color: #fff;
+        text-align: center; }
+      figure .gallery .pop span {
+        cursor: pointer;
+        font-size: 50px;
+        color: #fff;
+        position: absolute;
+        top: 3vw;
+        right: 5vw;
+        transition: 0.3s; }
+        figure .gallery .pop span:hover {
+          color: crimson;
+          transition: 0.3s; }
   figure footer {
     width: 100%;
     padding-top: 100px; }

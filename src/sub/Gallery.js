@@ -3,12 +3,16 @@ import { useEffect, useState, useRef } from "react";
 import { LatestStories } from "../component/common";
 
 const path = process.env.PUBLIC_URL;
+const body = document.querySelector("body");
 
 function Gallery(){
     let [loading, setLoading] = useState(true);
     let [enableClick, setEnableClick] = useState(true);
     let input = useRef(null);
     // let [interest, setInterest] = useState(true);
+
+    let [isPop, setIsPop] = useState(false);
+    let [index, setIndex] = useState(0);
 
     let [items, setItems] = useState([]);
     let list = useRef(null);
@@ -176,13 +180,19 @@ function Gallery(){
                                 items.map((item, index)=>{
                                     const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`
 
+                                    let tit = item.title;
+                                    let tit_len = tit.length;
+
                                     return (
                                         <li key={index}>
-                                            <div className="pic">
+                                            <div className="pic" onClick={()=>{
+                                                setIsPop(true);
+                                                setIndex(index)
+                                            }}>
                                                 <img src={imgSrc} />
                                             </div>
 
-                                            <p>{item.title}</p>
+                                            <p>{(tit_len > 40) ? tit = tit.substr(0, 40)+"..." : tit}</p>
                                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellendus maiores distinctio adipisci, in laborum neque ducimus voluptas reprehenderit quasi, voluptates eos doloribus debitis quae beatae voluptatibus, reiciendis quisquam vero aliquid odit? Nihil voluptates,
                                             </span>
 
@@ -243,6 +253,8 @@ function Gallery(){
                     </div>
                 </div>
             </div>
+
+            {isPop ? <Pop></Pop> : null}
         </section>
     )
 
@@ -256,7 +268,8 @@ function Gallery(){
         const count = opt.count; //3의 배수
 
         if(opt.type === "interest"){
-            url = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1&tags=vaccine`;
+            // 여기선 interest 사용 안하지만 나중에 하게 될 상황을 대비해서 일단 작성해둠.
+            url = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1`;
         }else if(opt.type === "search"){
             url = `${baseURL}method=${method1}&api_key=${key}&per_page=${count}&format=json&nojsoncallback=1&tags=${opt.tags}`;
         }else {
@@ -279,6 +292,31 @@ function Gallery(){
                 setEnableClick(true);
             },500)
         },500)
+    }
+
+    function Pop(){
+        const imgSrc = `https://live.staticflickr.com/${items[index].server}/${items[index].id}_${items[index].secret}_b.jpg`;
+
+        useEffect(()=>{
+            body.style.overflow = "hidden";
+            return ()=>{
+                body.style.overflow = "auto";
+            }
+        },[])
+
+        return (
+            <aside className="pop">
+                <img src={imgSrc} />
+
+                <p>{items[index].title}</p>
+
+                <span onClick={()=>{
+                    setIsPop(false);
+                }}>
+                    <i className="far fa-times-circle"></i>
+                </span>
+            </aside>
+        )
     }
 }
 

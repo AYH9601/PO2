@@ -40,6 +40,9 @@ function Board(){
                     <div className="boardRight">
                         {
                             posts.slice(0).reverse().map((data, index)=>{
+                                let tit = data.title;
+                                let tit_len = tit.length;
+                                
                                 return (
                                     <article key={index} className="boardDown">
                                         <div className="boardDownPost">
@@ -48,7 +51,7 @@ function Board(){
                                             </div>
 
                                             <div className="boardDownTitle">
-                                                <h2>{data.title}</h2>
+                                                <h2>{(tit_len > 48) ? tit = tit.substr(0, 48)+"..." : tit}</h2>
                                                 <h3>{data.date}</h3>
                                             </div>
                                         </div>
