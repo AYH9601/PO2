@@ -37,13 +37,17 @@
         }
 
         .data {
-            width: 30%;
-            height: 500px;
-            background-color: #000;
-            border-radius: 30px;
-            padding-top: 50px;
+            width: 100%;
+            &::after{content: ""; display: block; clear: both;}
 
             .dataLoading {
+                float: left;
+                width: 30%;
+                height: 500px;
+                background-color: #000;
+                border-radius: 30px;
+                padding-top: 50px;
+                
                 .loadingPic {
                     margin: 0 auto;
                     margin-bottom: 40px;
@@ -60,6 +64,45 @@
                     font: bold 25px/1.5 "poppins";
                     letter-spacing: 1px;
                     color: #fff;
+                }
+            }
+
+            .dataCenter {
+                float: left;
+                width: 40%;
+            }
+
+            .dataRight {
+                width: 30%;
+                float: right;
+                ul {
+                    li {
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between;
+                        font: bold 35px/1 "poppins";
+                        padding: 15px 0 15px 0;
+                        border-top: 1px solid #000;
+                        transition: 0.2s;
+    
+                        i {
+                            transform: translateY(5px);
+                            font-size: 25px;
+                            color: #000;
+                            transition: 0.2s;
+                        }
+    
+                        &:hover {
+                            color: crimson;
+                            transition: 0.2s;
+    
+                            i {
+                                transform: translate(15px, 5px);
+                                color: crimson;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
                 }
             }
         }

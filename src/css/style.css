@@ -1383,25 +1383,58 @@ figure {
           color: #fff;
           transition: 0.3s; }
       figure .youtube .inner .data {
-        width: 30%;
-        height: 500px;
-        background-color: #000;
-        border-radius: 30px;
-        padding-top: 50px; }
-        figure .youtube .inner .data .dataLoading .loadingPic {
-          margin: 0 auto;
-          margin-bottom: 40px;
-          transform: translateX(-10px);
-          width: 250px;
-          height: 250px;
-          background-image: url(../../public/img/youtubeLoading.gif);
-          background-repeat: no-repeat;
-          background-size: cover; }
-        figure .youtube .inner .data .dataLoading h2 {
-          text-align: center;
-          font: bold 25px/1.5 "poppins";
-          letter-spacing: 1px;
-          color: #fff; }
+        width: 100%; }
+        figure .youtube .inner .data::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .youtube .inner .data .dataLoading {
+          float: left;
+          width: 30%;
+          height: 500px;
+          background-color: #000;
+          border-radius: 30px;
+          padding-top: 50px; }
+          figure .youtube .inner .data .dataLoading .loadingPic {
+            margin: 0 auto;
+            margin-bottom: 40px;
+            transform: translateX(-10px);
+            width: 250px;
+            height: 250px;
+            background-image: url(../../public/img/youtubeLoading.gif);
+            background-repeat: no-repeat;
+            background-size: cover; }
+          figure .youtube .inner .data .dataLoading h2 {
+            text-align: center;
+            font: bold 25px/1.5 "poppins";
+            letter-spacing: 1px;
+            color: #fff; }
+        figure .youtube .inner .data .dataCenter {
+          float: left;
+          width: 40%; }
+        figure .youtube .inner .data .dataRight {
+          width: 30%;
+          float: right; }
+          figure .youtube .inner .data .dataRight ul li {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font: bold 35px/1 "poppins";
+            padding: 15px 0 15px 0;
+            border-top: 1px solid #000;
+            transition: 0.2s; }
+            figure .youtube .inner .data .dataRight ul li i {
+              transform: translateY(5px);
+              font-size: 25px;
+              color: #000;
+              transition: 0.2s; }
+            figure .youtube .inner .data .dataRight ul li:hover {
+              color: crimson;
+              transition: 0.2s; }
+              figure .youtube .inner .data .dataRight ul li:hover i {
+                transform: translate(15px, 5px);
+                color: crimson;
+                transition: 0.2s; }
       figure .youtube .inner .frame article {
         margin-bottom: -50px; }
         figure .youtube .inner .frame article > .inner {

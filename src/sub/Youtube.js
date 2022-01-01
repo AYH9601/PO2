@@ -40,6 +40,12 @@ function Youtube(){
                         </h2>
                     </div>
 
+                    <div className="dataCenter">
+                        <h2>
+                            Ai, Data, Cloud The convergence of all these moves us into the future.
+                        </h2>
+                    </div>
+
                     <div className="dataRight">
                         <ul>
                             <li>
