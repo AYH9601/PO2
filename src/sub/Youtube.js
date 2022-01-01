@@ -19,7 +19,6 @@ function Youtube(){
         .then(json=>{
             setData(json.data.items)
         })
-        console.log(data)
     },[]);
 
     return (
@@ -44,6 +43,10 @@ function Youtube(){
                                     <div className="inner">
                                         <div className="pic">
                                             <img src={item.snippet.thumbnails.medium.url} />
+                                            <i className="fas fa-play-circle" onClick={()=>{
+                                                setIsPop(true);
+                                                setIndex(index)
+                                            }}></i>
                                         </div>
 
                                         <div className="txt">
@@ -51,10 +54,10 @@ function Youtube(){
                                             <h2>
                                                 {(tit_len > 50) ? tit = tit.substr(0, 50)+"..." : tit}
                                             </h2>
-                                            <i className="fas fa-play-circle" onClick={()=>{
+                                            {/* <i className="fas fa-play-circle" onClick={()=>{
                                                 setIsPop(true);
                                                 setIndex(index)
-                                            }}></i>
+                                            }}></i> */}
                                             <p>
                                                 {(desc_len > 150) ? desc = desc.substr(0, 150)+"..." : desc}
                                             </p>

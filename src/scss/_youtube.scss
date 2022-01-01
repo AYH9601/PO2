@@ -18,25 +18,50 @@
 
         .frame {
             article {
+                margin-bottom: -50px;
                 >.inner {
                     width: 96%;
                     margin-right: 4%;
                     // border: 2px solid rgb(201,201,201);
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
                     padding: 10px;
-                    margin-bottom: 20px;
+                    margin-bottom: 100px;
                     transition: 0.2s;
                     &::after{content: ""; display: block; clear: both;}
                     &:hover {
                         box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.4);
                         transition: 0.2s;
                     }
+
                     .pic {
                         float: left;
                         width: 35%;
                         height: 225px;
+
+                        position: relative;
+
                         img {
                             width: 400px;
+                            border-radius: 10px;
+                        }
+
+                        i {
+                            position: absolute;
+                            top: 70px; left: 43%;
+                            cursor: pointer;
+                            padding-top: 10px;
+                            float: left;
+                            font-size: 80px;
+                            color: crimson;
+                            width: 10%;
+                            transition: 0.2s;
+                            opacity: 0.6;
+
+                            &:hover {
+                                color: crimson;
+                                transition: 0.2s;
+                                opacity: 1;
+                            }
                         }
                     }
 
@@ -74,6 +99,7 @@
                         }
 
                         i {
+                            display: none;
                             cursor: pointer;
                             padding-top: 10px;
                             float: left;
@@ -86,6 +112,7 @@
                                 transition: 0.2s;
                             }
                         }
+
                         p {
                             float: left;
                             width: 90%;
