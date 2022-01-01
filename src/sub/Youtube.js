@@ -32,6 +32,9 @@ function Youtube(){
                 <button>Explore Our Media</button>
 
                 <section className="data">
+
+                    <h3>Red Queen</h3>
+                    
                     <div className="dataLoading">
                         <div className="loadingPic"></div>
                         <h2>
@@ -53,11 +56,11 @@ function Youtube(){
                                 <i className="fas fa-arrow-right"></i>    
                             </li>
                             <li>
-                                Cloud & Data
+                                Umbrella Cloud
                                 <i className="fas fa-arrow-right"></i>
                             </li>
                             <li>
-                                Ai
+                                Convergence
                                 <i className="fas fa-arrow-right"></i>
                             </li>
                         </ul>
@@ -65,6 +68,8 @@ function Youtube(){
                 </section>
 
                 <section className="frame">
+
+                    <h3>Our Biotechnology Video</h3>
                     {
                         data.map((item, index)=>{
                             let tit = item.snippet.title;

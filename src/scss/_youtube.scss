@@ -1,5 +1,6 @@
 .youtube {
     padding-top: 100px;
+
     .inner {
         width: 1180px;
         margin: 0 auto;
@@ -38,7 +39,15 @@
 
         .data {
             width: 100%;
+            margin-bottom: 100px;
             &::after{content: ""; display: block; clear: both;}
+
+            h3 {
+                font: bold 18px "poppins";
+                letter-spacing: 1px;
+                color: #333;
+                margin-bottom: 50px;
+            }
 
             .dataLoading {
                 float: left;
@@ -47,6 +56,7 @@
                 background-color: #000;
                 border-radius: 30px;
                 padding-top: 50px;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
                 
                 .loadingPic {
                     margin: 0 auto;
@@ -70,11 +80,15 @@
             .dataCenter {
                 float: left;
                 width: 40%;
+                padding: 0 30px 0 30px;
+                h2 {
+                    font: bold 35px/1.8 "poppins";
+                }
             }
 
             .dataRight {
                 width: 30%;
-                float: right;
+                float: left;
                 ul {
                     li {
                         cursor: pointer;
@@ -97,7 +111,7 @@
                             transition: 0.2s;
     
                             i {
-                                transform: translate(15px, 5px);
+                                transform: translate(-15px, 5px);
                                 color: crimson;
                                 transition: 0.2s;
                             }
@@ -108,6 +122,13 @@
         }
 
         .frame {
+            h3 {
+                font: bold 18px "poppins";
+                letter-spacing: 1px;
+                color: #333;
+                margin-bottom: -40px;
+            }
+
             article {
                 margin-bottom: -50px;
                 >.inner {
