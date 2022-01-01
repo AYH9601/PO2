@@ -29,6 +29,35 @@ function Youtube(){
                     Go behind the breakthroughs and explore the stories of the work we do at Umbrella, in conversations with the scientists and leaders who make it happen. Listen to recent episodes and subscribe using your favorite podcast platform. 
                 </h1>
 
+                <button>Explore Our Media</button>
+
+                <section className="data">
+                    <div className="dataLoading">
+                        <div className="loadingPic"></div>
+                        <h2>
+                            Umbrella DataCenter<br></br>
+                            Red Queen
+                        </h2>
+                    </div>
+
+                    <div className="dataRight">
+                        <ul>
+                            <li>
+                                Red Queen
+                                <i className="fas fa-arrow-right"></i>    
+                            </li>
+                            <li>
+                                Cloud & Data
+                                <i className="fas fa-arrow-right"></i>
+                            </li>
+                            <li>
+                                Ai
+                                <i className="fas fa-arrow-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
                 <section className="frame">
                     {
                         data.map((item, index)=>{

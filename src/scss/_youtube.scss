@@ -13,7 +13,55 @@
             font: bold 40px/1.3 "poppins";
             letter-spacing: 0.5px;
             color: #000;
+            margin-bottom: 60px;
+        }
+
+        button {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            width: 250px;
+            height: 70px;
+            font: bold 18px/1 "poppins";
+            color: crimson;
+            transition: 0.3s;
             margin-bottom: 100px;
+
+            &:hover {
+                background-color: crimson;
+                color: #fff;
+                transition: 0.3s;
+            }
+        }
+
+        .data {
+            width: 30%;
+            height: 500px;
+            background-color: #000;
+            border-radius: 30px;
+            padding-top: 50px;
+
+            .dataLoading {
+                .loadingPic {
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    transform: translateX(-10px);
+                    width: 250px;
+                    height: 250px;
+                    background-image: url(../../public/img/youtubeLoading.gif);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+    
+                h2 {
+                    text-align: center;
+                    font: bold 25px/1.5 "poppins";
+                    letter-spacing: 1px;
+                    color: #fff;
+                }
+            }
         }
 
         .frame {
@@ -146,8 +194,8 @@
             font-size: 50px;
             color: #fff;
             position: absolute;
-            top: 0.7vw;
-            right: 5vw;
+            bottom: 0.7vw;
+            right: 48.5vw;
             transition: 0.3s;
 
             &:hover {
