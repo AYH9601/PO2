@@ -2,47 +2,58 @@
     "data":[
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing1.",
-            "date": "2022-01-01"
+            "date": "2022-01-01",
+            "writer":"Skylar Grey"
         },
         {
             "title": "Lorem ipsum dolor2.",
-            "date": "2022-01-02"
+            "date": "2022-01-02",
+            "writer":"Lewis Hamilton"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing3.",
-            "date": "2022-01-03"
+            "date": "2022-01-03",
+            "writer":"Max Verstappen"
         },
         {
             "title": "Lorem ipsum doloradipisicing4.",
-            "date": "2022-01-04"
+            "date": "2022-01-04",
+            "writer":"Andy"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing5.",
-            "date": "2022-01-05"
+            "date": "2022-01-05",
+            "writer":"Yasuo"
         },
         {
             "title": "Lorem ipsum dolor6.",
-            "date": "2022-01-06"
+            "date": "2022-01-06",
+            "writer":"Yone"
         },
         {
             "title": "Lorem ipsum dolor sit amet adipisicing7.",
-            "date": "2022-01-07"
+            "date": "2022-01-07",
+            "writer":"Veiga"
         },
         {
             "title": "Lorem ipsum8.",
-            "date": "2022-01-08"
+            "date": "2022-01-08",
+            "writer":"Amumu"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing9.",
-            "date": "2022-01-09"
+            "date": "2022-01-09",
+            "writer":"YeongI"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur10.",
-            "date": "2022-01-10"
+            "date": "2022-01-10",
+            "writer":"YeongS"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing11.",
-            "date": "2022-01-11"
+            "date": "2022-01-11",
+            "writer":"YeongH"
         }
     ]
 }
