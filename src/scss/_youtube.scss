@@ -84,6 +84,26 @@
                 h2 {
                     font: bold 35px/1.8 "poppins";
                 }
+
+                button {
+                    cursor: pointer;
+                    display: inline-block;
+                    background-color: #fff;
+                    border: 2px solid crimson;
+                    border-radius: 35px;
+                    width: 250px;
+                    height: 70px;
+                    font: bold 18px/1 "poppins";
+                    color: crimson;
+                    transition: 0.3s;
+                    margin-top: 40px;
+        
+                    &:hover {
+                        background-color: crimson;
+                        color: #fff;
+                        transition: 0.3s;
+                    }
+                }
             }
 
             .dataRight {

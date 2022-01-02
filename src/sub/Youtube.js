@@ -47,21 +47,22 @@ function Youtube(){
                         <h2>
                             Ai, Data, Cloud The convergence of all these moves us into the future.
                         </h2>
+                        <button>Umbrella Artificial Intelligence</button>
                     </div>
 
                     <div className="dataRight">
                         <ul>
                             <li>
                                 Red Queen
-                                <i className="fas fa-arrow-right"></i>    
+                                <i className="far fa-square"></i>    
                             </li>
                             <li>
                                 Umbrella Cloud
-                                <i className="fas fa-arrow-right"></i>
+                                <i className="far fa-square"></i>   
                             </li>
                             <li>
                                 Convergence
-                                <i className="fas fa-arrow-right"></i>
+                                <i className="far fa-square"></i>   
                             </li>
                         </ul>
                     </div>

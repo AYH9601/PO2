@@ -41,9 +41,9 @@
                     margin-bottom: 30px;
                 }
                 &:nth-of-type(1){
-                    .pic {background-image: url(../../public/img/department1.jpg);}
+                    .pic {background-image: url(../../public/img/department1-2.png);}
                     transition: 0.2s;
-                    filter: grayscale(30%);
+                    // filter: grayscale(30%);
                     &:hover {
                         filter: grayscale(0%);
                         transition: 0.2s;

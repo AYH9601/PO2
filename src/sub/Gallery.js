@@ -9,7 +9,7 @@ function Gallery(){
     let [loading, setLoading] = useState(true);
     let [enableClick, setEnableClick] = useState(true);
     let input = useRef(null);
-    // let [interest, setInterest] = useState(true);
+    // let [interest, setInterest] = useState(true); 나중에 쓰고싶어질수있으니 냅두기
 
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0);

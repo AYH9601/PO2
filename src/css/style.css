@@ -652,10 +652,9 @@ figure {
             background-size: cover;
             margin-bottom: 30px; }
           figure .department .profileSection .profileInner article:nth-of-type(1) {
-            transition: 0.2s;
-            filter: grayscale(30%); }
+            transition: 0.2s; }
             figure .department .profileSection .profileInner article:nth-of-type(1) .pic {
-              background-image: url(../../public/img/department1.jpg); }
+              background-image: url(../../public/img/department1-2.png); }
             figure .department .profileSection .profileInner article:nth-of-type(1):hover {
               filter: grayscale(0%);
               transition: 0.2s; }
@@ -1422,6 +1421,22 @@ figure {
           padding: 0 30px 0 30px; }
           figure .youtube .inner .data .dataCenter h2 {
             font: bold 35px/1.8 "poppins"; }
+          figure .youtube .inner .data .dataCenter button {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            width: 250px;
+            height: 70px;
+            font: bold 18px/1 "poppins";
+            color: crimson;
+            transition: 0.3s;
+            margin-top: 40px; }
+            figure .youtube .inner .data .dataCenter button:hover {
+              background-color: crimson;
+              color: #fff;
+              transition: 0.3s; }
         figure .youtube .inner .data .dataRight {
           width: 30%;
           float: left; }

@@ -4,6 +4,9 @@ function Membership(){
             <div className="inner">
                 <h1>Membership</h1>
             </div>
+
+
+            
         </section>
     )
 }

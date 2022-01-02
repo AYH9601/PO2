@@ -13,7 +13,6 @@ function Board(){
             .then(data=>{
                 setPosts(data.data.data);
             })
-            console.log("test")
     },[]); 
 
     return (
