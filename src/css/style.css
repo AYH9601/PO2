@@ -1467,7 +1467,9 @@ figure {
           transition: 0.3s; }
       figure .youtube .inner .data {
         width: 100%;
-        margin-bottom: 100px; }
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        border-bottom: 2px solid #c9c9c9; }
         figure .youtube .inner .data::after {
           content: "";
           display: block;
@@ -1478,7 +1480,8 @@ figure {
           color: #333;
           margin-bottom: 50px; }
         figure .youtube .inner .data .dataLoading {
-          float: left;
+          float: right;
+          margin-right: 27px;
           width: 30%;
           height: 500px;
           background-color: #000;
@@ -1499,13 +1502,12 @@ figure {
             font: bold 25px/1.5 "poppins";
             letter-spacing: 1px;
             color: #fff; }
-        figure .youtube .inner .data .dataCenter {
+        figure .youtube .inner .data .dataLeft {
           float: left;
-          width: 40%;
-          padding: 0 30px 0 30px; }
-          figure .youtube .inner .data .dataCenter h2 {
+          width: 60%; }
+          figure .youtube .inner .data .dataLeft h2 {
             font: bold 35px/1.8 "poppins"; }
-          figure .youtube .inner .data .dataCenter button {
+          figure .youtube .inner .data .dataLeft button {
             cursor: pointer;
             display: inline-block;
             background-color: #fff;
@@ -1517,33 +1519,32 @@ figure {
             color: crimson;
             transition: 0.3s;
             margin-top: 40px; }
-            figure .youtube .inner .data .dataCenter button:hover {
+            figure .youtube .inner .data .dataLeft button:hover {
               background-color: crimson;
               color: #fff;
               transition: 0.3s; }
-        figure .youtube .inner .data .dataRight {
-          width: 30%;
-          float: left; }
-          figure .youtube .inner .data .dataRight ul li {
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            font: bold 35px/1 "poppins";
-            padding: 15px 0 15px 0;
-            border-top: 1px solid #000;
-            transition: 0.2s; }
-            figure .youtube .inner .data .dataRight ul li i {
-              transform: translateY(5px);
-              font-size: 25px;
-              color: #000;
+          figure .youtube .inner .data .dataLeft .dataBoard {
+            width: 60%; }
+            figure .youtube .inner .data .dataLeft .dataBoard ul li {
+              cursor: pointer;
+              display: flex;
+              justify-content: space-between;
+              font: bold 35px/1 "poppins";
+              padding: 15px 0 15px 0;
+              border-top: 1px solid #000;
               transition: 0.2s; }
-            figure .youtube .inner .data .dataRight ul li:hover {
-              color: crimson;
-              transition: 0.2s; }
-              figure .youtube .inner .data .dataRight ul li:hover i {
-                transform: translate(-15px, 5px);
+              figure .youtube .inner .data .dataLeft .dataBoard ul li i {
+                transform: translateY(5px);
+                font-size: 25px;
+                color: #000;
+                transition: 0.2s; }
+              figure .youtube .inner .data .dataLeft .dataBoard ul li:hover {
                 color: crimson;
                 transition: 0.2s; }
+                figure .youtube .inner .data .dataLeft .dataBoard ul li:hover i {
+                  transform: translate(15px, 5px);
+                  color: crimson;
+                  transition: 0.2s; }
       figure .youtube .inner .frame h3 {
         font: bold 18px "poppins";
         letter-spacing: 1px;

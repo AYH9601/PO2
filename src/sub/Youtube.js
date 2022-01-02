@@ -35,36 +35,36 @@ function Youtube(){
 
                     <h3>Red Queen</h3>
                     
+                    <div className="dataLeft">
+                        <h2>
+                            Ai, Data, Cloud The convergence of all these moves us into the future.
+                        </h2>
+                        <button>Umbrella Artificial Intelligence</button>
+
+                        <div className="dataBoard">
+                            <ul>
+                                <li>
+                                    Red Queen
+                                    <i className="fas fa-arrow-right"></i>    
+                                </li>
+                                <li>
+                                    Umbrella Cloud
+                                    <i className="fas fa-arrow-right"></i>  
+                                </li>
+                                <li>
+                                    Convergence
+                                    <i className="fas fa-arrow-right"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div className="dataLoading">
                         <div className="loadingPic"></div>
                         <h2>
                             Umbrella DataCenter<br></br>
                             Red Queen
                         </h2>
-                    </div>
-
-                    <div className="dataCenter">
-                        <h2>
-                            Ai, Data, Cloud The convergence of all these moves us into the future.
-                        </h2>
-                        <button>Umbrella Artificial Intelligence</button>
-                    </div>
-
-                    <div className="dataRight">
-                        <ul>
-                            <li>
-                                Red Queen
-                                <i className="far fa-square"></i>    
-                            </li>
-                            <li>
-                                Umbrella Cloud
-                                <i className="far fa-square"></i>   
-                            </li>
-                            <li>
-                                Convergence
-                                <i className="far fa-square"></i>   
-                            </li>
-                        </ul>
                     </div>
                 </section>
 

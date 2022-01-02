@@ -39,7 +39,9 @@
 
         .data {
             width: 100%;
+            padding-bottom: 100px;
             margin-bottom: 100px;
+            border-bottom: 2px solid rgb(201,201,201);
             &::after{content: ""; display: block; clear: both;}
 
             h3 {
@@ -50,7 +52,8 @@
             }
 
             .dataLoading {
-                float: left;
+                float: right;
+                margin-right: 27px;
                 width: 30%;
                 height: 500px;
                 background-color: #000;
@@ -77,10 +80,10 @@
                 }
             }
 
-            .dataCenter {
+            .dataLeft {
                 float: left;
-                width: 40%;
-                padding: 0 30px 0 30px;
+                width: 60%;
+                // padding-right: 30px;
                 h2 {
                     font: bold 35px/1.8 "poppins";
                 }
@@ -104,36 +107,35 @@
                         transition: 0.3s;
                     }
                 }
-            }
 
-            .dataRight {
-                width: 30%;
-                float: left;
-                ul {
-                    li {
-                        cursor: pointer;
-                        display: flex;
-                        justify-content: space-between;
-                        font: bold 35px/1 "poppins";
-                        padding: 15px 0 15px 0;
-                        border-top: 1px solid #000;
-                        transition: 0.2s;
-    
-                        i {
-                            transform: translateY(5px);
-                            font-size: 25px;
-                            color: #000;
+                .dataBoard {
+                    width: 60%;
+                    ul {
+                        li {
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: space-between;
+                            font: bold 35px/1 "poppins";
+                            padding: 15px 0 15px 0;
+                            border-top: 1px solid #000;
                             transition: 0.2s;
-                        }
-    
-                        &:hover {
-                            color: crimson;
-                            transition: 0.2s;
-    
+        
                             i {
-                                transform: translate(-15px, 5px);
+                                transform: translateY(5px);
+                                font-size: 25px;
+                                color: #000;
+                                transition: 0.2s;
+                            }
+        
+                            &:hover {
                                 color: crimson;
                                 transition: 0.2s;
+        
+                                i {
+                                    transform: translate(15px, 5px);
+                                    color: crimson;
+                                    transition: 0.2s;
+                                }
                             }
                         }
                     }

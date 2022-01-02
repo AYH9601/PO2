@@ -90,10 +90,10 @@ function Board(){
                         </thead>
                         <tbody>
                             {
-                                posts.slice(0).reverse(0).map((data, index)=>{
+                                posts.slice(3).reverse(0).map((data, index)=>{
                                     return (
                                         <tr key={index} className="communityInner">
-                                            <td>{len-index}</td>
+                                            <td>{len-index+1212}</td>
                                             <td>{data.title}</td>
                                             <td>{data.writer}</td>
                                             <td>{data.date}</td>
