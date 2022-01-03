@@ -43,17 +43,17 @@
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing9.",
             "date": "2022-01-09",
-            "writer":"YeongI"
+            "writer":"Teemo"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur10.",
             "date": "2022-01-10",
-            "writer":"YeongS"
+            "writer":"Max Verstappen"
         },
         {
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing11.",
             "date": "2022-01-11",
-            "writer":"YeongH"
+            "writer":"Lewis Hamilton"
         }
     ]
 }

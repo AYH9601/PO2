@@ -69,8 +69,21 @@ function Youtube(){
                 </section>
 
                 <section className="frame">
-
                     <h3>Our Biotechnology Video</h3>
+
+                    <h4>
+                        Watch videos on a variety of topics on medicine, pharmacy and biotechnology
+                    </h4>
+                    <div className="youtubeSearchBox">
+                        <input type="text" id="search" placeholder="Search for Keyword"/>
+
+                        <button className="btnSearch">
+                            <div className="arrowCircle">
+                                <i className="fas fa-arrow-right"></i>
+                            </div>
+                        </button>
+                    </div>
+
                     {
                         data.map((item, index)=>{
                             let tit = item.snippet.title;
