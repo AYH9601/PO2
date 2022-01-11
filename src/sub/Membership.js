@@ -13,19 +13,52 @@ function Membership(){
                     
                     <article>
                         <div className="join">
-                            <ul>
-                                <li><h1>Agree to the Terms of Service</h1></li>
+                            <ul className="page1 on">
+                                <h1>Agree to the Terms of Service</h1>
                                 <li>
                                     <input type="checkbox" name="agree" id="agree"></input>
-                                    <p>I agreed to Terms of Umbrella Technology</p>
+                                    <p>I agreed to Terms of <br></br> Umbrella Corporation</p>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="agree" id="agree"></input>
-                                    <p>I agreed to Collection and use of personal information</p>
+                                    <p>I agreed to Collection and <br></br>use of personal information</p>
                                 </li>
                                 <li>
                                     <input type="checkbox" name="agree" id="agree"></input>
-                                    <p>I agreed to Overseas transfer of personal information</p>
+                                    <p>I agreed to Overseas transfer <br></br>of personal information</p>
+                                </li>
+                                <li className="membershipBtn">
+                                    <i className="fas fa-arrow-alt-circle-right"></i>
+                                </li>
+                            </ul>
+
+                            <ul className="page2">
+                                <h1>Join</h1>
+                                <li>
+                                    <input type="text" name="id" id="id" placeholder="ID" required></input>
+                                </li>
+                                <li>
+                                    <input type="text" name="pwd" id="pwd" placeholder="PASSWORD" required></input>
+                                </li>
+                                <li>
+                                <input type="text" name="pwd" id="pwd" placeholder="PASSWORD Verify" required></input>
+                                </li>
+                                <li>
+                                <input type="text" name="name" id="name" placeholder="Name" required></input>
+                                </li>
+                                <li>
+                                <input type="text" name="number" id="number" placeholder="PhoneNumber" required></input>
+                                </li>
+                                <li className="aim">
+                                    <input type="radio" value="scientist" id="scientist" name="aim"></input>
+                                    <p>Scientist</p>
+                                    <input type="radio" value="Medical" id="Medical" name="aim"></input>
+                                    <p>Medical</p>
+                                    <input type="radio" value="Student" id="Student" name="aim"></input>
+                                    <p>Student</p>
+                                </li>
+                                <li className="membershipBtn">
+                                    <i className="fas fa-arrow-alt-circle-right"></i>
                                 </li>
                             </ul>                            
                         </div>
