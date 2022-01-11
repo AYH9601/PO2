@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "tag": "Oncology",
+            "title": "Conquering Cancer"
+        },
+        {
+            "tag": "Inflammation & &Immunology",
+            "title": "Innovation, Research & Development"
+        },
+        {
+            "tag": "Vaccines",
+            "title": "Driven to Discover the Cure"
+        },
+        {
+            "tag": "Rare Disease",
+            "title": "Our Approach to Gene Therapy and More"
+        },
+        {
+            "tag": "Internal Mdeicine",
+            "title": "Advancing the Fight"
+        },
+        {
+            "tag": "Anti Infectives",
+            "title": "New Drugs, Medicines & Therapies"
+        }
+    ]
+}
