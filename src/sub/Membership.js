@@ -35,30 +35,84 @@ function Membership(){
                             <ul className="page2">
                                 <h1>Join</h1>
                                 <li>
-                                    <input type="text" name="id" id="id" placeholder="ID" required></input>
+                                    <input 
+                                        type="text" 
+                                        name="id" 
+                                        id="id" 
+                                        placeholder="ID" 
+                                        // onChange={handleChange} 
+                                        required>
+                                    </input>
                                 </li>
                                 <li>
-                                    <input type="text" name="pwd" id="pwd" placeholder="PASSWORD" required></input>
+                                    <input 
+                                        type="password" 
+                                        name="pwd1" 
+                                        id="pwd1" 
+                                        placeholder="PASSWORD" 
+                                        // onChange={handleChange} 
+                                        required>
+                                    </input>
                                 </li>
                                 <li>
-                                <input type="text" name="pwd" id="pwd" placeholder="PASSWORD Verify" required></input>
+                                    <input 
+                                        type="password" 
+                                        name="pwd2" 
+                                        id="pwd2" 
+                                        placeholder="PASSWORD Re" 
+                                        // onChange={handleChange} 
+                                        required>
+                                    </input>
                                 </li>
                                 <li>
-                                <input type="text" name="name" id="name" placeholder="Name" required></input>
+                                    <input 
+                                        type="text"
+                                        name="eamil" 
+                                        id="email" 
+                                        placeholder="E-mail" 
+                                        // onChange={handleChange} 
+                                        required>
+                                    </input>
                                 </li>
                                 <li>
-                                <input type="text" name="number" id="number" placeholder="PhoneNumber" required></input>
+                                    <input 
+                                        type="text" 
+                                        name="number" 
+                                        id="number" 
+                                        placeholder="Phone Number"
+                                        // onChange={handleChange}  
+                                        required>
+                                    </input>
                                 </li>
                                 <li className="aim">
-                                    <input type="radio" value="scientist" id="scientist" name="aim"></input>
-                                    <p>Scientist</p>
-                                    <input type="radio" value="Medical" id="Medical" name="aim"></input>
-                                    <p>Medical</p>
-                                    <input type="radio" value="Student" id="Student" name="aim"></input>
-                                    <p>Student</p>
+                                    <input 
+                                        type="radio" 
+                                        value="scientist" 
+                                        id="scientist" 
+                                        name="aim">
+                                    </input>
+                                    <label htmlFor="scientist">Scientist</label>
+                                    <input 
+                                        type="radio" 
+                                        value="medical" 
+                                        id="medical" 
+                                        name="aim">
+                                    </input>
+                                    <label htmlFor="medical">Medical</label>
+                                    <input 
+                                        type="radio" 
+                                        value="student" 
+                                        id="student" 
+                                        name="aim">
+                                    </input>
+                                    <label htmlFor="student">Student</label>
                                 </li>
+
                                 <li className="membershipBtn">
-                                    <i className="fas fa-arrow-alt-circle-right"></i>
+                                    <div className="btn">
+                                        <i className="fas fa-arrow-alt-circle-right"></i>
+                                        {/* <input type="submit" value=""/> */}
+                                    </div>
                                 </li>
                             </ul>                            
                         </div>

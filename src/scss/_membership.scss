@@ -1,7 +1,7 @@
 .membership {
     .inner {
         main {
-            z-index: 10;
+            z-index: 11;
             position: absolute;
             top: 0;
             left: 0;
@@ -12,6 +12,7 @@
             background-image: url(../../public/img/membershipback2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            opacity: 0.5s;
             color: crimson;
 
             .memberHeader {
@@ -115,29 +116,41 @@
                                 input::placeholder {
                                     color: rgb(200, 200, 200);
                                 }
+                                input[type=password] {
+                                    border: none;
+                                    width: 100%;
+                                    font: bold 20px/2.5 "poppins";
+                                }
 
                                 &.aim {
                                     margin-top: 20px;
                                     input[type=radio] {
                                         margin-left: 15px;
                                     }
-                                    p {
+                                    label {
                                         display: inline-block;
                                         margin-left: 10px;
                                         font: bold 20px/2.5 "poppins";
                                         color: rgb(200, 200, 200);
                                     }
                                 }
-                                i {
-                                    cursor: pointer;
-                                    margin-top: 50px;
-                                    display: block;
-                                    text-align: center;
-                                    color: rgb(200, 200, 200);
-                                    font-size: 80px;
-                                    
+
+                                .btn {
                                     &:hover {
                                         color: crimson;
+                                    }
+                                    
+                                    i {
+                                        cursor: pointer;
+                                        margin-top: 50px;
+                                        display: block;
+                                        text-align: center;
+                                        color: rgb(200, 200, 200);
+                                        font-size: 80px;
+                                        
+                                        &:hover {
+                                            color: crimson;
+                                        }
                                     }
                                 }
                             }

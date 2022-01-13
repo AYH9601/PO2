@@ -157,7 +157,7 @@ figure {
             color: #000;
             transition: 0.3s; }
             figure header .inner .three li a:hover {
-              color: red;
+              color: crimson;
               transition: 0.3s; }
   figure .main {
     position: relative; }
@@ -1698,7 +1698,7 @@ figure {
           color: crimson;
           transition: 0.3s; }
   figure .membership .inner main {
-    z-index: 10;
+    z-index: 11;
     position: absolute;
     top: 0;
     left: 0;
@@ -1708,6 +1708,7 @@ figure {
     background-image: url(../../public/img/membershipback2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.5s;
     color: crimson; }
     figure .membership .inner main .memberHeader {
       position: absolute;
@@ -1780,23 +1781,29 @@ figure {
           font: bold 20px/2.5 "poppins"; }
         figure .membership .inner main article .join ul.page2 li input::placeholder {
           color: #c8c8c8; }
+        figure .membership .inner main article .join ul.page2 li input[type=password] {
+          border: none;
+          width: 100%;
+          font: bold 20px/2.5 "poppins"; }
         figure .membership .inner main article .join ul.page2 li.aim {
           margin-top: 20px; }
           figure .membership .inner main article .join ul.page2 li.aim input[type=radio] {
             margin-left: 15px; }
-          figure .membership .inner main article .join ul.page2 li.aim p {
+          figure .membership .inner main article .join ul.page2 li.aim label {
             display: inline-block;
             margin-left: 10px;
             font: bold 20px/2.5 "poppins";
             color: #c8c8c8; }
-        figure .membership .inner main article .join ul.page2 li i {
+        figure .membership .inner main article .join ul.page2 li .btn:hover {
+          color: crimson; }
+        figure .membership .inner main article .join ul.page2 li .btn i {
           cursor: pointer;
           margin-top: 50px;
           display: block;
           text-align: center;
           color: #c8c8c8;
           font-size: 80px; }
-          figure .membership .inner main article .join ul.page2 li i:hover {
+          figure .membership .inner main article .join ul.page2 li .btn i:hover {
             color: crimson; }
     figure .membership .inner main .memberFooter {
       width: 100%;
