@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {NavLink} from "react-router-dom";
 
 function Membership(){
@@ -7,7 +7,8 @@ function Membership(){
         pwd1 : "",
         pwd2 : "",
         email : "",
-        number : ""
+        number : "",
+        aim : ""
     }
 
     const [val, setVal] = useState(initVal);
@@ -41,9 +42,32 @@ function Membership(){
         if( !val.id || val.id.length < 5) {
             errs.id = "Enter 5 or more text"
         }
-
+        if( !val.pwd1 || val.pwd1.length < 5 || !eng.test(val.pwd1) || !num.test(val.pwd1) || !spc.test(val.pwd1)) {
+			errs.pwd1 = "Please create at least 5 letters, numbers, and special characters."
+		}
         
+        if( !val.pwd2 !== !val.pwd1 !== val.pwd2) {
+			errs.pwd2 = "Verify your password."
+		}
+
+        if( !val.aim){
+			errs.gender="Choose your Type."
+		}
+        return errs;
     }
+
+    useEffect(()=>{
+		console.log(err);
+		const len = Object.keys(err).length;
+		
+		if (len === 0 && isSubmit) {
+			console.log("PASS!");
+			setSuccess(true);
+		}else {
+			console.log("FAIL! Miss Match!");
+			setSuccess(false);
+		}
+	},[err]);
 
     return (
         <section className="content membership">
@@ -55,6 +79,8 @@ function Membership(){
                         </NavLink>
                     </nav>
                     
+                    {success ? <div>Welcome to Umbrella</div> : null}
+
                     <article onSubmit={handleSubmit}>
                         <div className="join">
                             <ul className="page1 on">
@@ -85,8 +111,8 @@ function Membership(){
                                         id="id" 
                                         placeholder="ID" 
                                         onChange={handleChange} 
-                                        required>
-                                    </input>
+                                        required/>
+                                    <span className="err">{err.id}</span>
                                 </li>
                                 <li>
                                     <input 
@@ -95,8 +121,8 @@ function Membership(){
                                         id="pwd1" 
                                         placeholder="PASSWORD" 
                                         onChange={handleChange} 
-                                        required>
-                                    </input>
+                                        required/>
+                                    <span className="err">{err.pwd1}</span>
                                 </li>
                                 <li>
                                     <input 
@@ -105,8 +131,8 @@ function Membership(){
                                         id="pwd2" 
                                         placeholder="PASSWORD Re" 
                                         onChange={handleChange} 
-                                        required>
-                                    </input>
+                                        required/>
+                                    <span className="err">{err.pwd2}</span>
                                 </li>
                                 <li>
                                     <input 
@@ -115,8 +141,8 @@ function Membership(){
                                         id="email" 
                                         placeholder="E-mail" 
                                         onChange={handleChange} 
-                                        required>
-                                    </input>
+                                        required/>
+                                    <span className="err">{err.email}</span>
                                 </li>
                                 <li>
                                     <input 
@@ -125,8 +151,8 @@ function Membership(){
                                         id="number" 
                                         placeholder="Phone Number"
                                         onChange={handleChange}  
-                                        required>
-                                    </input>
+                                        required/>
+                                    <span className="err">{err.number}</span>
                                 </li>
                                 <li className="aim">
                                     <input 
@@ -134,25 +160,23 @@ function Membership(){
                                         value="scientist" 
                                         id="scientist" 
                                         name="aim"
-                                        onChange={handleCheck}>
-                                    </input>
+                                        onChange={handleCheck}/>
                                     <label htmlFor="scientist">Scientist</label>
                                     <input 
                                         type="radio" 
                                         value="medical" 
                                         id="medical" 
                                         name="aim"
-                                        onChange={handleCheck}>
-                                    </input>
+                                        onChange={handleCheck}/>
                                     <label htmlFor="medical">Medical</label>
                                     <input 
                                         type="radio" 
                                         value="student" 
                                         id="student" 
                                         name="aim"
-                                        onChange={handleCheck}>
-                                    </input>
+                                        onChange={handleCheck}/>
                                     <label htmlFor="student">Student</label>
+                                    <span className="err">{err.aim}</span>
                                 </li>
 
                                 <li className="membershipBtn">
