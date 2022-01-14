@@ -110,8 +110,8 @@ function Membership(){
 
                                 <li className="membershipBtn">
                                     <div className="btn">
-                                        <i className="fas fa-arrow-alt-circle-right"></i>
-                                        {/* <input type="submit" value=""/> */}
+                                        <input type="submit" value="Go"/>
+                                        {/* <i className="fas fa-arrow-alt-circle-right"></i> */}
                                     </div>
                                 </li>
                             </ul>                            

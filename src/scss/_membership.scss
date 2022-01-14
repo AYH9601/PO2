@@ -136,15 +136,33 @@
                                 }
 
                                 .btn {
-                                    &:hover {
-                                        color: crimson;
+                                    background: darkcyan;
+                                    position: relative;
+                                    text-align: center;
+
+                                    input[type=submit] {
+                                        cursor: pointer;
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 50%;
+                                        border: none;
+                                        background-color: crimson;
+                                        font:bold 30px/1 "poppins";
+                                        color: #fff;
+
+                                        &:hover {
+                                            background-color: #fff;
+                                        }
                                     }
-                                    
+
                                     i {
                                         cursor: pointer;
-                                        margin-top: 50px;
+                                        // margin-top: 50px;
                                         display: block;
                                         text-align: center;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 40%;
                                         color: rgb(200, 200, 200);
                                         font-size: 80px;
                                         
