@@ -136,22 +136,23 @@
                                 }
 
                                 .btn {
-                                    background: darkcyan;
                                     position: relative;
                                     text-align: center;
 
                                     input[type=submit] {
+                                        // margin-top: 50px;
                                         cursor: pointer;
                                         width: 80px;
                                         height: 80px;
                                         border-radius: 50%;
                                         border: none;
-                                        background-color: crimson;
+                                        background-color: rgb(200, 200, 200);
                                         font:bold 30px/1 "poppins";
                                         color: #fff;
 
                                         &:hover {
-                                            background-color: #fff;
+                                            background-color: crimson;
+                                            color: #fff;
                                         }
                                     }
 

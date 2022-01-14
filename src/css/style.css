@@ -1795,7 +1795,6 @@ figure {
             font: bold 20px/2.5 "poppins";
             color: #c8c8c8; }
         figure .membership .inner main article .join ul.page2 li .btn {
-          background: darkcyan;
           position: relative;
           text-align: center; }
           figure .membership .inner main article .join ul.page2 li .btn input[type=submit] {
@@ -1804,11 +1803,12 @@ figure {
             height: 80px;
             border-radius: 50%;
             border: none;
-            background-color: crimson;
+            background-color: #c8c8c8;
             font: bold 30px/1 "poppins";
             color: #fff; }
             figure .membership .inner main article .join ul.page2 li .btn input[type=submit]:hover {
-              background-color: #fff; }
+              background-color: crimson;
+              color: #fff; }
           figure .membership .inner main article .join ul.page2 li .btn i {
             cursor: pointer;
             display: block;

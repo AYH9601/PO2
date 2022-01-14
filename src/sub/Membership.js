@@ -1,6 +1,50 @@
+import { useState } from "react";
 import {NavLink} from "react-router-dom";
 
 function Membership(){
+    const initVal={
+        id : "",
+        pwd1 : "",
+        pwd2 : "",
+        email : "",
+        number : ""
+    }
+
+    const [val, setVal] = useState(initVal);
+    const [err, setErr] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
+    const [success, setSuccess] = useState(false);
+
+    const handleChange = e => {
+        const {name,value} = e.target;
+        setVal({...val,[name]:value})
+    }
+
+    const handleCheck = e => {
+        const {name} = e.target;
+        const isCheck = e.target.checked;
+        setVal({...val,[name]:isCheck});
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        setIsSubmit(true)
+        setErr(check(val));
+    }
+
+    const check = val => {
+        let errs = {};
+		let eng = /[a-zA-Z]/
+		let num = /[0-9]/
+		let spc = /[~!@#$%^&*]/
+
+        if( !val.id || val.id.length < 5) {
+            errs.id = "Enter 5 or more text"
+        }
+
+        
+    }
+
     return (
         <section className="content membership">
             <div className="inner">
@@ -11,7 +55,7 @@ function Membership(){
                         </NavLink>
                     </nav>
                     
-                    <article>
+                    <article onSubmit={handleSubmit}>
                         <div className="join">
                             <ul className="page1 on">
                                 <h1>Agree to the Terms of Service</h1>
@@ -40,7 +84,7 @@ function Membership(){
                                         name="id" 
                                         id="id" 
                                         placeholder="ID" 
-                                        // onChange={handleChange} 
+                                        onChange={handleChange} 
                                         required>
                                     </input>
                                 </li>
@@ -50,7 +94,7 @@ function Membership(){
                                         name="pwd1" 
                                         id="pwd1" 
                                         placeholder="PASSWORD" 
-                                        // onChange={handleChange} 
+                                        onChange={handleChange} 
                                         required>
                                     </input>
                                 </li>
@@ -60,7 +104,7 @@ function Membership(){
                                         name="pwd2" 
                                         id="pwd2" 
                                         placeholder="PASSWORD Re" 
-                                        // onChange={handleChange} 
+                                        onChange={handleChange} 
                                         required>
                                     </input>
                                 </li>
@@ -70,7 +114,7 @@ function Membership(){
                                         name="eamil" 
                                         id="email" 
                                         placeholder="E-mail" 
-                                        // onChange={handleChange} 
+                                        onChange={handleChange} 
                                         required>
                                     </input>
                                 </li>
@@ -80,7 +124,7 @@ function Membership(){
                                         name="number" 
                                         id="number" 
                                         placeholder="Phone Number"
-                                        // onChange={handleChange}  
+                                        onChange={handleChange}  
                                         required>
                                     </input>
                                 </li>
@@ -89,21 +133,24 @@ function Membership(){
                                         type="radio" 
                                         value="scientist" 
                                         id="scientist" 
-                                        name="aim">
+                                        name="aim"
+                                        onChange={handleCheck}>
                                     </input>
                                     <label htmlFor="scientist">Scientist</label>
                                     <input 
                                         type="radio" 
                                         value="medical" 
                                         id="medical" 
-                                        name="aim">
+                                        name="aim"
+                                        onChange={handleCheck}>
                                     </input>
                                     <label htmlFor="medical">Medical</label>
                                     <input 
                                         type="radio" 
                                         value="student" 
                                         id="student" 
-                                        name="aim">
+                                        name="aim"
+                                        onChange={handleCheck}>
                                     </input>
                                     <label htmlFor="student">Student</label>
                                 </li>
