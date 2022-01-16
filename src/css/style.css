@@ -2020,28 +2020,14 @@ figure {
         figure .location .inner .hospital .hospitalRight h4 {
           font: bold 40px/1.2 "poppins";
           color: #000;
-          margin-bottom: 30px; }
+          margin-bottom: 40px; }
         figure .location .inner .hospital .hospitalRight p {
           font: bold 18px/1.8 "poppins";
           color: #000;
-          margin-bottom: 20px; }
-        figure .location .inner .hospital .hospitalRight button {
-          cursor: pointer;
-          width: 500px;
-          height: 70px;
-          background: none;
-          border: 2px solid crimson;
-          border-radius: 35px;
-          font: bold 17px/1 "poppins";
-          color: crimson;
-          transition: 0.2s; }
-          figure .location .inner .hospital .hospitalRight button:hover {
-            background-color: crimson;
-            color: #fff;
-            transition: 0.2s; }
+          margin-bottom: 30px; }
     figure .location .inner .hosBox {
       display: flex;
-      margin-bottom: 100px; }
+      margin-bottom: 200px; }
       figure .location .inner .hosBox li {
         width: calc(100%/4);
         height: 300px; }
@@ -2056,7 +2042,20 @@ figure {
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             height: 100%;
-            border-radius: 10px; }
+            border-radius: 10px;
+            transition: 0.3s; }
+            figure .location .inner .hosBox li .box .hos:hover {
+              background: crimson;
+              transition: 0.3s; }
+              figure .location .inner .hosBox li .box .hos:hover h3 {
+                color: #fff;
+                transition: 0.3s; }
+              figure .location .inner .hosBox li .box .hos:hover p {
+                color: #fff;
+                transition: 0.3s; }
+              figure .location .inner .hosBox li .box .hos:hover em {
+                color: #fff;
+                transition: 0.3s; }
             figure .location .inner .hosBox li .box .hos h3 {
               font: bold 20px/1.5 "poppins";
               color: crimson;

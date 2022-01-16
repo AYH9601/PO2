@@ -202,37 +202,37 @@
                 h4 {
                     font: bold 40px/1.2 "poppins";
                     color: #000;
-                    margin-bottom: 30px;
+                    margin-bottom: 40px;
                 }
                 p {
                     font: bold 18px/1.8 "poppins";
                     color: #000;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
-                button {
-                    cursor: pointer;
-                    width: 500px;
-                    height: 70px;
-                    background: none;
-                    border: 2px solid crimson;
-                    border-radius: 35px;
-                    font: bold 17px/1 "poppins";
-                    color: crimson;
-                    transition: 0.2s;
+                // button {
+                //     cursor: pointer;
+                //     width: 500px;
+                //     height: 70px;
+                //     background: none;
+                //     border: 2px solid crimson;
+                //     border-radius: 35px;
+                //     font: bold 17px/1 "poppins";
+                //     color: crimson;
+                //     transition: 0.2s;
         
-                    &:hover {
-                        background-color: crimson; 
-                        color: #fff;
-                        transition: 0.2s;
-                    }
-                }
+                //     &:hover {
+                //         background-color: crimson; 
+                //         color: #fff;
+                //         transition: 0.2s;
+                //     }
+                // }
             }
     
         }
 
         .hosBox {
             display: flex;
-            margin-bottom: 100px;
+            margin-bottom: 200px;
             li {
                 width: calc(100%/4);
                 height: 300px;
@@ -249,6 +249,14 @@
                         width: 100%;
                         height: 100%;
                         border-radius: 10px;
+                        transition: 0.3s;
+                        &:hover {
+                            background: crimson;
+                            transition: 0.3s;
+                            h3 {color: #fff; transition: 0.3s;}
+                            p {color: #fff; transition: 0.3s;}
+                            em {color: #fff; transition: 0.3s;}
+                        }
                         h3 {
                             font: bold 20px/1.5 "poppins";
                             color: crimson;

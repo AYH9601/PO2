@@ -11,14 +11,14 @@ function Location(){
     const info = [
 		{
 			title : "Umbrella Virus Center", 
-			latlng : new kakao.maps.LatLng(37.5132313,127.0594368),
+			latlng : new kakao.maps.LatLng(37.49843613566955,126.76273179094987),
 			imgSrc : process.env.PUBLIC_URL+"/img/marker.png",
 			imgSize : new kakao.maps.Size(60, 97),
 			imgPos : {offset: new kakao.maps.Point(116, 99)},		
 		},
 		{
 			title : "Umbrella BioTech Center", 
-			latlng : new kakao.maps.LatLng(37.507099899564444,126.75639338893572),
+			latlng : new kakao.maps.LatLng(37.4985786,126.6928556),
 			imgSrc : process.env.PUBLIC_URL+"/img/marker.png",
 			imgSize : new kakao.maps.Size(60, 97),
 			imgPos : {offset: new kakao.maps.Point(116, 99)},
@@ -194,7 +194,7 @@ function Location(){
                         <p>
                             You can find very advanced biotechnology and pharmaceutical technology at Umbrella Hospital. For patients and their families, our medical staff are committed to providing the best possible support at all times.
                         </p>
-                        <button>Find out more about the Our hospital</button>
+                        {/* <button>Find out more about the Our hospital</button> */}
                     </div>
                 </div>
 
