@@ -142,6 +142,7 @@
 
         .kakaomap {
             position: relative;
+            margin-bottom: 200px;
             #map {
                 width: 100%;
                 height: 500px;
@@ -168,6 +169,109 @@
                         color: crimson;
                         transition: 0.2s;
                     }
+                }
+            }
+        }
+
+        .hospital {
+            height: 500px;
+            text-align: left;
+            &::after{content: ""; display: block; clear: both;}
+    
+            h3 {
+                font: bold 18px "poppins";
+                letter-spacing: 1px;
+                color: #333;
+                margin-bottom: 40px;
+            }
+    
+            .hospitalLeft {
+                float: left;
+                width: 45%;
+                height: 315px;
+                background-image: url(../../public/img/ebook.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    
+            .hospitalRight {
+                padding: 0px 25px 0px 25px;
+                float: left;
+                width: 55%;
+                
+                h4 {
+                    font: bold 40px/1.2 "poppins";
+                    color: #000;
+                    margin-bottom: 30px;
+                }
+                p {
+                    font: bold 18px/1.8 "poppins";
+                    color: #000;
+                    margin-bottom: 20px;
+                }
+                button {
+                    cursor: pointer;
+                    width: 500px;
+                    height: 70px;
+                    background: none;
+                    border: 2px solid crimson;
+                    border-radius: 35px;
+                    font: bold 17px/1 "poppins";
+                    color: crimson;
+                    transition: 0.2s;
+        
+                    &:hover {
+                        background-color: crimson; 
+                        color: #fff;
+                        transition: 0.2s;
+                    }
+                }
+            }
+    
+        }
+
+        .hosBox {
+            display: flex;
+            margin-bottom: 100px;
+            li {
+                width: calc(100%/4);
+                height: 300px;
+                .box {
+                    padding: 0 10px;
+                    height: 300px;
+                    
+                    .hos {
+                        cursor: pointer;
+                        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+                        .pic {
+                            border-radius: 10px 10px 0 0;
+                            width: 100%;
+                            height: 150px;
+                            background: lightskyblue;
+                            margin-bottom: 20px;
+                        }
+                        width: 100%;
+                        height: 100%;
+                        // background: lightcoral;
+                        border-radius: 10px;
+                        h3 {
+                            font: bold 15px/1 "poppins";
+                            color: #000;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            font: bold 13px/1 "poppins";
+                            color: #666;
+                            margin-bottom: 50px;
+                        }
+                        em {
+                            display: block;
+                            font: bold 13px/1 "poppins";
+                            color: #666;
+
+                        }
+                    }
+                    
                 }
             }
         }

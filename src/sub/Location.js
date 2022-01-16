@@ -185,6 +185,58 @@ function Location(){
                         }
                     </ul>
                 </div>
+
+                <div className="hospital">
+                    <h3>Hospital</h3>
+                    <div className="hospitalLeft"></div>
+                    <div className="hospitalRight">
+                        <h4>Experience the best medical support at Umbrella General Hospital.</h4>
+                        <p>
+                            You can find very advanced biotechnology and pharmaceutical technology at Umbrella Hospital. For patients and their families, our medical staff are committed to providing the best possible support at all times.
+                        </p>
+                        <button>Find out more about the Our hospital</button>
+                    </div>
+                </div>
+
+                <ul className="hosBox" ref={btnBranch}>
+                    <li>
+                        <div className="box">
+                            <div className="hos">
+                                {/* <div className="pic"></div> */}
+                                <h3>Umbrella Virus Center</h3>
+                                <p>Bucheon-city. Korea</p>
+                                <em>Open at am 8</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="box">
+                            <div className="hos">
+                                <h3>Umbrella BioTech Center</h3>
+                                <p>Seoul Metropolitan Government. Korea</p>
+                                <em>Open at am 8</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="box">
+                            <div className="hos">
+                                <h3>Umbrella Business District</h3>
+                                <p>Hwaseong-city. Korea</p>
+                                <em>Open at am 9</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="box">
+                            <div className="hos">
+                                <h3>Umbrella Global Production Base</h3>
+                                <p>Incheon Metropolitan City. Korea</p>
+                                <em>Open at am 7</em>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     )

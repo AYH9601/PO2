@@ -33,18 +33,18 @@ function Youtube(){
 
                 <section className="data">
 
-                    <h3>Red Queen</h3>
+                    <h3>Artificial Intelligence </h3>
                     
                     <div className="dataLeft">
                         <h2>
                             Ai, Data, Cloud The convergence of all these moves us into the future.
                         </h2>
-                        <button>Umbrella Artificial Intelligence</button>
+                        <button>With Artificial Intelligence</button>
 
                         <div className="dataBoard">
                             <ul>
                                 <li>
-                                    Red Queen
+                                    Artificial Intelligence 
                                     <i className="fas fa-arrow-right"></i>    
                                 </li>
                                 <li>
@@ -63,7 +63,7 @@ function Youtube(){
                         <div className="loadingPic"></div>
                         <h2>
                             Umbrella DataCenter<br></br>
-                            Red Queen
+                            Artificial Intelligence 
                         </h2>
                     </div>
                 </section>
