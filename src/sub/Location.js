@@ -203,36 +203,44 @@ function Location(){
                         <div className="box">
                             <div className="hos">
                                 {/* <div className="pic"></div> */}
-                                <h3>Umbrella Virus Center</h3>
-                                <p>Bucheon-city. Korea</p>
-                                <em>Open at am 8</em>
+                                <h3>Public Health and Medical Agency</h3>
+                                <p>
+                                    For the development of public health care We are running a variety of businesses.
+                                </p>
+                                <em>Show More</em>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <div className="hos">
-                                <h3>Umbrella BioTech Center</h3>
-                                <p>Seoul Metropolitan Government. Korea</p>
-                                <em>Open at am 8</em>
+                                <h3>Health Promotion Center</h3>
+                                <p>
+                                    Disease prevention and quality of life improvement strive for
+                                </p>
+                                <em>Show More</em>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <div className="hos">
-                                <h3>Umbrella Business District</h3>
-                                <p>Hwaseong-city. Korea</p>
-                                <em>Open at am 9</em>
+                                <h3>Development Support Group</h3>
+                                <p>
+                                    A warm heart towards medical development will respond.
+                                </p>
+                                <em>Show More</em>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div className="box">
                             <div className="hos">
-                                <h3>Umbrella Global Production Base</h3>
-                                <p>Incheon Metropolitan City. Korea</p>
-                                <em>Open at am 7</em>
+                                <h3>Medical Cooperation Center</h3>
+                                <p>
+                                    Medical care as one network Umbrella treatment cooperation system
+                                </p>
+                                <em>Show More</em>
                             </div>
                         </div>
                     </li>

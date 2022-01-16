@@ -142,7 +142,7 @@
 
         .kakaomap {
             position: relative;
-            margin-bottom: 200px;
+            margin-bottom: 150px;
             #map {
                 width: 100%;
                 height: 500px;
@@ -241,34 +241,32 @@
                     height: 300px;
                     
                     .hos {
-                        cursor: pointer;
+                        background: rgb(250, 250, 250);
+                        position: relative;
+                        padding: 50px 20px 50px 20px;
+                        text-align: left;
                         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-                        .pic {
-                            border-radius: 10px 10px 0 0;
-                            width: 100%;
-                            height: 150px;
-                            background: lightskyblue;
-                            margin-bottom: 20px;
-                        }
                         width: 100%;
                         height: 100%;
-                        // background: lightcoral;
                         border-radius: 10px;
                         h3 {
-                            font: bold 15px/1 "poppins";
-                            color: #000;
-                            margin-bottom: 10px;
+                            font: bold 20px/1.5 "poppins";
+                            color: crimson;
+                            margin-bottom: 50px;
                         }
                         p {
-                            font: bold 13px/1 "poppins";
+                            font: bold 15px/2 "poppins";
                             color: #666;
                             margin-bottom: 50px;
                         }
                         em {
                             display: block;
                             font: bold 13px/1 "poppins";
-                            color: #666;
-
+                            color: crimson;
+                            position: absolute;
+                            left: 20px;
+                            bottom: 10px;
+                            cursor: pointer;
                         }
                     }
                     
