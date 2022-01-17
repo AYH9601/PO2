@@ -1955,6 +1955,22 @@ figure {
               height: 150px;
               background: lightskyblue;
               margin-bottom: 20px; }
+            figure .location .inner .dot li .box .hos .hos1 {
+              background-image: url(../../public/img/hos1.jpg);
+              background-repeat: no-repeat;
+              background-size: cover; }
+            figure .location .inner .dot li .box .hos .hos2 {
+              background-image: url(../../public/img/hos2.jpg);
+              background-repeat: no-repeat;
+              background-size: cover; }
+            figure .location .inner .dot li .box .hos .hos3 {
+              background-image: url(../../public/img/hos3.jpg);
+              background-repeat: no-repeat;
+              background-size: cover; }
+            figure .location .inner .dot li .box .hos .hos4 {
+              background-image: url(../../public/img/hos4.jpg);
+              background-repeat: no-repeat;
+              background-size: cover; }
             figure .location .inner .dot li .box .hos h3 {
               font: bold 15px/1 "poppins";
               color: #000;
@@ -1966,7 +1982,7 @@ figure {
             figure .location .inner .dot li .box .hos em {
               display: block;
               font: bold 13px/1 "poppins";
-              color: #666; }
+              color: crimson; }
     figure .location .inner .kakaomap {
       position: relative;
       margin-bottom: 150px; }
@@ -2010,7 +2026,7 @@ figure {
         float: left;
         width: 45%;
         height: 315px;
-        background-image: url(../../public/img/ebook.jpg);
+        background-image: url(../../public/img/hos5.jpg);
         background-repeat: no-repeat;
         background-size: cover; }
       figure .location .inner .hospital .hospitalRight {

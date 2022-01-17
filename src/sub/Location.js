@@ -18,21 +18,21 @@ function Location(){
 		},
 		{
 			title : "Umbrella BioTech Center", 
-			latlng : new kakao.maps.LatLng(37.4985786,126.6928556),
+			latlng : new kakao.maps.LatLng(37.5779531,127.0018347),
 			imgSrc : process.env.PUBLIC_URL+"/img/marker.png",
 			imgSize : new kakao.maps.Size(60, 97),
 			imgPos : {offset: new kakao.maps.Point(116, 99)},
 		},
 		{
 			title : "Umbrella Business District", 
-			latlng : new kakao.maps.LatLng(35.17422705914147,129.10766665201712),
+			latlng : new kakao.maps.LatLng(37.2229453,127.0630783),
 			imgSrc : process.env.PUBLIC_URL+"/img/marker.png",
 			imgSize : new kakao.maps.Size(60, 97),
 			imgPos : {offset: new kakao.maps.Point(116, 99)},
 		},
         {
             title : "Umbrella Global Production Base",
-			latlng : new kakao.maps.LatLng(35.17422705914147,129.10766665201712),
+			latlng : new kakao.maps.LatLng(37.5123161,126.7132263),
 			imgSrc : process.env.PUBLIC_URL+"/img/marker.png",
 			imgSize : new kakao.maps.Size(60, 97),
 			imgPos : {offset: new kakao.maps.Point(116, 99)},
@@ -120,7 +120,7 @@ function Location(){
                             <div className="hos" onClick={()=>{
                             setIndex(0)
                         }}>
-                                <div className="pic"></div>
+                                <div className="pic hos1"></div>
                                 <h3>Umbrella Virus Center</h3>
                                 <p>Bucheon-city. Korea</p>
                                 <em>Open at am 8</em>
@@ -132,7 +132,7 @@ function Location(){
                             <div className="hos" onClick={()=>{
                             setIndex(1)
                         }}>
-                                <div className="pic"></div>
+                                <div className="pic hos2"></div>
                                 <h3>Umbrella BioTech Center</h3>
                                 <p>Seoul Metropolitan Government. Korea</p>
                                 <em>Open at am 8</em>
@@ -144,7 +144,7 @@ function Location(){
                             <div className="hos" onClick={()=>{
                             setIndex(2)
                         }}>
-                                <div className="pic"></div>
+                                <div className="pic hos3"></div>
                                 <h3>Umbrella Business District</h3>
                                 <p>Hwaseong-city. Korea</p>
                                 <em>Open at am 9</em>
@@ -156,7 +156,7 @@ function Location(){
                             <div className="hos" onClick={()=>{
                             setIndex(3)
                         }}>
-                                <div className="pic"></div>
+                                <div className="pic hos4"></div>
                                 <h3>Umbrella Global Production Base</h3>
                                 <p>Incheon Metropolitan City. Korea</p>
                                 <em>Open at am 7</em>

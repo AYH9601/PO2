@@ -114,6 +114,26 @@
                             background: lightskyblue;
                             margin-bottom: 20px;
                         }
+                        .hos1 {
+                            background-image: url(../../public/img/hos1.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        .hos2 {
+                            background-image: url(../../public/img/hos2.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        .hos3 {
+                            background-image: url(../../public/img/hos3.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        .hos4 {
+                            background-image: url(../../public/img/hos4.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
                         width: 100%;
                         height: 100%;
                         // background: lightcoral;
@@ -131,8 +151,8 @@
                         em {
                             display: block;
                             font: bold 13px/1 "poppins";
-                            color: #666;
-
+                            // color: #666;
+                            color: crimson;
                         }
                     }
                     
@@ -189,7 +209,7 @@
                 float: left;
                 width: 45%;
                 height: 315px;
-                background-image: url(../../public/img/ebook.jpg);
+                background-image: url(../../public/img/hos5.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
             }

@@ -1,8 +1,8 @@
 {
-  "homepage": "https://ayh9601.github.io/PO2",
+  "homepage": "https://ayh9601.github.io/po2",
   "name": "coin",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
