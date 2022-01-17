@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/po2/static/css/main.1f23a90a.css",
-    "main.js": "/po2/static/js/main.f87b9969.js",
+    "main.css": "/po2/static/css/main.876596d2.css",
+    "main.js": "/po2/static/js/main.b91673db.js",
     "static/media/goods.jpg": "/po2/static/media/goods.ca9a5613acc105cb1b8c.jpg",
     "static/media/youtubeLoading.gif": "/po2/static/media/youtubeLoading.7517415e575521b3249f.gif",
     "static/media/Art.png": "/po2/static/media/Art.d76224f3f4a4ec6e32e7.png",
@@ -31,6 +31,7 @@
     "static/media/headerLogo3.png": "/po2/static/media/headerLogo3.7a7753a258d60b211a0c.png",
     "static/media/investors1.jpg": "/po2/static/media/investors1.6ed8535bfdf5ecd93797.jpg",
     "static/media/ebook.jpg": "/po2/static/media/ebook.322d45ae48595ab1d0d7.jpg",
+    "static/media/hos5.jpg": "/po2/static/media/hos5.dd580731d6cdec37574a.jpg",
     "static/media/unboxingArticle.jpg": "/po2/static/media/unboxingArticle.ae4cba34eef6eb6af48b.jpg",
     "static/media/virus.jpg": "/po2/static/media/virus.2fa79603164fe914819d.jpg",
     "static/media/career1.jpg": "/po2/static/media/career1.cbd089eeee75e52946cb.jpg",
@@ -41,11 +42,11 @@
     "static/media/department8.jpg": "/po2/static/media/department8.785395894d45fce5ebbc.jpg",
     "static/media/hos1.jpg": "/po2/static/media/hos1.00ab90979215e9647c50.jpg",
     "index.html": "/po2/index.html",
-    "main.1f23a90a.css.map": "/po2/static/css/main.1f23a90a.css.map",
-    "main.f87b9969.js.map": "/po2/static/js/main.f87b9969.js.map"
+    "main.876596d2.css.map": "/po2/static/css/main.876596d2.css.map",
+    "main.b91673db.js.map": "/po2/static/js/main.b91673db.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f23a90a.css",
-    "static/js/main.f87b9969.js"
+    "static/css/main.876596d2.css",
+    "static/js/main.b91673db.js"
   ]
 }
