@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/po2/static/css/main.651543cd.css",
-    "main.js": "/po2/static/js/main.78940ee1.js",
+    "main.css": "/po2/static/css/main.1f23a90a.css",
+    "main.js": "/po2/static/js/main.f87b9969.js",
     "static/media/goods.jpg": "/po2/static/media/goods.ca9a5613acc105cb1b8c.jpg",
     "static/media/youtubeLoading.gif": "/po2/static/media/youtubeLoading.7517415e575521b3249f.gif",
     "static/media/Art.png": "/po2/static/media/Art.d76224f3f4a4ec6e32e7.png",
     "static/media/covid1.jpg": "/po2/static/media/covid1.5b76ccee6940ec8e5e41.jpg",
+    "static/media/hos3.jpg": "/po2/static/media/hos3.3c34a5d32ae2a130263d.jpg",
     "static/media/virusArticle.png": "/po2/static/media/virusArticle.aec02ab386287d096516.png",
     "static/media/investors5.jpg": "/po2/static/media/investors5.11283959da729630581a.jpg",
     "static/media/umbrella.png": "/po2/static/media/umbrella.deff0f5fffafc1d45d7f.png",
@@ -13,12 +14,14 @@
     "static/media/investors4.jpg": "/po2/static/media/investors4.18470a72f9d512dc5bc9.jpg",
     "static/media/investors2.jpg": "/po2/static/media/investors2.3c96b94a3c246b969962.jpg",
     "static/media/investors3.jpg": "/po2/static/media/investors3.207ecaa4e112f5c884f3.jpg",
+    "static/media/hos2.jpg": "/po2/static/media/hos2.f3dc46aba1ba1aa1eaf7.jpg",
     "static/media/career2.jpg": "/po2/static/media/career2.f2a106d0408a2a84cd26.jpg",
     "static/media/department1-2.png": "/po2/static/media/department1-2.a39b1960b28b06bb8712.png",
     "static/media/virus8.png": "/po2/static/media/virus8.e21e8bc3629d11d8863f.png",
     "static/media/virus7.png": "/po2/static/media/virus7.73f6778253d6bf211275.png",
     "static/media/department2.jpg": "/po2/static/media/department2.91c51dd741bcc26f3e99.jpg",
     "static/media/virus5.jpg": "/po2/static/media/virus5.642f37cf0bd1b67f42be.jpg",
+    "static/media/hos4.jpg": "/po2/static/media/hos4.12bcb2a715f8dbc1cc09.jpg",
     "static/media/covid2.jpg": "/po2/static/media/covid2.165996efb37d00707dc1.jpg",
     "static/media/career3.jpg": "/po2/static/media/career3.d003afdbba52fcb551ff.jpg",
     "static/media/covid3.jpg": "/po2/static/media/covid3.04bc2fb04743ce7ce008.jpg",
@@ -36,12 +39,13 @@
     "static/media/TvirusArticle.jpg": "/po2/static/media/TvirusArticle.7bb0a7495207fb2a2870.jpg",
     "static/media/department4.jpg": "/po2/static/media/department4.a0255deb66cf72652483.jpg",
     "static/media/department8.jpg": "/po2/static/media/department8.785395894d45fce5ebbc.jpg",
+    "static/media/hos1.jpg": "/po2/static/media/hos1.00ab90979215e9647c50.jpg",
     "index.html": "/po2/index.html",
-    "main.651543cd.css.map": "/po2/static/css/main.651543cd.css.map",
-    "main.78940ee1.js.map": "/po2/static/js/main.78940ee1.js.map"
+    "main.1f23a90a.css.map": "/po2/static/css/main.1f23a90a.css.map",
+    "main.f87b9969.js.map": "/po2/static/js/main.f87b9969.js.map"
   },
   "entrypoints": [
-    "static/css/main.651543cd.css",
-    "static/js/main.78940ee1.js"
+    "static/css/main.1f23a90a.css",
+    "static/js/main.f87b9969.js"
   ]
 }
