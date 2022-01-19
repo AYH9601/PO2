@@ -11,22 +11,67 @@ function Board(){
     const input = useRef(null);
     const textarea = useRef(null);
     const showBox = useRef(null);
-    const [memo, setMemo] = useState([
+    const [memos, setMemos] = useState([
         {title:"Hello", content:"Here Comes Description in Detail"}
     ]);
 
-    //CRUD
+    //게시
     const createPost=()=>{
-        setMemo([
+        setMemos([
         {
             title: input.current.value,
             content: textarea.current.value
         }
-        , ...memo
+        , ...memos
         ]);
         input.current.value="";
         textarea.current.value="";
     }
+
+    //삭제
+    const deletePost=index=>{
+        setMemos(
+            memos.filter((_, memoIndex)=>memoIndex !== index)
+        )
+    }
+
+    //수정
+    const enableUpdate=index=>{
+        setMemos(
+            memos.map((memo, memoIndex)=>{
+                if(memoIndex === index) memo.enableUpdate=true;
+                return memo;
+            })
+        )
+    }
+
+    //다시 게시
+    const disableUpdate=index=>{
+        setMemos(
+            memos.map((memo, memoIndex)=>{
+                if(memoIndex === index) memo.enableUpdate=false;
+                return memo;
+            })
+        )
+    }
+
+    //수정해서 다시 게시
+    const updatePost=index=>{
+        setMemos(
+            memos.map((memo, memoIndex)=>{
+                if(memoIndex === index){
+                    const article = showBox.current.children[index];
+                    const input = article.querySelector("input");
+                    const textarea = article.querySelector("textarea");
+                    memo.title = input.value;
+                    memo.content = textarea.value;
+                    memo.enableUpdate = false;
+                }
+                return memo;
+            })
+        )
+    }
+
 
     useEffect(()=>{
         axios
@@ -146,24 +191,54 @@ function Board(){
 
                 {/* CRUD */}
                 <div className="boardCRUD">
-                    <h1>Create CURD</h1>
+                    <h1>Notice</h1>
                     <section className="inputBox">
-                        <input type="text" placeholder='제목을 입력하세요.' ref={input}/><br />
-                        <textarea cols="30" rows="10" placeholder='본문을 입력하세요.' ref={textarea}></textarea><br />
+                        <input type="text" placeholder='Please enter a Title.' ref={input}/><br />
+                        <textarea cols="30" rows="5" placeholder='Please enter a Contents' ref={textarea}></textarea><br />
 
                         <button onClick={()=>{
                             input.current.value='';
                             textarea.current.value='';
                         }}>Reset</button>
+
                         <button onClick={createPost}>Post</button>
                     </section>
+
+
                     <section className="showBox" ref={showBox}>
                         {
-                            memo.map((memo, index)=>{
+                            memos.map((memo, index)=>{
                             return (
                                 <article key={index}>
-                                <h2>{memo.title}</h2>
-                                <p>{memo.content}</p>
+                                    {
+                                        memo.enableUpdate
+                                        ?
+                                        //수정하기
+                                        <>
+                                            <div className="post">
+                                                <input type="text" defaultValue={memo.title}/><br></br>
+                                                <textarea defaultValue={memo.content}></textarea>
+                                            </div>
+
+                                            <ul className="btns">
+                                                <li onClick={()=>updatePost(index)}>Enter</li>
+                                                <li onClick={()=>disableUpdate(index)}>Cancel</li>
+                                            </ul>
+                                        </>
+                                        :
+                                        //출력모드
+                                        <>
+                                            <div className="post">
+                                                <h2>{memo.title}</h2>
+                                                <p>{memo.content}</p>
+                                            </div>
+
+                                            <ul className="btns">
+                                                <li onClick={()=>enableUpdate(index)}>Edit</li>
+                                                <li onClick={()=>deletePost(index)}>Remove</li>
+                                            </ul>
+                                        </>
+                                    }
                                 </article>
                             )
                             })
