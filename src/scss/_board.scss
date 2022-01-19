@@ -279,6 +279,7 @@
         }
 
         .boardCRUD {
+            margin-bottom: 50px;
             h1 {
                 font: bold 18px/1 "poppins";
                 margin-bottom: 50px;
@@ -354,17 +355,69 @@
 
                 article {
                     width: 100%;
-                    padding: 20px 30px;
+                    padding: 40px 30px;
                     border-bottom: 2px solid #ddd;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: space-between;
+
                     h2 {
                         font: bold 20px/1 "poppins";
-                        color: #555;
+                        color: #000;
                         margin-bottom: 20px;
                     }
                     p {
                         font: bold 18px/1.2 "poppins";
-                        color: #777;
-                        
+                        color: #555;
+                        margin-bottom: 0px;
+                    }
+
+                    .post {
+                        width: 60%;
+                        input {
+                            width: 100%;
+                            padding: 15px 10px;
+                            border: none;
+                            background: rgb(240, 240, 240);
+                            margin-bottom: 15px;
+                            font: bold 18px/1 "poppins";
+                            color: #000;
+                            letter-spacing: 1px;
+                        }
+    
+                        textarea {
+                            width: 100%;
+                            padding: 15px 10px;
+                            border: none;
+                            background: rgb(240, 240, 240);
+                            resize: none;
+                            font: bold 15px/1 "poppins";
+                            color: #000;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    .btns {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        li {
+                            cursor: pointer;
+                            margin-left: 20px;
+                            font-size: 15px;
+                            font: bold 15px/1 "poppins";
+                            color: #999;
+                            transition: 0.25s;
+                            &:nth-of-type(2) {color: crimson;}
+                            i {
+                                font-size: 25px;
+                            }
+                            &:hover {
+                                transition: 0.25s;
+                                color: crimson;
+                            }
+                        }
                     }
                 }
             }

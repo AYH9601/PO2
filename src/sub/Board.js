@@ -240,8 +240,8 @@ function Board(){
                                             </div>
 
                                             <ul className="btns">
-                                                <li onClick={()=>enableUpdate(index)}>Edit</li>
-                                                <li onClick={()=>deletePost(index)}>Remove</li>
+                                                <li onClick={()=>enableUpdate(index)}><i className="fas fa-wrench"></i></li>
+                                                <li onClick={()=>deletePost(index)}><i className="fas fa-times-circle"></i></li>
                                             </ul>
                                         </>
                                     }
