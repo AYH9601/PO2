@@ -72,7 +72,6 @@ function Board(){
         )
     }
 
-
     useEffect(()=>{
         axios
             .get(url)
@@ -196,16 +195,23 @@ function Board(){
                         <input type="text" placeholder='Please enter a Title.' ref={input}/><br />
                         <textarea cols="30" rows="5" placeholder='Please enter a Contents' ref={textarea}></textarea><br />
 
-                        <button onClick={()=>{
-                            input.current.value='';
-                            textarea.current.value='';
-                        }}>Reset</button>
+                        <div className="CRUDBtn">
+                            <button onClick={()=>{
+                                input.current.value='';
+                                textarea.current.value='';
+                            }}>Reset</button>
 
-                        <button onClick={createPost}>Post</button>
+                            <button onClick={createPost}>Post</button>
+                        </div>
+
+                        <p className="CRUDcopy"> &copy; copy 2022 Umbrella Inc. All rights reserved</p>
                     </section>
 
 
                     <section className="showBox" ref={showBox}>
+                        <div className="showNotice">
+                            <p>Notice List</p>
+                        </div>
                         {
                             memos.map((memo, index)=>{
                             return (

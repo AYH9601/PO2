@@ -1586,73 +1586,138 @@ figure {
               font: bold 15px/1 "poppins";
               letter-spacing: 1px;
               color: #999; }
-    figure .board .inner .boardLower table {
+    figure .board .inner .boardLower {
+      margin-bottom: 100px; }
+      figure .board .inner .boardLower table {
+        width: 100%;
+        border-bottom: 2px solid #999;
+        margin-bottom: 50px;
+        border-collapse: collapse; }
+        figure .board .inner .boardLower table tr:hover td {
+          background: #f1f1f1; }
+        figure .board .inner .boardLower table th {
+          padding: 15px;
+          background: #000;
+          font: bold 17px/1 "poppins";
+          color: #555;
+          color: #fff; }
+          figure .board .inner .boardLower table th:nth-of-type(1) {
+            width: 10%; }
+          figure .board .inner .boardLower table th:nth-of-type(3) {
+            width: 15%; }
+          figure .board .inner .boardLower table th:nth-of-type(4) {
+            width: 15%; }
+        figure .board .inner .boardLower table td {
+          padding: 20px;
+          font: bold 17px/1 "poppins";
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          color: #555; }
+          figure .board .inner .boardLower table td:nth-of-type(1) {
+            color: crimson; }
+          figure .board .inner .boardLower table td:nth-of-type(2) {
+            text-align: left;
+            cursor: pointer; }
+          figure .board .inner .boardLower table td:nth-of-type(3) {
+            cursor: pointer; }
+      figure .board .inner .boardLower .pagination {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center; }
+        figure .board .inner .boardLower .pagination p {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          cursor: pointer;
+          margin-right: 15px;
+          margin-left: 15px;
+          font: bold 15px/1 "poppins";
+          color: #999; }
+          figure .board .inner .boardLower .pagination p:hover {
+            color: crimson; }
+          figure .board .inner .boardLower .pagination p:nth-of-type(2) {
+            margin-left: 40px; }
+          figure .board .inner .boardLower .pagination p:nth-of-type(6) {
+            margin-right: 20px; }
+        figure .board .inner .boardLower .pagination .leftCircle, figure .board .inner .boardLower .pagination .rightCircle {
+          font-size: 25px;
+          width: 40px;
+          height: 40px;
+          border: 2px solid #000;
+          color: #000;
+          border-radius: 50%;
+          line-height: 40px;
+          transition: 0.2s;
+          transform: translateY(3px); }
+          figure .board .inner .boardLower .pagination .leftCircle:hover, figure .board .inner .boardLower .pagination .rightCircle:hover {
+            color: #fff;
+            border-bottom: none;
+            border: 2px solid #555;
+            background-color: #555;
+            transition: 0.2s; }
+    figure .board .inner .boardCRUD h1 {
+      font: bold 18px/1 "poppins";
+      margin-bottom: 50px; }
+    figure .board .inner .boardCRUD .inputBox {
       width: 100%;
-      border-bottom: 2px solid #999;
-      margin-bottom: 50px;
-      border-collapse: collapse; }
-      figure .board .inner .boardLower table tr:hover td {
-        background: #f1f1f1; }
-      figure .board .inner .boardLower table th {
-        padding: 15px;
-        background: #000;
-        font: bold 17px/1 "poppins";
-        color: #555;
-        color: #fff; }
-        figure .board .inner .boardLower table th:nth-of-type(1) {
-          width: 10%; }
-        figure .board .inner .boardLower table th:nth-of-type(3) {
-          width: 15%; }
-        figure .board .inner .boardLower table th:nth-of-type(4) {
-          width: 15%; }
-      figure .board .inner .boardLower table td {
-        padding: 20px;
-        font: bold 17px/1 "poppins";
-        border-bottom: 1px solid #ddd;
-        text-align: center;
-        color: #555; }
-        figure .board .inner .boardLower table td:nth-of-type(1) {
-          color: crimson; }
-        figure .board .inner .boardLower table td:nth-of-type(2) {
-          text-align: left;
-          cursor: pointer; }
-        figure .board .inner .boardLower table td:nth-of-type(3) {
-          cursor: pointer; }
-    figure .board .inner .boardLower .pagination {
-      margin-top: 50px;
-      width: 100%;
-      text-align: center; }
-      figure .board .inner .boardLower .pagination p {
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        cursor: pointer;
-        margin-right: 15px;
-        margin-left: 15px;
-        font: bold 15px/1 "poppins";
-        color: #999; }
-        figure .board .inner .boardLower .pagination p:hover {
-          color: crimson; }
-        figure .board .inner .boardLower .pagination p:nth-of-type(2) {
-          margin-left: 40px; }
-        figure .board .inner .boardLower .pagination p:nth-of-type(6) {
-          margin-right: 20px; }
-      figure .board .inner .boardLower .pagination .leftCircle, figure .board .inner .boardLower .pagination .rightCircle {
-        font-size: 25px;
-        width: 40px;
-        height: 40px;
-        border: 2px solid #000;
-        color: #000;
-        border-radius: 50%;
-        line-height: 40px;
-        transition: 0.2s;
-        transform: translateY(3px); }
-        figure .board .inner .boardLower .pagination .leftCircle:hover, figure .board .inner .boardLower .pagination .rightCircle:hover {
+      padding: 40px 30px;
+      border: 1px solid #555;
+      position: relative;
+      margin-bottom: 40px; }
+      figure .board .inner .boardCRUD .inputBox input {
+        width: 60%;
+        padding: 10px 10px;
+        margin-bottom: 15px;
+        font: bold 15px/1 "poppins"; }
+      figure .board .inner .boardCRUD .inputBox textarea {
+        resize: none;
+        width: 60%;
+        padding: 10px 10px;
+        font: bold 15px/1 "poppins"; }
+      figure .board .inner .boardCRUD .inputBox .CRUDBtn {
+        position: absolute;
+        top: 40px;
+        right: 30px; }
+        figure .board .inner .boardCRUD .inputBox .CRUDBtn button {
+          cursor: pointer;
+          width: 80px;
+          height: 30px;
+          margin-left: 20px;
+          background: crimson;
+          border: none;
           color: #fff;
-          border-bottom: none;
-          border: 2px solid #555;
-          background-color: #555;
+          font: bold 13px/1 "poppins";
           transition: 0.2s; }
+          figure .board .inner .boardCRUD .inputBox .CRUDBtn button:hover {
+            transition: 0.2s;
+            background: #000;
+            color: #fff; }
+      figure .board .inner .boardCRUD .inputBox .CRUDcopy {
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+        color: crimson;
+        margin-bottom: 0px; }
+    figure .board .inner .boardCRUD .showBox .showNotice {
+      width: 100%;
+      background: #000;
+      padding: 15px 30px; }
+      figure .board .inner .boardCRUD .showBox .showNotice p {
+        font: bold 17px/1 "poppins";
+        letter-spacing: 1.5px;
+        color: #fff;
+        margin-bottom: 0px; }
+    figure .board .inner .boardCRUD .showBox article {
+      width: 100%;
+      padding: 20px 30px;
+      border-bottom: 2px solid #ddd; }
+      figure .board .inner .boardCRUD .showBox article h2 {
+        font: bold 20px/1 "poppins";
+        color: #555;
+        margin-bottom: 20px; }
+      figure .board .inner .boardCRUD .showBox article p {
+        font: bold 18px/1.2 "poppins";
+        color: #777; }
   figure .gallery {
     padding-top: 100px; }
     figure .gallery .galleryUpper p {
