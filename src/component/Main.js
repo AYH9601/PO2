@@ -4,7 +4,6 @@ import { LatestStories } from "../component/common";
 
 
 function Main(){
-    //seven
     let [posts,setPosts] = useState([]);
 
     useEffect(()=>{

@@ -1,11 +1,32 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function Board(){
     let [posts,setPosts] = useState([]);
     let len = posts.length;
     const path = process.env.PUBLIC_URL;
     const url = `${path}/dbs/board.json`;
+
+    //CRUD
+    const input = useRef(null);
+    const textarea = useRef(null);
+    const showBox = useRef(null);
+    const [memo, setMemo] = useState([
+        {title:"Hello", content:"Here Comes Description in Detail"}
+    ]);
+
+    //CRUD
+    const createPost=()=>{
+        setMemo([
+        {
+            title: input.current.value,
+            content: textarea.current.value
+        }
+        , ...memo
+        ]);
+        input.current.value="";
+        textarea.current.value="";
+    }
 
     useEffect(()=>{
         axios
@@ -121,6 +142,33 @@ function Board(){
                             </div>
                         </p>
                     </div>
+                </div>
+
+                {/* CRUD */}
+                <div className="boardCRUD">
+                    <h1>Create CURD</h1>
+                    <section className="inputBox">
+                        <input type="text" placeholder='제목을 입력하세요.' ref={input}/><br />
+                        <textarea cols="30" rows="10" placeholder='본문을 입력하세요.' ref={textarea}></textarea><br />
+
+                        <button onClick={()=>{
+                            input.current.value='';
+                            textarea.current.value='';
+                        }}>Reset</button>
+                        <button onClick={createPost}>Post</button>
+                    </section>
+                    <section className="showBox" ref={showBox}>
+                        {
+                            memo.map((memo, index)=>{
+                            return (
+                                <article key={index}>
+                                <h2>{memo.title}</h2>
+                                <p>{memo.content}</p>
+                                </article>
+                            )
+                            })
+                        }
+                    </section>
                 </div>
             </div>
         </section>

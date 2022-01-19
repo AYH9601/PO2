@@ -42,6 +42,7 @@ function Location(){
     const [mapInfo, setMapInfo] = useState(info);
 
     useEffect(()=>{
+        container.current.innerHTML="";
 		const options = { //지도를 생성할 때 필요한 기본 옵션
 			center: mapInfo[index].latlng, //지도의 중심좌표.
 			level: 3 //지도의 레벨(확대, 축소 정도)
@@ -89,7 +90,7 @@ function Location(){
 
                 <div className="locationHeader">
                     <h1>Umbrella BioTechnoloy Center & Hospital</h1>
-                    <h2>Need biotech and medical assistance? We always welcome you.</h2>
+                    <h2>Need biotech and medical assistance? We always with you.</h2>
 
                     <div className="locationSearchBox">
                         <input type="text" id="search" placeholder="Search for Location"/>
