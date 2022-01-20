@@ -10,6 +10,8 @@ function Board(){
     //CRUD
     const input = useRef(null);
     const textarea = useRef(null);
+    const updateInput = useRef(null);
+    const updateTextarea = useRef(null);
     const showBox = useRef(null);
 
     // const [posts, setPosts] = useState([
@@ -78,10 +80,12 @@ function Board(){
             posts.map((post, postIndex)=>{
                 if(postIndex === index){
                     const article = showBox.current.children[index];
-                    const input = article.querySelector("input");
-                    const textarea = article.querySelector("textarea");
-                    post.title = input.value;
-                    post.content = textarea.value;
+                    // const input = article.querySelector("input");
+                    // const textarea = article.querySelector("textarea");
+                    // post.title = input.value;
+                    // post.content = textarea.value;
+                    post.title = updateInput.current.value;
+                    post.content = updateTextarea.current.value;
                     post.enableUpdate = false;
                 }
                 return post;
@@ -225,7 +229,6 @@ function Board(){
                         <p className="CRUDcopy"> &copy; copy 2022 Umbrella Inc. All rights reserved</p>
                     </section>
 
-
                     <section className="showBox" ref={showBox}>
                         <div className="showNotice">
                             <p>Notice List</p>
@@ -240,8 +243,8 @@ function Board(){
                                             //수정하기
                                             <>
                                                 <div className="post">
-                                                    <input type="text" defaultValue={post.title}/><br></br>
-                                                    <textarea defaultValue={post.content}></textarea>
+                                                    <input type="text" defaultValue={post.title} ref={updateInput}/><br></br>
+                                                    <textarea defaultValue={post.content} ref={updateTextarea}></textarea>
                                                 </div>
 
                                                 <ul className="btns">
