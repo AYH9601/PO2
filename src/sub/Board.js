@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState, useRef } from "react";
 
 function Board(){
-    let [posts,setPosts] = useState([]);
-    let len = posts.length;
+    let [texts,setTexts] = useState([]);
+    let len = texts.length;
     const path = process.env.PUBLIC_URL;
     const url = `${path}/dbs/board.json`;
 
@@ -11,18 +11,35 @@ function Board(){
     const input = useRef(null);
     const textarea = useRef(null);
     const showBox = useRef(null);
-    const [memos, setMemos] = useState([
-        {title:"Hello", content:"Here Comes Description in Detail"}
-    ]);
+
+    // const [posts, setPosts] = useState([
+    //     {title:"Welcome to Umbrella", content:"Here Comes Important Notice"}
+    // ]);
+
+    const getLocalItems =()=>{
+        let data = localStorage.getItem("posts");
+    
+        if(data){
+            return JSON.parse(data)
+        }else{
+            return [];
+        }
+    }
+
+    const [posts, setPosts]=useState(getLocalItems)
 
     //게시
     const createPost=()=>{
-        setMemos([
+        if(!input.current.value || !textarea.current.value){
+            alert("You Need Title and Contents");
+            return;
+        }
+        setPosts([
         {
             title: input.current.value,
             content: textarea.current.value
         }
-        , ...memos
+        , ...posts
         ]);
         input.current.value="";
         textarea.current.value="";
@@ -30,55 +47,56 @@ function Board(){
 
     //삭제
     const deletePost=index=>{
-        setMemos(
-            memos.filter((_, memoIndex)=>memoIndex !== index)
+        setPosts(
+            posts.filter((_, postIndex)=>postIndex !== index)
         )
     }
 
     //수정
     const enableUpdate=index=>{
-        setMemos(
-            memos.map((memo, memoIndex)=>{
-                if(memoIndex === index) memo.enableUpdate=true;
-                return memo;
+        setPosts(
+            posts.map((post, postIndex)=>{
+                if(postIndex === index) post.enableUpdate=true;
+                return post;
             })
         )
     }
 
-    //다시 게시
+    //수정 to 출력
     const disableUpdate=index=>{
-        setMemos(
-            memos.map((memo, memoIndex)=>{
-                if(memoIndex === index) memo.enableUpdate=false;
-                return memo;
+        setPosts(
+            posts.map((post, postIndex)=>{
+                if(postIndex === index) post.enableUpdate=false;
+                return post;
             })
         )
     }
 
     //수정해서 다시 게시
     const updatePost=index=>{
-        setMemos(
-            memos.map((memo, memoIndex)=>{
-                if(memoIndex === index){
+        setPosts(
+            posts.map((post, postIndex)=>{
+                if(postIndex === index){
                     const article = showBox.current.children[index];
                     const input = article.querySelector("input");
                     const textarea = article.querySelector("textarea");
-                    memo.title = input.value;
-                    memo.content = textarea.value;
-                    memo.enableUpdate = false;
+                    post.title = input.value;
+                    post.content = textarea.value;
+                    post.enableUpdate = false;
                 }
-                return memo;
+                return post;
             })
         )
     }
 
     useEffect(()=>{
+        localStorage.setItem("posts",JSON.stringify(posts));
         axios
             .get(url)
             .then(data=>{
-                setPosts(data.data.data);
+                setTexts(data.data.data);
             })
-    },[]); 
+    },[posts]); 
 
     return (
         <section className="content board">
@@ -117,7 +135,7 @@ function Board(){
 
                     <div className="boardRight">
                         {
-                            posts.slice(0).reverse().map((data, index)=>{
+                            texts.slice(0).reverse().map((data, index)=>{
                                 let tit = data.title;
                                 let tit_len = tit.length;
                                 
@@ -155,7 +173,7 @@ function Board(){
                         </thead>
                         <tbody>
                             {
-                                posts.slice(3).reverse(0).map((data, index)=>{
+                                texts.slice(3).reverse(0).map((data, index)=>{
                                     return (
                                         <tr key={index} className="communityInner">
                                             <td>{len-index+1212}</td>
@@ -213,40 +231,40 @@ function Board(){
                             <p>Notice List</p>
                         </div>
                         {
-                            memos.map((memo, index)=>{
-                            return (
-                                <article key={index}>
-                                    {
-                                        memo.enableUpdate
-                                        ?
-                                        //수정하기
-                                        <>
-                                            <div className="post">
-                                                <input type="text" defaultValue={memo.title}/><br></br>
-                                                <textarea defaultValue={memo.content}></textarea>
-                                            </div>
+                            posts.map((post, index)=>{
+                                return (
+                                    <article key={index}>
+                                        {
+                                            post.enableUpdate
+                                            ?
+                                            //수정하기
+                                            <>
+                                                <div className="post">
+                                                    <input type="text" defaultValue={post.title}/><br></br>
+                                                    <textarea defaultValue={post.content}></textarea>
+                                                </div>
 
-                                            <ul className="btns">
-                                                <li onClick={()=>updatePost(index)}>Enter</li>
-                                                <li onClick={()=>disableUpdate(index)}>Cancel</li>
-                                            </ul>
-                                        </>
-                                        :
-                                        //출력모드
-                                        <>
-                                            <div className="post">
-                                                <h2>{memo.title}</h2>
-                                                <p>{memo.content}</p>
-                                            </div>
+                                                <ul className="btns">
+                                                    <li onClick={()=>updatePost(index)}>Enter</li>
+                                                    <li onClick={()=>disableUpdate(index)}>Cancel</li>
+                                                </ul>
+                                            </>
+                                            :
+                                            //출력모드
+                                            <>
+                                                <div className="post">
+                                                    <h2>{post.title}</h2>
+                                                    <p>{post.content}</p>
+                                                </div>
 
-                                            <ul className="btns">
-                                                <li onClick={()=>enableUpdate(index)}><i className="fas fa-wrench"></i></li>
-                                                <li onClick={()=>deletePost(index)}><i className="fas fa-times-circle"></i></li>
-                                            </ul>
-                                        </>
-                                    }
-                                </article>
-                            )
+                                                <ul className="btns">
+                                                    <li onClick={()=>enableUpdate(index)}><i className="fas fa-wrench"></i></li>
+                                                    <li onClick={()=>deletePost(index)}><i className="fas fa-times-circle"></i></li>
+                                                </ul>
+                                            </>
+                                        }
+                                    </article>
+                                )
                             })
                         }
                     </section>
