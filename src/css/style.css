@@ -2770,6 +2770,25 @@ figure {
           color: #fff;
           font: bold 17px/1.5 "poppins";
           letter-spacing: 1px; }
+  figure #btns {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%); }
+    figure #btns li {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background: #c7c7c7;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: 0.5s; }
+      figure #btns li:hover {
+        background: crimson;
+        transition: 0.5s; }
+      figure #btns li.on {
+        height: 80px;
+        background: crimson; }
   figure footer {
     width: 100%;
     padding-top: 100px; }

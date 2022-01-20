@@ -1,0 +1,25 @@
+#btns {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: rgb(199, 199, 199);
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            background: crimson;
+            transition: 0.5s;
+        }
+        &.on {
+            height: 80px;
+            background: crimson;
+        }
+    }
+}
