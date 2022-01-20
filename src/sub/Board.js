@@ -24,7 +24,9 @@ function Board(){
         if(data){
             return JSON.parse(data)
         }else{
-            return [];
+            return [
+                {title:"Welcome to Umbrella", content:"Here Comes Important Notice"}
+            ];
         }
     }
 
