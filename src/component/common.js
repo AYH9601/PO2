@@ -1,6 +1,5 @@
 import {NavLink} from "react-router-dom";
 // import { useState } from "react/cjs/react.development";
-import { useEffect,useState } from "react";
 
 function Header(){
     const active = {color:"crimson"}
@@ -126,109 +125,5 @@ function Footer(){
     )
 }
 
-function LatestStories(){
-    return (
-        <div className="inner">
-            <div className="latestStories">
-                <h3>Latest Stories</h3>
 
-                <article>
-                    <h4>Science</h4>
-                    <ul>
-                        <li className="LSTitle">
-                            How Does a Virus Inhibitor Work
-                        </li>
-                        <li className="LSArticle">
-                            The FDA has authorized Umbrella's COVID-20 oral treatment for emergency use.</li>
-                    </ul>
-                    <div className="LSPic">
-                        <div className="articlePic1">
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <h4>Our<br></br>Products</h4>
-                    <ul>
-                        <li className="LSTitle">Finally, A Cure For Progeria Has Been Completed.</li>
-                        <li className="LSArticle">
-                            After the efforts of many scientists, we have created a treatment using a new virus.</li>
-                    </ul>
-                    <div className="LSPic">
-                        <div className="articlePic2">
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <h4>Our<br></br>Purpose</h4>
-                    <ul>
-                        <li className="LSTitle">Umbrella's Institue Vision</li>
-                        <li className="LSArticle">We will protect humanity with an umbrella.</li>
-                    </ul>
-                    <div className="LSPic">
-                        <div className="articlePic3">
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <button>See More News</button>
-                </article>
-            </div>
-        </div>
-    )
-}
-
-function BoardNews(){
-    const getLocalItems=()=>{
-        let data = localStorage.getItem("posts");
-
-        if(data){
-            let result = JSON.parse(data)
-            result = result.splice(0,7);
-            return result;
-        }else {
-            return [
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"}
-            ]
-        }
-    }
-
-    const [posts]=useState(getLocalItems)
-
-    useEffect(()=>{
-        localStorage.setItem("posts", JSON.stringify(posts));
-    },[posts])
-
-    return(
-        <section id="boardNews">
-            <div className="inner">
-                <h3>RECENT Critical Notice</h3>
-                <div className="txtBox">
-                    {
-                        posts.map((post,index)=>{
-                            return(
-                                <article key={index} >
-                                    <NavLink exact to="/Board"><h4>{post.title}</h4></NavLink>
-                                    <p>{post.content}</p>
-                                </article>
-                            )
-                        })
-                    }
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export {Header, Footer, LatestStories, BoardNews};
+export {Header, Footer};

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState, useRef } from "react";
-import { LatestStories } from "../component/common";
+import LatestStories from "../component/MainParts/LatestStories"
 
 const path = process.env.PUBLIC_URL;
 const body = document.querySelector("body");

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { LatestStories } from "../component/common";
+import LatestStories from "../component/MainParts/LatestStories"
 
 
 function Department(){

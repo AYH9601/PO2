@@ -1,6 +1,7 @@
 import MainOne from "../component/MainParts/MainOne";
 import MainTwo from "../component/MainParts/MainTwo";
-import { BoardNews, LatestStories } from "../component/common";
+import LatestStories from "../component/MainParts/LatestStories"
+import BoardNews from "../component/MainParts/BoardNews"
 import MainThree from "../component/MainParts/MainThree";
 import MainFour from "../component/MainParts/MainFour";
 import MainFive from "../component/MainParts/MainFive";
