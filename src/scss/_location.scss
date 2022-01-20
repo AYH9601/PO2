@@ -229,30 +229,13 @@
                     color: #000;
                     margin-bottom: 30px;
                 }
-                // button {
-                //     cursor: pointer;
-                //     width: 500px;
-                //     height: 70px;
-                //     background: none;
-                //     border: 2px solid crimson;
-                //     border-radius: 35px;
-                //     font: bold 17px/1 "poppins";
-                //     color: crimson;
-                //     transition: 0.2s;
-        
-                //     &:hover {
-                //         background-color: crimson; 
-                //         color: #fff;
-                //         transition: 0.2s;
-                //     }
-                // }
             }
     
         }
 
         .hosBox {
             display: flex;
-            margin-bottom: 200px;
+            margin-bottom: 100px;
             li {
                 width: calc(100%/4);
                 height: 300px;
@@ -299,6 +282,25 @@
                     }
                     
                 }
+            }
+        }
+
+        .hosBtn {
+            margin-bottom: 100px;
+            cursor: pointer;
+            width: 350px;
+            height: 70px;
+            background: none;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            font: bold 17px/1 "poppins";
+            color: crimson;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: crimson; 
+                color: #fff;
+                transition: 0.2s;
             }
         }
     }

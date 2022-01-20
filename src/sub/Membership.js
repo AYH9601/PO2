@@ -16,21 +16,22 @@ function Membership(){
     const [isSubmit, setIsSubmit] = useState(false);
     const [success, setSuccess] = useState(false);
 
-    const handleChange = e => {
-        const {name,value} = e.target;
-        setVal({...val,[name]:value})
+    const handleChange = e => {   
+        const {name, value} = e.target;     
+        setVal({...val, [name]: value});     
     }
 
-    const handleCheck = e => {
-        const {name} = e.target;
-        const isCheck = e.target.checked;
-        setVal({...val,[name]:isCheck});
+    const handleCheck = e => {    
+        const {name} = e.target;  
+        const isCheck = e.target.checked;   
+        setVal({...val, [name]: isCheck});  
     }
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        setIsSubmit(true)
-        setErr(check(val));
+    const handleSubmit = e =>{ 
+        e.preventDefault();   
+        setIsSubmit(true);
+        setErr(check(val));  
+        console.log(val);
     }
 
     const check = val => {
@@ -111,7 +112,8 @@ function Membership(){
                                         id="id" 
                                         placeholder="ID" 
                                         onChange={handleChange} 
-                                        required/>
+                                        // required
+                                        />
                                     <span className="err">{err.id}</span>
                                 </li>
                                 <li>
@@ -121,7 +123,8 @@ function Membership(){
                                         id="pwd1" 
                                         placeholder="PASSWORD" 
                                         onChange={handleChange} 
-                                        required/>
+                                        // required
+                                        />
                                     <span className="err">{err.pwd1}</span>
                                 </li>
                                 <li>
@@ -131,7 +134,8 @@ function Membership(){
                                         id="pwd2" 
                                         placeholder="PASSWORD Re" 
                                         onChange={handleChange} 
-                                        required/>
+                                        // required
+                                        />
                                     <span className="err">{err.pwd2}</span>
                                 </li>
                                 <li>
@@ -141,7 +145,8 @@ function Membership(){
                                         id="email" 
                                         placeholder="E-mail" 
                                         onChange={handleChange} 
-                                        required/>
+                                        // required
+                                        />
                                     <span className="err">{err.email}</span>
                                 </li>
                                 <li>
@@ -151,27 +156,29 @@ function Membership(){
                                         id="number" 
                                         placeholder="Phone Number"
                                         onChange={handleChange}  
-                                        required/>
+                                        // required
+                                        />
                                     <span className="err">{err.number}</span>
                                 </li>
+                                
                                 <li className="aim">
                                     <input 
                                         type="radio" 
-                                        value="scientist" 
+                                        // value="scientist" 
                                         id="scientist" 
                                         name="aim"
                                         onChange={handleCheck}/>
                                     <label htmlFor="scientist">Scientist</label>
                                     <input 
                                         type="radio" 
-                                        value="medical" 
+                                        // value="medical" 
                                         id="medical" 
                                         name="aim"
                                         onChange={handleCheck}/>
                                     <label htmlFor="medical">Medical</label>
                                     <input 
                                         type="radio" 
-                                        value="student" 
+                                        // value="student" 
                                         id="student" 
                                         name="aim"
                                         onChange={handleCheck}/>

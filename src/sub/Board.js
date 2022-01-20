@@ -25,7 +25,8 @@ function Board(){
             return JSON.parse(data)
         }else{
             return [
-                {title:"Welcome to Umbrella", content:"Here Comes Important Notice"}
+                {title:"Welcome to Umbrella", content:"Here Comes Important Notice"},
+                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"}
             ];
         }
     }
@@ -81,7 +82,7 @@ function Board(){
         setPosts(
             posts.map((post, postIndex)=>{
                 if(postIndex === index){
-                    const article = showBox.current.children[index];
+                    // const article = showBox.current.children[index];
                     // const input = article.querySelector("input");
                     // const textarea = article.querySelector("textarea");
                     // post.title = input.value;

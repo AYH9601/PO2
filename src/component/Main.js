@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { LatestStories } from "../component/common";
+import { BoardNews, LatestStories } from "../component/common";
 
 
 function Main(){
@@ -40,6 +40,8 @@ function Main(){
                 </div>
 
                 <LatestStories></LatestStories>
+
+                <BoardNews></BoardNews>
 
                 <div className="three">
                     <h3>eBook</h3>

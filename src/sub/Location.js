@@ -195,7 +195,6 @@ function Location(){
                         <p>
                             You can find very advanced biotechnology and pharmaceutical technology at Umbrella Hospital. For patients and their families, our medical staff are committed to providing the best possible support at all times.
                         </p>
-                        {/* <button>Find out more about the Our hospital</button> */}
                     </div>
                 </div>
 
@@ -203,7 +202,6 @@ function Location(){
                     <li>
                         <div className="box">
                             <div className="hos">
-                                {/* <div className="pic"></div> */}
                                 <h3>Public Health and Medical Agency</h3>
                                 <p>
                                     For the development of public health care We are running a variety of businesses.
@@ -246,6 +244,8 @@ function Location(){
                         </div>
                     </li>
                 </ul>
+
+                <button className="hosBtn">Umbrella General Hospital</button>
             </div>
         </section>
     )

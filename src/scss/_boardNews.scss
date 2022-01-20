@@ -1,0 +1,45 @@
+#boardNews {
+    margin-bottom: 150px;
+    .inner {
+        h3 {
+            font: bold 18px "poppins";
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 60px;
+        }
+
+        .txtBox {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: flex-start;
+            align-content: space-between;
+            flex-wrap: wrap;
+
+            article {
+                cursor: pointer;
+                width: calc(100%/4);
+                height: 50%;
+                background: crimson;
+                border: 1px solid #fff;
+                padding: 50px 20px;
+                transition: 0.25s;
+
+                &:hover {
+                    background: darkred; transition: 0.2s;
+                }
+                h4 {
+                    color: #fff;
+                    font: bold 18px/1 "poppins";
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: #fff;
+                    font: bold 17px/1.5 "poppins";
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

@@ -2442,18 +2442,6 @@ figure {
         figure .membership .inner main article .join ul.page2 li .btn {
           position: relative;
           text-align: center; }
-          figure .membership .inner main article .join ul.page2 li .btn input[type=submit] {
-            cursor: pointer;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: none;
-            background-color: #c8c8c8;
-            font: bold 30px/1 "poppins";
-            color: #fff; }
-            figure .membership .inner main article .join ul.page2 li .btn input[type=submit]:hover {
-              background-color: crimson;
-              color: #fff; }
           figure .membership .inner main article .join ul.page2 li .btn i {
             cursor: pointer;
             display: block;
@@ -2688,7 +2676,7 @@ figure {
           margin-bottom: 30px; }
     figure .location .inner .hosBox {
       display: flex;
-      margin-bottom: 200px; }
+      margin-bottom: 100px; }
       figure .location .inner .hosBox li {
         width: calc(100%/4);
         height: 300px; }
@@ -2733,6 +2721,55 @@ figure {
               left: 20px;
               bottom: 10px;
               cursor: pointer; }
+    figure .location .inner .hosBtn {
+      margin-bottom: 100px;
+      cursor: pointer;
+      width: 350px;
+      height: 70px;
+      background: none;
+      border: 2px solid crimson;
+      border-radius: 35px;
+      font: bold 17px/1 "poppins";
+      color: crimson;
+      transition: 0.2s; }
+      figure .location .inner .hosBtn:hover {
+        background-color: crimson;
+        color: #fff;
+        transition: 0.2s; }
+  figure #boardNews {
+    margin-bottom: 150px; }
+    figure #boardNews .inner h3 {
+      font: bold 18px "poppins";
+      letter-spacing: 1px;
+      color: #333;
+      margin-bottom: 60px; }
+    figure #boardNews .inner .txtBox {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap; }
+      figure #boardNews .inner .txtBox article {
+        cursor: pointer;
+        width: calc(100%/4);
+        height: 50%;
+        background: crimson;
+        border: 1px solid #fff;
+        padding: 50px 20px;
+        transition: 0.25s; }
+        figure #boardNews .inner .txtBox article:hover {
+          background: darkred;
+          transition: 0.2s; }
+        figure #boardNews .inner .txtBox article h4 {
+          color: #fff;
+          font: bold 18px/1 "poppins";
+          letter-spacing: 1px;
+          margin-bottom: 10px; }
+        figure #boardNews .inner .txtBox article p {
+          color: #fff;
+          font: bold 17px/1.5 "poppins";
+          letter-spacing: 1px; }
   figure footer {
     width: 100%;
     padding-top: 100px; }
