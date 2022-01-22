@@ -43,3 +43,14 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet){
+    #boardNews {
+        margin-left: 30px;
+        margin-right: 30px;
+
+        .inner {
+            width: 100%;
+        }
+    }
+}

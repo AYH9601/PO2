@@ -586,46 +586,20 @@
 
 @media screen and (max-width: $tablet){
     .main {
+        width: 100%;
         position: relative;
+
         .one {
-            padding-top: 220px;
-            text-align: center;
-            width: 100%;
-            height: 800px;
-            background-image: url(../../public/img/virus.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-            h1 {
-                font: bold 90px/1.2 "poppins";
-                color: #000;
-                margin-bottom: 30px;
-            }
-            p {
-                font: bold 22px/1.8 "poppins";
-                color: crimson;
-                margin-bottom: 35px;
-            }
             button {
-                cursor: pointer;
-                width: 240px;
-                height: 70px;
-                background: none;
-                border: 2px solid crimson;
-                border-radius: 35px;
-                font: bold 17px/1 "poppins";
-                color: crimson;
-                transition: 0.2s;
-    
-                &:hover {
-                    background-color: crimson; 
-                    color: #fff;
-                    transition: 0.2s;
-                }
+                background: crimson;
+                color: #fff;
             }
         }
     
         .two {
+            padding-left: 30px;
+            padding-right: 30px;
+
             height: 750px;
             &::after{content: ""; display: block; clear: both;}
     
@@ -681,6 +655,9 @@
         }
         
         .latestStories {
+            padding-left: 30px;
+            padding-right: 60px;
+            
             h3 {
                 font: bold 18px "poppins";
                 letter-spacing: 1px;
@@ -722,7 +699,7 @@
     
                 h4 {
                     float: left;
-                    width: 18%;
+                    width: 19%;
                     font: bold 18px "poppins";
                     color: #444;
                 }
@@ -783,6 +760,9 @@
         }
     
         .three {
+            padding-left: 30px;
+            padding-right: 30px;
+
             height: 500px;
             &::after{content: ""; display: block; clear: both;}
     
@@ -839,6 +819,9 @@
         }
     
         .four {
+            padding-left: 30px;
+            padding-right: 30px;
+
             height: 600px;
             &::after{content: ""; display: block; clear: both;}
     
@@ -859,10 +842,10 @@
             }
     
             .fourRight {
-                padding: 0px 0px 0px 120px;
+                padding: 0px 0px 0px 25px;
                 float: left;
-                width: 55%;
-                
+                width: 50%;
+
                 h4 {
                     font: bold 30px/1.2 "poppins";
                     color: #000;
@@ -890,6 +873,9 @@
         }
     
         .five {
+            padding-left: 30px;
+            padding-right: 30px;
+
             h3 {
                 font: bold 18px "poppins";
                 letter-spacing: 1px;
@@ -1006,6 +992,9 @@
         }
     
         .six {
+            padding-left: 30px;
+            padding-right: 30px;
+
             border-bottom: 1px solid rgb(201, 201, 201);
             h3 {
                 font: bold 18px "poppins";
@@ -1042,6 +1031,9 @@
         }
     
         .seven {
+            padding-left: 30px;
+            padding-right: 30px;
+
             &::after {content: ""; display: block; clear: both;}
     
             h3 {

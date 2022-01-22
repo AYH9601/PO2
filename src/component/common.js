@@ -3,6 +3,9 @@ import {NavLink} from "react-router-dom";
 
 function Header(){
     const active = {color:"crimson"}
+    const btnCall = document.querySelector(".btnCall"); 
+    const menuMo = document.querySelector(".menuMo");
+
     return (
         <header>
             <div className="inner">
@@ -40,7 +43,10 @@ function Header(){
                 </nav>
 
 
-                <div className="btnCall">
+                <div className="btnCall" onClick={()=>{
+                    btnCall.classList.toggle("on");  
+                    menuMo.classList.toggle("on"); 
+                }}>
                     <span>Call button</span>
                 </div>
 

@@ -176,7 +176,7 @@ figure {
           position: absolute;
           top: 0;
           left: 0;
-          transition: top 0.5s; }
+          transition: 0.5s; }
         figure header .inner .btnCall::after {
           content: '';
           width: 100%;
@@ -185,7 +185,7 @@ figure {
           position: absolute;
           bottom: 0;
           left: 0;
-          transition: bottom 0.5s; }
+          transition: 0.5s; }
         figure header .inner .btnCall span {
           width: 100%;
           height: 2px;
@@ -196,6 +196,12 @@ figure {
           left: 0;
           text-indent: -9999px;
           transition: 0.5s; }
+        figure header .inner .btnCall.on::before {
+          background: crimson; }
+        figure header .inner .btnCall.on::after {
+          background: crimson; }
+        figure header .inner .btnCall.on span {
+          background: crimson; }
       figure header .inner .munuMo {
         display: none; }
       figure header .inner .gnbMo {
@@ -208,7 +214,8 @@ figure {
       height: 100px;
       background: #fff;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      position: fixed; }
+      position: fixed;
+      z-index: 10; }
       figure header .inner {
         width: 100%;
         height: 100%;
@@ -237,13 +244,17 @@ figure {
           z-index: 12; }
         figure header .inner .menuMo {
           display: block;
-          z-index: 11;
+          z-index: 9;
           position: fixed;
           top: 0px;
+          left: -50vw;
           width: 50vw;
           height: 100vh;
           background: #fff;
-          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          transition: 0.5s; }
+          figure header .inner .menuMo.on {
+            left: 0px; }
           figure header .inner .menuMo > .gnbMo {
             display: block;
             padding-top: 120px;
@@ -729,38 +740,14 @@ figure {
           transition: 0.2s; }
   @media screen and (max-width: 1179px) {
     figure .main {
+      width: 100%;
       position: relative; }
-      figure .main .one {
-        padding-top: 220px;
-        text-align: center;
-        width: 100%;
-        height: 800px;
-        background-image: url(../../public/img/virus.jpg);
-        background-repeat: no-repeat;
-        background-size: cover; }
-        figure .main .one h1 {
-          font: bold 90px/1.2 "poppins";
-          color: #000;
-          margin-bottom: 30px; }
-        figure .main .one p {
-          font: bold 22px/1.8 "poppins";
-          color: crimson;
-          margin-bottom: 35px; }
-        figure .main .one button {
-          cursor: pointer;
-          width: 240px;
-          height: 70px;
-          background: none;
-          border: 2px solid crimson;
-          border-radius: 35px;
-          font: bold 17px/1 "poppins";
-          color: crimson;
-          transition: 0.2s; }
-          figure .main .one button:hover {
-            background-color: crimson;
-            color: #fff;
-            transition: 0.2s; }
+      figure .main .one button {
+        background: crimson;
+        color: #fff; }
       figure .main .two {
+        padding-left: 30px;
+        padding-right: 30px;
         height: 750px; }
         figure .main .two::after {
           content: "";
@@ -805,84 +792,89 @@ figure {
               background-color: crimson;
               color: #fff;
               transition: 0.2s; }
-      figure .main .latestStories h3 {
-        font: bold 18px "poppins";
-        letter-spacing: 1px;
-        color: #333;
-        margin-bottom: 40px; }
-      figure .main .latestStories article {
-        width: 100%;
-        border-top: 1.5px solid #c9c9c9;
-        padding-top: 40px;
-        padding-bottom: 40px; }
-        figure .main .latestStories article::after {
-          content: "";
-          display: block;
-          clear: both; }
-        figure .main .latestStories article:last-child {
-          border-top: none;
-          text-align: center; }
-          figure .main .latestStories article:last-child button {
-            cursor: pointer;
-            display: inline-block;
-            background-color: #fff;
-            border: 2px solid crimson;
-            border-radius: 35px;
-            width: 220px;
-            height: 70px;
-            font: bold 18px/1 "poppins";
-            color: crimson;
-            transition: 0.3s; }
-            figure .main .latestStories article:last-child button:hover {
-              background-color: crimson;
-              color: #fff;
-              transition: 0.3s; }
-        figure .main .latestStories article h4 {
-          float: left;
-          width: 18%;
+      figure .main .latestStories {
+        padding-left: 30px;
+        padding-right: 60px; }
+        figure .main .latestStories h3 {
           font: bold 18px "poppins";
-          color: #444; }
-        figure .main .latestStories article ul {
-          float: left;
-          width: 47%; }
-          figure .main .latestStories article ul .LSTitle {
-            font: bold 40px/1.5 "poppins";
-            margin-bottom: 20px;
-            color: crimson;
-            cursor: pointer; }
-          figure .main .latestStories article ul .LSArticle {
-            font: bold 18px/1.5 "poppins";
-            letter-spacing: 1px;
+          letter-spacing: 1px;
+          color: #333;
+          margin-bottom: 40px; }
+        figure .main .latestStories article {
+          width: 100%;
+          border-top: 1.5px solid #c9c9c9;
+          padding-top: 40px;
+          padding-bottom: 40px; }
+          figure .main .latestStories article::after {
+            content: "";
+            display: block;
+            clear: both; }
+          figure .main .latestStories article:last-child {
+            border-top: none;
+            text-align: center; }
+            figure .main .latestStories article:last-child button {
+              cursor: pointer;
+              display: inline-block;
+              background-color: #fff;
+              border: 2px solid crimson;
+              border-radius: 35px;
+              width: 220px;
+              height: 70px;
+              font: bold 18px/1 "poppins";
+              color: crimson;
+              transition: 0.3s; }
+              figure .main .latestStories article:last-child button:hover {
+                background-color: crimson;
+                color: #fff;
+                transition: 0.3s; }
+          figure .main .latestStories article h4 {
+            float: left;
+            width: 19%;
+            font: bold 18px "poppins";
             color: #444; }
-        figure .main .latestStories article .LSPic {
-          float: left;
-          width: 35%;
-          height: 220px; }
-          figure .main .latestStories article .LSPic .articlePic1 {
-            width: 100%;
-            height: 220px;
-            background-image: url(../../public/img/virusArticle.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 10px;
-            margin-bottom: 20px; }
-          figure .main .latestStories article .LSPic .articlePic2 {
-            width: 100%;
-            height: 220px;
-            background-image: url(../../public/img/TvirusArticle.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 10px;
-            margin-bottom: 20px; }
-          figure .main .latestStories article .LSPic .articlePic3 {
-            width: 100%;
-            height: 220px;
-            background-image: url(../../public/img/unboxingArticle.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 10px;
-            margin-bottom: 20px; }
+          figure .main .latestStories article ul {
+            float: left;
+            width: 47%; }
+            figure .main .latestStories article ul .LSTitle {
+              font: bold 40px/1.5 "poppins";
+              margin-bottom: 20px;
+              color: crimson;
+              cursor: pointer; }
+            figure .main .latestStories article ul .LSArticle {
+              font: bold 18px/1.5 "poppins";
+              letter-spacing: 1px;
+              color: #444; }
+          figure .main .latestStories article .LSPic {
+            float: left;
+            width: 35%;
+            height: 220px; }
+            figure .main .latestStories article .LSPic .articlePic1 {
+              width: 100%;
+              height: 220px;
+              background-image: url(../../public/img/virusArticle.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 10px;
+              margin-bottom: 20px; }
+            figure .main .latestStories article .LSPic .articlePic2 {
+              width: 100%;
+              height: 220px;
+              background-image: url(../../public/img/TvirusArticle.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 10px;
+              margin-bottom: 20px; }
+            figure .main .latestStories article .LSPic .articlePic3 {
+              width: 100%;
+              height: 220px;
+              background-image: url(../../public/img/unboxingArticle.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 10px;
+              margin-bottom: 20px; }
       figure .main .three {
+        padding-left: 30px;
+        padding-right: 30px;
         height: 500px; }
         figure .main .three::after {
           content: "";
@@ -927,6 +919,8 @@ figure {
               color: #fff;
               transition: 0.2s; }
       figure .main .four {
+        padding-left: 30px;
+        padding-right: 30px;
         height: 600px; }
         figure .main .four::after {
           content: "";
@@ -945,9 +939,9 @@ figure {
           background-repeat: no-repeat;
           background-size: cover; }
         figure .main .four .fourRight {
-          padding: 0px 0px 0px 120px;
+          padding: 0px 0px 0px 25px;
           float: left;
-          width: 55%; }
+          width: 50%; }
           figure .main .four .fourRight h4 {
             font: bold 30px/1.2 "poppins";
             color: #000;
@@ -966,100 +960,105 @@ figure {
               background-color: crimson;
               color: #fff;
               transition: 0.2s; }
-      figure .main .five h3 {
-        font: bold 18px "poppins";
-        letter-spacing: 1px;
-        color: #333;
-        margin-bottom: 40px; }
-      figure .main .five span {
-        display: block;
-        font: bold 40px/1.5 "poppins";
-        color: #000;
-        margin-bottom: 20px; }
-      figure .main .five button {
-        cursor: pointer;
-        width: 250px;
-        height: 70px;
-        background: none;
-        border: 2px solid crimson;
-        border-radius: 35px;
-        font: bold 17px/1 "poppins";
-        color: crimson;
-        transition: 0.2s;
-        margin-bottom: 100px; }
-        figure .main .five button:hover {
-          background-color: crimson;
-          color: #fff;
-          transition: 0.2s; }
-      figure .main .five .fiveLower {
-        overflow: hidden; }
-        figure .main .five .fiveLower ul {
-          width: 1700px; }
-          figure .main .five .fiveLower ul::after {
-            content: "";
-            display: block;
-            clear: both; }
-          figure .main .five .fiveLower ul li {
-            float: left;
-            width: 400px;
-            height: 600px;
-            margin-right: 25px; }
-            figure .main .five .fiveLower ul li:last-child {
-              margin-right: none; }
-            figure .main .five .fiveLower ul li:nth-of-type(1) .fivePic {
-              background-image: url(../../public/img/covid1.jpg); }
-            figure .main .five .fiveLower ul li:nth-of-type(2) .fivePic {
-              background-image: url(../../public/img/covid2.jpg); }
-            figure .main .five .fiveLower ul li:nth-of-type(3) .fivePic {
-              background-image: url(../../public/img/covid3.jpg); }
-            figure .main .five .fiveLower ul li:nth-of-type(4) .fivePic {
-              background-image: url(../../public/img/covid4.jpg); }
-            figure .main .five .fiveLower ul li .fivePic {
-              width: 400px;
-              height: 220px;
-              border-radius: 10px;
-              margin-bottom: 30px;
-              background-repeat: no-repeat;
-              background-size: cover; }
-            figure .main .five .fiveLower ul li h1 {
-              font: bold 30px/1.3 "poppins";
-              color: #000;
-              margin-bottom: 20px; }
-            figure .main .five .fiveLower ul li p {
-              font: bold 20px/1.7 "poppins";
-              color: #333;
-              margin-bottom: 20px; }
-            figure .main .five .fiveLower ul li strong {
-              font: bold 20px/1 "poppins";
-              color: crimson;
-              cursor: pointer; }
-      figure .main .five .pagination {
-        margin-top: 20px;
-        margin-bottom: 100px;
-        padding-top: 40px;
-        border-top: 3px solid #c9c9c9;
-        width: 100%; }
-        figure .main .five .pagination .leftCircle, figure .main .five .pagination .rightCircle {
-          cursor: pointer;
-          display: inline-block;
-          margin-right: 15px;
-          font-size: 25px;
-          width: 40px;
-          height: 40px;
-          border: 2px solid #000;
+      figure .main .five {
+        padding-left: 30px;
+        padding-right: 30px; }
+        figure .main .five h3 {
+          font: bold 18px "poppins";
+          letter-spacing: 1px;
+          color: #333;
+          margin-bottom: 40px; }
+        figure .main .five span {
+          display: block;
+          font: bold 40px/1.5 "poppins";
           color: #000;
-          border-radius: 50%;
+          margin-bottom: 20px; }
+        figure .main .five button {
+          cursor: pointer;
+          width: 250px;
+          height: 70px;
+          background: none;
+          border: 2px solid crimson;
+          border-radius: 35px;
+          font: bold 17px/1 "poppins";
+          color: crimson;
           transition: 0.2s;
-          transform: translateY(3px); }
-          figure .main .five .pagination .leftCircle i, figure .main .five .pagination .rightCircle i {
-            margin-left: 7px; }
-          figure .main .five .pagination .leftCircle:hover, figure .main .five .pagination .rightCircle:hover {
+          margin-bottom: 100px; }
+          figure .main .five button:hover {
+            background-color: crimson;
             color: #fff;
-            border-bottom: none;
-            border: 2px solid #555;
-            background-color: #555;
             transition: 0.2s; }
+        figure .main .five .fiveLower {
+          overflow: hidden; }
+          figure .main .five .fiveLower ul {
+            width: 1700px; }
+            figure .main .five .fiveLower ul::after {
+              content: "";
+              display: block;
+              clear: both; }
+            figure .main .five .fiveLower ul li {
+              float: left;
+              width: 400px;
+              height: 600px;
+              margin-right: 25px; }
+              figure .main .five .fiveLower ul li:last-child {
+                margin-right: none; }
+              figure .main .five .fiveLower ul li:nth-of-type(1) .fivePic {
+                background-image: url(../../public/img/covid1.jpg); }
+              figure .main .five .fiveLower ul li:nth-of-type(2) .fivePic {
+                background-image: url(../../public/img/covid2.jpg); }
+              figure .main .five .fiveLower ul li:nth-of-type(3) .fivePic {
+                background-image: url(../../public/img/covid3.jpg); }
+              figure .main .five .fiveLower ul li:nth-of-type(4) .fivePic {
+                background-image: url(../../public/img/covid4.jpg); }
+              figure .main .five .fiveLower ul li .fivePic {
+                width: 400px;
+                height: 220px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                background-repeat: no-repeat;
+                background-size: cover; }
+              figure .main .five .fiveLower ul li h1 {
+                font: bold 30px/1.3 "poppins";
+                color: #000;
+                margin-bottom: 20px; }
+              figure .main .five .fiveLower ul li p {
+                font: bold 20px/1.7 "poppins";
+                color: #333;
+                margin-bottom: 20px; }
+              figure .main .five .fiveLower ul li strong {
+                font: bold 20px/1 "poppins";
+                color: crimson;
+                cursor: pointer; }
+        figure .main .five .pagination {
+          margin-top: 20px;
+          margin-bottom: 100px;
+          padding-top: 40px;
+          border-top: 3px solid #c9c9c9;
+          width: 100%; }
+          figure .main .five .pagination .leftCircle, figure .main .five .pagination .rightCircle {
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            border-radius: 50%;
+            transition: 0.2s;
+            transform: translateY(3px); }
+            figure .main .five .pagination .leftCircle i, figure .main .five .pagination .rightCircle i {
+              margin-left: 7px; }
+            figure .main .five .pagination .leftCircle:hover, figure .main .five .pagination .rightCircle:hover {
+              color: #fff;
+              border-bottom: none;
+              border: 2px solid #555;
+              background-color: #555;
+              transition: 0.2s; }
       figure .main .six {
+        padding-left: 30px;
+        padding-right: 30px;
         border-bottom: 1px solid #c9c9c9; }
         figure .main .six h3 {
           font: bold 18px "poppins";
@@ -1086,109 +1085,112 @@ figure {
             background-color: crimson;
             color: #fff;
             transition: 0.2s; }
-      figure .main .seven::after {
-        content: "";
-        display: block;
-        clear: both; }
-      figure .main .seven h3 {
-        font: bold 18px "poppins";
-        letter-spacing: 1px;
-        color: #333;
-        margin-bottom: 20px;
-        margin-top: 70px; }
-      figure .main .seven .sevenLeft {
-        padding-top: 50px;
-        float: left;
-        width: 50%; }
-        figure .main .seven .sevenLeft p {
-          font: bold 40px/1.5 "poppins";
-          color: #000;
-          margin-bottom: 40px; }
-        figure .main .seven .sevenLeft button {
-          cursor: pointer;
-          width: 200px;
-          height: 60px;
-          background: none;
-          border: 2px solid crimson;
-          border-radius: 35px;
-          font: bold 14px/1 "poppins";
-          color: crimson;
-          transition: 0.2s;
-          margin-bottom: 80px; }
-          figure .main .seven .sevenLeft button:hover {
-            background-color: crimson;
-            color: #fff;
-            transition: 0.2s; }
-      figure .main .seven .sevenRight {
-        float: left;
-        width: 50%;
-        height: 900px; }
-        figure .main .seven .sevenRight ul {
-          height: 900px;
-          width: 4000px; }
-          figure .main .seven .sevenRight ul::after {
-            content: "";
-            display: block;
-            clear: both; }
-          figure .main .seven .sevenRight ul li {
+      figure .main .seven {
+        padding-left: 30px;
+        padding-right: 30px; }
+        figure .main .seven::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .main .seven h3 {
+          font: bold 18px "poppins";
+          letter-spacing: 1px;
+          color: #333;
+          margin-bottom: 20px;
+          margin-top: 70px; }
+        figure .main .seven .sevenLeft {
+          padding-top: 50px;
+          float: left;
+          width: 50%; }
+          figure .main .seven .sevenLeft p {
+            font: bold 40px/1.5 "poppins";
+            color: #000;
+            margin-bottom: 40px; }
+          figure .main .seven .sevenLeft button {
             cursor: pointer;
-            float: left;
-            margin-right: 25px; }
-            figure .main .seven .sevenRight ul li:hover h4 {
-              display: inline-block;
-              border-bottom: 2px solid #000; }
-            figure .main .seven .sevenRight ul li .sevenPic {
-              background-image: url(../../public/img/virus2.jpg);
-              background-repeat: no-repeat;
-              background-size: cover;
-              width: 590px;
-              height: 750px;
-              border-radius: 10px; }
-            figure .main .seven .sevenRight ul li:nth-of-type(2) .sevenPic {
-              background-image: url(../../public/img/virus7.png); }
-            figure .main .seven .sevenRight ul li:nth-of-type(3) .sevenPic {
-              background-image: url(../../public/img/virus3.jpg); }
-            figure .main .seven .sevenRight ul li:nth-of-type(4) .sevenPic {
-              background-image: url(../../public/img/virus6.jpg); }
-            figure .main .seven .sevenRight ul li:nth-of-type(5) .sevenPic {
-              background-image: url(../../public/img/virus5.jpg); }
-            figure .main .seven .sevenRight ul li:nth-of-type(6) .sevenPic {
-              background-image: url(../../public/img/virus8.png); }
-            figure .main .seven .sevenRight ul li h3 {
-              font: bold 18px/1 "poppins";
-              letter-spacing: 1px;
-              color: #333;
-              margin-top: 30px; }
-            figure .main .seven .sevenRight ul li h4 {
-              font: bold 25px/1 "poppins";
-              color: #000; }
-      figure .main .seven .pagination {
-        float: left;
-        width: 100%;
-        border-top: 3px solid #c9c9c9;
-        margin-top: 10px;
-        padding-top: 40px;
-        margin-bottom: 80px; }
-        figure .main .seven .pagination .leftCircle, figure .main .seven .pagination .rightCircle {
-          cursor: pointer;
-          display: inline-block;
-          margin-right: 15px;
-          font-size: 25px;
-          width: 40px;
-          height: 40px;
-          border: 2px solid #000;
-          color: #000;
-          border-radius: 50%;
-          transition: 0.2s;
-          transform: translateY(3px); }
-          figure .main .seven .pagination .leftCircle i, figure .main .seven .pagination .rightCircle i {
-            margin-left: 7px; }
-          figure .main .seven .pagination .leftCircle:hover, figure .main .seven .pagination .rightCircle:hover {
-            color: #fff;
-            border-bottom: none;
-            border: 2px solid #555;
-            background-color: #555;
-            transition: 0.2s; } }
+            width: 200px;
+            height: 60px;
+            background: none;
+            border: 2px solid crimson;
+            border-radius: 35px;
+            font: bold 14px/1 "poppins";
+            color: crimson;
+            transition: 0.2s;
+            margin-bottom: 80px; }
+            figure .main .seven .sevenLeft button:hover {
+              background-color: crimson;
+              color: #fff;
+              transition: 0.2s; }
+        figure .main .seven .sevenRight {
+          float: left;
+          width: 50%;
+          height: 900px; }
+          figure .main .seven .sevenRight ul {
+            height: 900px;
+            width: 4000px; }
+            figure .main .seven .sevenRight ul::after {
+              content: "";
+              display: block;
+              clear: both; }
+            figure .main .seven .sevenRight ul li {
+              cursor: pointer;
+              float: left;
+              margin-right: 25px; }
+              figure .main .seven .sevenRight ul li:hover h4 {
+                display: inline-block;
+                border-bottom: 2px solid #000; }
+              figure .main .seven .sevenRight ul li .sevenPic {
+                background-image: url(../../public/img/virus2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 590px;
+                height: 750px;
+                border-radius: 10px; }
+              figure .main .seven .sevenRight ul li:nth-of-type(2) .sevenPic {
+                background-image: url(../../public/img/virus7.png); }
+              figure .main .seven .sevenRight ul li:nth-of-type(3) .sevenPic {
+                background-image: url(../../public/img/virus3.jpg); }
+              figure .main .seven .sevenRight ul li:nth-of-type(4) .sevenPic {
+                background-image: url(../../public/img/virus6.jpg); }
+              figure .main .seven .sevenRight ul li:nth-of-type(5) .sevenPic {
+                background-image: url(../../public/img/virus5.jpg); }
+              figure .main .seven .sevenRight ul li:nth-of-type(6) .sevenPic {
+                background-image: url(../../public/img/virus8.png); }
+              figure .main .seven .sevenRight ul li h3 {
+                font: bold 18px/1 "poppins";
+                letter-spacing: 1px;
+                color: #333;
+                margin-top: 30px; }
+              figure .main .seven .sevenRight ul li h4 {
+                font: bold 25px/1 "poppins";
+                color: #000; }
+        figure .main .seven .pagination {
+          float: left;
+          width: 100%;
+          border-top: 3px solid #c9c9c9;
+          margin-top: 10px;
+          padding-top: 40px;
+          margin-bottom: 80px; }
+          figure .main .seven .pagination .leftCircle, figure .main .seven .pagination .rightCircle {
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            border-radius: 50%;
+            transition: 0.2s;
+            transform: translateY(3px); }
+            figure .main .seven .pagination .leftCircle i, figure .main .seven .pagination .rightCircle i {
+              margin-left: 7px; }
+            figure .main .seven .pagination .leftCircle:hover, figure .main .seven .pagination .rightCircle:hover {
+              color: #fff;
+              border-bottom: none;
+              border: 2px solid #555;
+              background-color: #555;
+              transition: 0.2s; } }
   figure .department {
     padding-top: 100px;
     overflow: hidden; }
@@ -2807,6 +2809,12 @@ figure {
           color: #fff;
           font: bold 17px/1.5 "poppins";
           letter-spacing: 1px; }
+  @media screen and (max-width: 1179px) {
+    figure #boardNews {
+      margin-left: 30px;
+      margin-right: 30px; }
+      figure #boardNews .inner {
+        width: 100%; } }
   figure #btns {
     position: fixed;
     top: 50%;
@@ -2826,6 +2834,9 @@ figure {
       figure #btns li.on {
         height: 80px;
         background: crimson; }
+  @media screen and (max-width: 1179px) {
+    figure #btns {
+      display: none; } }
   figure footer {
     width: 100%;
     padding-top: 100px; }
@@ -2893,5 +2904,16 @@ figure {
             figure footer .inner .lower ul .lowerRight i:hover {
               color: #333;
               transition: 0.3s; }
+  @media screen and (max-width: 1179px) {
+    figure footer .inner {
+      width: 100%; }
+      figure footer .inner .upper {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px; }
+      figure footer .inner .lower {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

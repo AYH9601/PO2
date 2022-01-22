@@ -95,3 +95,23 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: $tablet){
+    footer {
+        .inner {
+            width: 100%;
+
+            .upper {
+                width: 100%;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .lower {
+                width: 100%;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+    }
+}
