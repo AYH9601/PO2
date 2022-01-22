@@ -1,6 +1,6 @@
 function LatestStories(){
     return (
-        <div className="inner myScroll">
+        <section id="latestStories" className="myScroll">
             <div className="latestStories">
                 <h3>Latest Stories</h3>
 
@@ -48,7 +48,7 @@ function LatestStories(){
                     <button>See More News</button>
                 </article>
             </div>
-        </div>
+        </section>
     )
 }
 

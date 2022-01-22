@@ -164,8 +164,6 @@ function Department(){
                         </div>
                     </div>
                 </div>
-
-                <LatestStories></LatestStories>
             </div>
 
         </section>
