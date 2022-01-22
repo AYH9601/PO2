@@ -87,7 +87,6 @@ function Location(){
     return (
         <section className="content location">
             <div className="inner">
-
                 <div className="locationHeader">
                     <h1>Umbrella BioTechnoloy Center & Hospital</h1>
                     <h2>Need biotech and medical assistance? We always with you.</h2>

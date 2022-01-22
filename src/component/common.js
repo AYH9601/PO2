@@ -47,7 +47,7 @@ function Header(){
                     btnCall.classList.toggle("on");  
                     menuMo.classList.toggle("on"); 
                 }}>
-                    <span>Call button</span>
+                    <span className="on">Call button</span>
                 </div>
 
                 <nav className="menuMo">

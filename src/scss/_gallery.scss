@@ -117,7 +117,6 @@
                 &.on {
                     opacity: 1;
                     transform: translateX(0px);
-                    // transition: 0.5s;
                 }
 
                 >li {
@@ -429,6 +428,16 @@
                 color: crimson;
                 transition: 0.3s;
             }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .gallery {
+        margin-right: 30px;
+        margin-left: 30px;
+        .inner {
+            width: 100%;
         }
     }
 }

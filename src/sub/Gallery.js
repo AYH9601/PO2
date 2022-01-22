@@ -175,6 +175,7 @@ function Gallery(){
                         </div>
 
                         {(loading) ? <img className="loading" src={path+"/img/loadingRed.gif"} /> : ""}
+                        
                         <ul className="list" ref={list}>
                             {
                                 items.map((item, index)=>{

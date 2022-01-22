@@ -740,8 +740,9 @@ figure {
           transition: 0.2s; }
   @media screen and (max-width: 1179px) {
     figure .main {
-      width: 100%;
       position: relative; }
+      figure .main .inner {
+        width: 100%; }
       figure .main .one button {
         background: crimson;
         color: #fff; }
@@ -1496,6 +1497,10 @@ figure {
       display: none; }
     figure .department .latestStories article:last-child button {
       display: none; }
+  @media screen and (max-width: 1179px) {
+    figure .department {
+      margin-right: 30px;
+      margin-left: 30px; } }
   figure .board {
     padding-top: 100px; }
     figure .board .inner p {
@@ -1799,6 +1804,80 @@ figure {
             figure .board .inner .boardCRUD .showBox article .btns li:hover {
               transition: 0.25s;
               color: crimson; }
+  @media screen and (max-width: 1179px) {
+    figure .board {
+      margin-left: 30px;
+      margin-right: 30px; }
+      figure .board .inner {
+        width: 100%; }
+        figure .board .inner .boardInner {
+          margin-bottom: 100px; }
+          figure .board .inner .boardInner .boardLeft {
+            width: 100%; }
+            figure .board .inner .boardInner .boardLeft h1 {
+              text-align: center;
+              font: bold 40px/1.8 "poppins";
+              letter-spacing: 0.5px;
+              color: #000;
+              margin-bottom: 100px; }
+            figure .board .inner .boardInner .boardLeft #BoardSearchBox {
+              margin: 0 auto;
+              width: 515px;
+              border-bottom: 1px solid #000;
+              margin-bottom: 55px; }
+              figure .board .inner .boardInner .boardLeft #BoardSearchBox input[type=text] {
+                border: none;
+                width: 460px;
+                height: 40px; }
+              figure .board .inner .boardInner .boardLeft #BoardSearchBox input::placeholder {
+                font: bold 30px/1 "poppins";
+                color: #c8c8c8;
+                letter-spacing: 0.5px; }
+              figure .board .inner .boardInner .boardLeft #BoardSearchBox .btnSearch {
+                border: none;
+                font-size: 25px;
+                color: #999;
+                background-color: #fff;
+                transform: translateY(-10px);
+                cursor: pointer;
+                transition: 0.2s; }
+                figure .board .inner .boardInner .boardLeft #BoardSearchBox .btnSearch .arrowCircle {
+                  width: 55px;
+                  height: 55px;
+                  border: 2px solid #999;
+                  border-radius: 50%;
+                  margin-bottom: 5px;
+                  transition: 0.2s; }
+                  figure .board .inner .boardInner .boardLeft #BoardSearchBox .btnSearch .arrowCircle i {
+                    transform: translate(1px, 12px); }
+                figure .board .inner .boardInner .boardLeft #BoardSearchBox .btnSearch:hover {
+                  color: #fff;
+                  transition: -0.2s; }
+                  figure .board .inner .boardInner .boardLeft #BoardSearchBox .btnSearch:hover .arrowCircle {
+                    background-color: crimson;
+                    border: 2px solid crimson;
+                    transition: 0.2s; }
+            figure .board .inner .boardInner .boardLeft > ul {
+              margin: 0 auto;
+              width: 80%;
+              text-align: center; }
+              figure .board .inner .boardInner .boardLeft > ul li {
+                display: inline-block;
+                margin-right: 10px;
+                font: bold 17px/1 "poppins";
+                background-color: #ffd9de;
+                color: #000;
+                padding: 7px 15px 7px 15px;
+                border-radius: 17px;
+                transition: 0.3s;
+                margin-bottom: 10px;
+                cursor: pointer; }
+                figure .board .inner .boardInner .boardLeft > ul li:hover {
+                  background-color: crimson;
+                  color: #fff;
+                  transition: 0.3s; }
+          figure .board .inner .boardInner .boardRight {
+            display: none; } }
   figure .gallery {
     padding-top: 100px; }
     figure .gallery .galleryUpper p {
@@ -2114,6 +2193,12 @@ figure {
         figure .gallery .pop span:hover {
           color: crimson;
           transition: 0.3s; }
+  @media screen and (max-width: 1179px) {
+    figure .gallery {
+      margin-right: 30px;
+      margin-left: 30px; }
+      figure .gallery .inner {
+        width: 100%; } }
   figure .youtube {
     padding-top: 100px; }
     figure .youtube .inner {
@@ -2381,6 +2466,12 @@ figure {
         figure .youtube .pop span:hover {
           color: crimson;
           transition: 0.3s; }
+  @media screen and (max-width: 1179px) {
+    figure .youtube {
+      margin-left: 30px;
+      margin-right: 30px; }
+      figure .youtube .inner {
+        width: 100%; } }
   figure .membership .inner main {
     z-index: 11;
     position: absolute;
@@ -2775,6 +2866,12 @@ figure {
         background-color: crimson;
         color: #fff;
         transition: 0.2s; }
+  @media screen and (max-width: 1179px) {
+    figure .location {
+      margin-left: 30px;
+      margin-right: 30px; }
+      figure .location .inner {
+        width: 100%; } }
   figure #boardNews {
     margin-bottom: 150px; }
     figure #boardNews .inner h3 {
