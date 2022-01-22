@@ -31,43 +31,6 @@ function Youtube(){
 
                 <button>Explore Our Media</button>
 
-                <section className="data">
-
-                    <h3>Artificial Intelligence </h3>
-                    
-                    <div className="dataLeft">
-                        <h2>
-                            Ai, Data, Cloud The convergence of all these moves us into the future.
-                        </h2>
-                        <button>With Artificial Intelligence</button>
-
-                        <div className="dataBoard">
-                            <ul>
-                                <li>
-                                    Artificial Intelligence 
-                                    <i className="fas fa-arrow-right"></i>    
-                                </li>
-                                <li>
-                                    Umbrella Cloud
-                                    <i className="fas fa-arrow-right"></i>  
-                                </li>
-                                <li>
-                                    Convergence
-                                    <i className="fas fa-arrow-right"></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="dataLoading">
-                        <div className="loadingPic"></div>
-                        <h2>
-                            Umbrella DataCenter<br></br>
-                            Artificial Intelligence 
-                        </h2>
-                    </div>
-                </section>
-
                 <section className="frame">
                     <h3>Our Biotechnology Video</h3>
 
@@ -121,6 +84,43 @@ function Youtube(){
                             )
                         })
                     }
+                </section>
+
+                <section className="data">
+
+                    <h3>Artificial Intelligence </h3>
+                    
+                    <div className="dataLeft">
+                        <h2>
+                            Ai, Data, Cloud The convergence of all these moves us into the future.
+                        </h2>
+                        <button>With Artificial Intelligence</button>
+
+                        <div className="dataBoard">
+                            <ul>
+                                <li>
+                                    Artificial Intelligence 
+                                    <i className="fas fa-arrow-right"></i>    
+                                </li>
+                                <li>
+                                    Umbrella Cloud
+                                    <i className="fas fa-arrow-right"></i>  
+                                </li>
+                                <li>
+                                    Convergence
+                                    <i className="fas fa-arrow-right"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="dataLoading">
+                        <div className="loadingPic"></div>
+                        <h2>
+                            Umbrella DataCenter<br></br>
+                            Artificial Intelligence 
+                        </h2>
+                    </div>
                 </section>
 
                 {isPop ? <Pop /> : null}

@@ -19,8 +19,6 @@ function App() {
 				<Header></Header>
 				<Route exact path="/location" component={Location}></Route>
 
-				<Route exact path="/PO2/" component={Main}></Route>
-				<Route exact path="/PO2" component={Main}></Route>
 				<Route exact path="/" component={Main}></Route>
 				<Route exact path="/main" component={Main}></Route>
 

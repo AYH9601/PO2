@@ -1,4 +1,8 @@
+// import { Swiper, SwiperSlide } from "swiper/react";
+
 function MainSeven(){
+    // const swiper = new Swiper(".sevenRight")
+
     return(
         <div className="seven myScroll">
             <h3>Science</h3>

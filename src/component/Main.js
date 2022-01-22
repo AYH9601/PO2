@@ -7,6 +7,7 @@ import MainFour from "../component/MainParts/MainFour";
 import MainFive from "../component/MainParts/MainFive";
 import MainSix from "../component/MainParts/MainSix";
 import MainSeven from "../component/MainParts/MainSeven";
+// import MainEight from "../component/MainParts/MainEight";
 import Btns from "../component/MainParts/Btns";
 
 import Anime from '../class/anime.js';
@@ -78,6 +79,8 @@ function Main(){
                 <MainSix></MainSix>
 
                 <MainSeven></MainSeven>
+
+                {/* <MainEight></MainEight> */}
 
                 <Btns getIndex={getIndex}></Btns>
             </div>
