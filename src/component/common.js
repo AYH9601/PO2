@@ -42,12 +42,11 @@ function Header(){
                     </ul>
                 </nav>
 
-
                 <div className="btnCall" onClick={()=>{
                     btnCall.classList.toggle("on");  
                     menuMo.classList.toggle("on"); 
                 }}>
-                    <span className="on">Call button</span>
+                    <span>Call button</span>
                 </div>
 
                 <nav className="menuMo">
