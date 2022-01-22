@@ -39,30 +39,30 @@ function Header(){
                     </ul>
                 </nav>
 
-                <div className="tabletHeader">
-                    <div className="btnCall">
-                        <span>Call button</span>
-                    </div>
 
-                    <nav className="menuMo">
-                        <h1>
-                            <NavLink exact to="/main">
-                                <div className="headerPic"></div>
-                            </NavLink>
-                        </h1>
-
-                        <nav className="gnbMo">
-                            <ul>
-                                <li><NavLink activeStyle={active} exact to="/Department">Department</NavLink></li>
-                                <li><NavLink activeStyle={active} exact to="/Board">Board</NavLink></li>
-                                <li><NavLink activeStyle={active} exact to="/Gallery">Gallery</NavLink></li>
-                                <li><NavLink activeStyle={active} exact to="/Youtube">Youtube</NavLink></li>
-                                <li><NavLink activeStyle={active} exact to="/Membership">Membership</NavLink></li>
-                            </ul>
-                        </nav>
-                    </nav>
+                <div className="btnCall">
+                    <span>Call button</span>
                 </div>
 
+                <nav className="menuMo">
+                    <h1>
+                        <NavLink exact to="/main">
+                            <div className="headerPic"></div>
+                        </NavLink>
+                    </h1>
+                    <nav className="gnbMo">
+                        <ul>
+                            <li><NavLink activeStyle={active} exact to="/Department">Department</NavLink></li>
+                            <li><NavLink activeStyle={active} exact to="/Board">Board</NavLink></li>
+                            <li><NavLink activeStyle={active} exact to="/Gallery">Gallery</NavLink></li>
+                            <li><NavLink activeStyle={active} exact to="/Youtube">Youtube</NavLink></li>
+                            <li><NavLink activeStyle={active} exact to="/Membership">Membership</NavLink></li>
+                            <li><NavLink activeStyle={active} exact to="/Location">Location</NavLink></li>
+                        </ul>
+                    </nav>
+
+                    <span className="gnbMo2">&copy; 2022 Umbrella Inc. All rights reserved</span>
+                </nav>
             </div>
         </header>
     )

@@ -37,111 +37,6 @@
             }
         }
 
-        .data {
-            width: 100%;
-            padding-bottom: 100px;
-            margin-bottom: 100px;
-            &::after{content: ""; display: block; clear: both;}
-
-            h3 {
-                font: bold 18px "poppins";
-                letter-spacing: 1px;
-                color: #333;
-                margin-bottom: 50px;
-            }
-
-            .dataLoading {
-                float: right;
-                margin-right: 27px;
-                width: 30%;
-                height: 500px;
-                background-color: #000;
-                border-radius: 30px;
-                padding-top: 50px;
-                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
-                
-                .loadingPic {
-                    margin: 0 auto;
-                    margin-bottom: 40px;
-                    transform: translateX(-15px);
-                    width: 250px;
-                    height: 250px;
-                    background-image: url(../../public/img/youtubeLoading.gif);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-    
-                h2 {
-                    text-align: center;
-                    font: bold 25px/1.5 "poppins";
-                    letter-spacing: 1px;
-                    color: #fff;
-                }
-            }
-
-            .dataLeft {
-                float: left;
-                width: 60%;
-                // padding-right: 30px;
-                h2 {
-                    font: bold 35px/1.8 "poppins";
-                }
-
-                >button {
-                    cursor: pointer;
-                    display: inline-block;
-                    background-color: #fff;
-                    border: 2px solid crimson;
-                    border-radius: 35px;
-                    width: 250px;
-                    height: 70px;
-                    font: bold 18px/1 "poppins";
-                    color: crimson;
-                    transition: 0.3s;
-                    margin-top: 40px;
-                    margin-bottom: 80px;
-        
-                    &:hover {
-                        background-color: crimson;
-                        color: #fff;
-                        transition: 0.3s;
-                    }
-                }
-
-                .dataBoard {
-                    width: 60%;
-                    ul {
-                        li {
-                            cursor: pointer;
-                            display: flex;
-                            justify-content: space-between;
-                            font: bold 35px/1 "poppins";
-                            padding: 15px 0 15px 0;
-                            border-top: 1px solid #000;
-                            transition: 0.2s;
-        
-                            i {
-                                transform: translateY(5px);
-                                font-size: 25px;
-                                color: #000;
-                                transition: 0.2s;
-                            }
-        
-                            &:hover {
-                                color: crimson;
-                                transition: 0.2s;
-        
-                                i {
-                                    transform: translate(15px, 5px);
-                                    color: crimson;
-                                    transition: 0.2s;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
 
         .frame {
             border-bottom: 2px solid rgb(201,201,201);
@@ -312,6 +207,112 @@
                             width: 90%;
                             font: bold 18px/1.5 "poppins";
                             color: #999;
+                        }
+                    }
+                }
+            }
+        }
+
+        .data {
+            width: 100%;
+            padding-bottom: 100px;
+            margin-bottom: 100px;
+            &::after{content: ""; display: block; clear: both;}
+
+            h3 {
+                font: bold 18px "poppins";
+                letter-spacing: 1px;
+                color: #333;
+                margin-bottom: 50px;
+            }
+
+            .dataLoading {
+                float: right;
+                margin-right: 27px;
+                width: 30%;
+                height: 500px;
+                background-color: #000;
+                border-radius: 30px;
+                padding-top: 50px;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+                
+                .loadingPic {
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    transform: translateX(-15px);
+                    width: 250px;
+                    height: 250px;
+                    background-image: url(../../public/img/youtubeLoading.gif);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+    
+                h2 {
+                    text-align: center;
+                    font: bold 25px/1.5 "poppins";
+                    letter-spacing: 1px;
+                    color: #fff;
+                }
+            }
+
+            .dataLeft {
+                float: left;
+                width: 60%;
+                // padding-right: 30px;
+                h2 {
+                    font: bold 35px/1.8 "poppins";
+                }
+
+                >button {
+                    cursor: pointer;
+                    display: inline-block;
+                    background-color: #fff;
+                    border: 2px solid crimson;
+                    border-radius: 35px;
+                    width: 300px;
+                    height: 70px;
+                    font: bold 18px/1 "poppins";
+                    color: crimson;
+                    transition: 0.3s;
+                    margin-top: 40px;
+                    margin-bottom: 80px;
+        
+                    &:hover {
+                        background-color: crimson;
+                        color: #fff;
+                        transition: 0.3s;
+                    }
+                }
+
+                .dataBoard {
+                    width: 60%;
+                    ul {
+                        li {
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: space-between;
+                            font: bold 35px/1 "poppins";
+                            padding: 15px 0 15px 0;
+                            border-top: 1px solid #000;
+                            transition: 0.2s;
+        
+                            i {
+                                transform: translateY(5px);
+                                font-size: 25px;
+                                color: #000;
+                                transition: 0.2s;
+                            }
+        
+                            &:hover {
+                                color: crimson;
+                                transition: 0.2s;
+        
+                                i {
+                                    transform: translate(15px, 5px);
+                                    color: crimson;
+                                    transition: 0.2s;
+                                }
+                            }
                         }
                     }
                 }
