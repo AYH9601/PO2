@@ -56,8 +56,8 @@ function Youtube(){
                             let desc_len = desc.length;
 
                             return (
-                                <article key={index}>
-                                    <div className="inner">
+                                <article key={index} className="youtubeArticle">
+                                    <div className="youtubeInner">
                                         <div className="pic">
                                             <img src={item.snippet.thumbnails.medium.url} />
                                             <i className="fas fa-play-circle" onClick={()=>{

@@ -1264,7 +1264,12 @@ figure {
   @media screen and (max-width: 1179px) {
     figure .department {
       margin-right: 30px;
-      margin-left: 30px; } }
+      margin-left: 30px; }
+      figure .department .inner {
+        width: 100%; }
+        figure .department .inner .careers .careersLower ul li {
+          text-align: center;
+          width: 31%; } }
   figure .board {
     padding-top: 100px; }
     figure .board .inner p {
@@ -1963,31 +1968,31 @@ figure {
                 background-color: crimson;
                 border: 2px solid crimson;
                 transition: 0.2s; }
-        figure .youtube .inner .frame > article {
+        figure .youtube .inner .frame > .youtubeArticle {
           margin-bottom: -50px; }
-          figure .youtube .inner .frame > article > .inner {
+          figure .youtube .inner .frame > .youtubeArticle > .youtubeInner {
             width: 96%;
             margin-right: 4%;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
             padding: 10px;
             margin-bottom: 100px;
             transition: 0.2s; }
-            figure .youtube .inner .frame > article > .inner::after {
+            figure .youtube .inner .frame > .youtubeArticle > .youtubeInner::after {
               content: "";
               display: block;
               clear: both; }
-            figure .youtube .inner .frame > article > .inner:hover {
+            figure .youtube .inner .frame > .youtubeArticle > .youtubeInner:hover {
               box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.4);
               transition: 0.2s; }
-            figure .youtube .inner .frame > article > .inner .pic {
+            figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic {
               float: left;
               width: 35%;
               height: 225px;
               position: relative; }
-              figure .youtube .inner .frame > article > .inner .pic img {
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic img {
                 width: 400px;
                 border-radius: 10px; }
-              figure .youtube .inner .frame > article > .inner .pic i {
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic i {
                 position: absolute;
                 top: 70px;
                 left: 43%;
@@ -1999,18 +2004,18 @@ figure {
                 width: 10%;
                 transition: 0.2s;
                 opacity: 0.6; }
-                figure .youtube .inner .frame > article > .inner .pic i:hover {
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic i:hover {
                   color: crimson;
                   transition: 0.2s;
                   opacity: 1; }
-            figure .youtube .inner .frame > article > .inner .txt {
+            figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt {
               float: left;
               width: 65%;
               height: 225px;
               padding-top: 10px;
               padding-left: 20px;
               padding-right: 20px; }
-              figure .youtube .inner .frame > article > .inner .txt em {
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt em {
                 display: inline-block;
                 font: bold 17px/1 "poppins";
                 background-color: #ffd9de;
@@ -2020,16 +2025,16 @@ figure {
                 transition: 0.3s;
                 margin-bottom: 20px;
                 cursor: pointer; }
-                figure .youtube .inner .frame > article > .inner .txt em:hover {
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt em:hover {
                   background-color: crimson;
                   color: #fff;
                   transition: 0.3s; }
-              figure .youtube .inner .frame > article > .inner .txt h2 {
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt h2 {
                 width: 100%;
                 font: bold 25px/1 "poppins";
                 color: #000;
                 margin-bottom: 40px; }
-              figure .youtube .inner .frame > article > .inner .txt i {
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt i {
                 display: none;
                 cursor: pointer;
                 padding-top: 10px;
@@ -2038,10 +2043,10 @@ figure {
                 color: #999;
                 width: 10%;
                 transition: 0.2s; }
-                figure .youtube .inner .frame > article > .inner .txt i:hover {
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt i:hover {
                   color: crimson;
                   transition: 0.2s; }
-              figure .youtube .inner .frame > article > .inner .txt p {
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt p {
                 float: left;
                 width: 90%;
                 font: bold 18px/1.5 "poppins";
@@ -2155,7 +2160,103 @@ figure {
       margin-left: 30px;
       margin-right: 30px; }
       figure .youtube .inner {
-        width: 100%; } }
+        width: 100%; }
+        figure .youtube .inner .frame {
+          text-align: center; }
+          figure .youtube .inner .frame h3, figure .youtube .inner .frame h4 {
+            text-align: left; }
+          figure .youtube .inner .frame .youtubeSearchBox {
+            text-align: center; }
+          figure .youtube .inner .frame > .youtubeArticle {
+            display: inline-block;
+            width: 450px;
+            margin-bottom: -50px; }
+            figure .youtube .inner .frame > .youtubeArticle:last-child {
+              display: none; }
+            figure .youtube .inner .frame > .youtubeArticle > .youtubeInner {
+              width: 400px;
+              height: 430px;
+              margin-right: 0%;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+              padding: 10px;
+              margin-bottom: 100px;
+              transition: 0.2s; }
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner::after {
+                content: "";
+                display: block;
+                clear: both; }
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner:hover {
+                box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.4);
+                transition: 0.2s; }
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic {
+                display: block;
+                width: 100%;
+                height: 225px;
+                margin-bottom: 20px;
+                position: relative; }
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic img {
+                  width: 100%;
+                  border-radius: 10px; }
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic i {
+                  position: absolute;
+                  top: 70px;
+                  left: 40%;
+                  cursor: pointer;
+                  padding-top: 10px;
+                  float: left;
+                  font-size: 80px;
+                  color: crimson;
+                  width: 10%;
+                  transition: 0.2s;
+                  opacity: 0.6; }
+                  figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .pic i:hover {
+                    color: crimson;
+                    transition: 0.2s;
+                    opacity: 1; }
+              figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt {
+                display: block;
+                width: 100%;
+                height: 100px;
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-right: 20px; }
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt em {
+                  display: inline-block;
+                  font: bold 17px/1 "poppins";
+                  background-color: #ffd9de;
+                  color: #000;
+                  padding: 7px 15px 7px 15px;
+                  border-radius: 17px;
+                  transition: 0.3s;
+                  margin-bottom: 20px;
+                  cursor: pointer; }
+                  figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt em:hover {
+                    background-color: crimson;
+                    color: #fff;
+                    transition: 0.3s; }
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt h2 {
+                  width: 100%;
+                  font: bold 25px/1 "poppins";
+                  color: #000;
+                  margin-bottom: 40px; }
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt i {
+                  display: none;
+                  cursor: pointer;
+                  padding-top: 10px;
+                  float: left;
+                  font-size: 50px;
+                  color: #999;
+                  width: 10%;
+                  transition: 0.2s; }
+                  figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt i:hover {
+                    color: crimson;
+                    transition: 0.2s; }
+                figure .youtube .inner .frame > .youtubeArticle > .youtubeInner .txt p {
+                  display: none;
+                  float: left;
+                  width: 90%;
+                  font: bold 18px/1.5 "poppins";
+                  color: #999; } }
   figure .membership .inner main {
     z-index: 11;
     position: absolute;

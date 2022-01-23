@@ -106,9 +106,9 @@
                 }
             }
 
-            >article {
+            >.youtubeArticle {
                 margin-bottom: -50px;
-                >.inner {
+                >.youtubeInner {
                     width: 96%;
                     margin-right: 4%;
                     // border: 2px solid rgb(201,201,201);
@@ -360,6 +360,127 @@
 
         .inner {
             width: 100%;
+
+            .frame {
+                text-align: center;
+                h3,h4 {
+                    text-align: left;
+                }
+                .youtubeSearchBox {
+                    text-align: center;
+                }
+                >.youtubeArticle {
+                    // background: cornflowerblue;
+                    &:last-child {display: none;}
+                    display: inline-block;
+                    width: 450px;
+                    margin-bottom: -50px;
+                    >.youtubeInner {
+                        width: 400px; /////////////
+                        height: 430px; ///////////////
+                        margin-right: 0%; //////////////
+                        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+                        padding: 10px;
+                        margin-bottom: 100px;
+                        transition: 0.2s;
+                        &::after{content: ""; display: block; clear: both;}
+                        &:hover {
+                            box-shadow: 5px 5px 10px rgba(220, 20, 60, 0.4);
+                            transition: 0.2s;
+                        }
+    
+                        .pic {
+                            display: block; ///////////
+                            width: 100%; ////////
+                            height: 225px; ////////////
+                            margin-bottom: 20px; ////////
+                            position: relative;
+    
+                            img {
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+    
+                            i {
+                                position: absolute;
+                                top: 70px; left: 40%; ///////////////
+                                cursor: pointer;
+                                padding-top: 10px;
+                                float: left;
+                                font-size: 80px;
+                                color: crimson;
+                                width: 10%;
+                                transition: 0.2s;
+                                opacity: 0.6;
+    
+                                &:hover {
+                                    color: crimson;
+                                    transition: 0.2s;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+    
+                        .txt {
+                            // background: cadetblue;
+                            display: block;//////////////
+                            width: 100%; /////////
+                            height: 100px; //////////////
+                            padding-top: 10px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+    
+                            em {
+                                display: inline-block;
+                                font: bold 17px/1 "poppins";
+                                background-color: rgb(255, 217, 222);
+                                color: #000;
+                                padding: 7px 15px 7px 15px;
+                                border-radius: 17px;
+                                transition: 0.3s;
+                                margin-bottom: 20px;
+                                cursor: pointer;
+    
+                                &:hover {
+                                    background-color: crimson;
+                                    color: #fff;
+                                    transition: 0.3s;
+                                }
+                            }
+    
+                            h2 {
+                                width: 100%;
+                                font: bold 25px/1 "poppins";
+                                color: #000;
+                                margin-bottom: 40px;
+                            }
+    
+                            i {
+                                display: none;
+                                cursor: pointer;
+                                padding-top: 10px;
+                                float: left;
+                                font-size: 50px;
+                                color: #999;
+                                width: 10%;
+                                transition: 0.2s;
+                                &:hover {
+                                    color: crimson;
+                                    transition: 0.2s;
+                                }
+                            }
+    
+                            p {
+                                display: none; ///////////
+                                float: left;
+                                width: 90%;
+                                font: bold 18px/1.5 "poppins";
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
