@@ -1,20 +1,26 @@
-// Redux Ver
-import { useEffect, useState} from "react";
-import { useSelector } from 'react-redux';
+// React Ver
+import axios from "axios";
+import {useEffect, useState} from "react";
 
 const body = document.querySelector("body");
 
 function Youtube(){
+    let [data, setData] = useState([]);
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0)
 
-    const youtube = useSelector(state=>state);
-    const vidData = youtube.youtubeReducer.youtube;
+    const key = "AIzaSyDE6DkHv8EVqiL6I61K8ex5nZ7genFVd_o";
+    const playListId = "PLrVltBJtL0uzzdHdf22ixDm39TlESGbFO";
+    const num = 5;
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${num}`;
 
-    // const key = "AIzaSyDE6DkHv8EVqiL6I61K8ex5nZ7genFVd_o";
-    // const playListId = "PLrVltBJtL0uzzdHdf22ixDm39TlESGbFO";
-    // const num = 5;
-    // const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${num}`;
+    useEffect(()=>{
+        axios
+        .get(url)
+        .then(json=>{
+            setData(json.data.items)
+        })
+    },[]);
 
     return (
         <main className="youtube">
@@ -43,7 +49,7 @@ function Youtube(){
                     </div>
 
                     {
-                        vidData.map((item, index)=>{
+                        data.map((item, index)=>{
                             let tit = item.snippet.title;
                             let tit_len = tit.length;
 
@@ -66,6 +72,10 @@ function Youtube(){
                                             <h2>
                                                 {(tit_len > 50) ? tit = tit.substr(0, 50)+"..." : tit}
                                             </h2>
+                                            {/* <i className="fas fa-play-circle" onClick={()=>{
+                                                setIsPop(true);
+                                                setIndex(index)
+                                            }}></i> */}
                                             <p>
                                                 {(desc_len > 150) ? desc = desc.substr(0, 150)+"..." : desc}
                                             </p>
@@ -129,7 +139,7 @@ function Youtube(){
 
         return(
             <aside className="pop">
-                <iframe src={"https://www.youtube.com/embed/"+vidData[index].snippet.resourceId.videoId}  width="100%" height="100%" allowFullscreen></iframe>
+                <iframe src={"https://www.youtube.com/embed/"+data[index].snippet.resourceId.videoId}  width="100%" height="100%" allowFullscreen></iframe>
                 <span onClick={()=>{
                     setIsPop(false)
                 }}><i className="far fa-times-circle"></i></span>

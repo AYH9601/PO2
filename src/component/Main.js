@@ -8,6 +8,7 @@ import MainFive from "../component/MainParts/MainFive";
 import MainSix from "../component/MainParts/MainSix";
 import MainSeven from "../component/MainParts/MainSeven";
 // import MainEight from "../component/MainParts/MainEight";
+import RecentMedia from "../component/MainParts/RecentMedia";
 import Btns from "../component/MainParts/Btns";
 
 import Anime from '../class/anime.js';
@@ -69,6 +70,8 @@ function Main(){
                 <LatestStories></LatestStories>
 
                 <BoardNews></BoardNews>
+
+                <RecentMedia></RecentMedia>
 
                 <MainThree></MainThree>
 

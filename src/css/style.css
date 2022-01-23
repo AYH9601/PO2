@@ -2771,6 +2771,70 @@ figure {
           background-size: cover;
           border-radius: 10px;
           margin-bottom: 20px; }
+  figure #recentMedia {
+    margin-bottom: 100px; }
+    figure #recentMedia .recentMediaInner {
+      text-align: center; }
+      figure #recentMedia .recentMediaInner h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
+        color: #333;
+        margin-bottom: 60px;
+        text-align: left; }
+      figure #recentMedia .recentMediaInner h4 {
+        text-align: left;
+        font: bold 40px/1.2 "poppins";
+        color: crimson;
+        margin-bottom: 50px; }
+      figure #recentMedia .recentMediaInner ul {
+        text-align: left;
+        margin-bottom: 40px; }
+        figure #recentMedia .recentMediaInner ul li {
+          display: inline-block;
+          margin-right: 10px;
+          font: bold 17px/1 "poppins";
+          background-color: #ffd9de;
+          color: #000;
+          padding: 7px 15px 7px 15px;
+          border-radius: 17px;
+          transition: 0.3s;
+          margin-bottom: 10px;
+          cursor: pointer; }
+          figure #recentMedia .recentMediaInner ul li.on {
+            background-color: crimson;
+            color: #fff; }
+          figure #recentMedia .recentMediaInner ul li:hover {
+            background-color: crimson;
+            color: #fff;
+            transition: 0.3s; }
+      figure #recentMedia .recentMediaInner .vidBox {
+        text-align: left;
+        height: 400px;
+        margin-bottom: 70px;
+        padding-bottom: 30px; }
+        figure #recentMedia .recentMediaInner .vidBox img {
+          cursor: pointer;
+          width: calc(100%/4);
+          height: 50%;
+          transition: 0.25s;
+          opacity: 1; }
+          figure #recentMedia .recentMediaInner .vidBox img:hover {
+            opacity: 0.6;
+            transition: 0.25s; }
+      figure #recentMedia .recentMediaInner .recentMediaButton {
+        cursor: pointer;
+        width: 200px;
+        height: 70px;
+        background: none;
+        border: 2px solid crimson;
+        border-radius: 35px;
+        font: bold 17px/1 "poppins";
+        color: crimson;
+        transition: 0.2s; }
+        figure #recentMedia .recentMediaInner .recentMediaButton:hover {
+          background-color: crimson;
+          color: #fff;
+          transition: 0.2s; }
   @media screen and (max-width: 1179px) {
     figure #boardNews {
       margin-left: 30px;
@@ -2778,6 +2842,8 @@ figure {
       figure #boardNews .inner {
         width: 100%; }
     figure .latestStories .inner {
+      width: 100%; }
+    figure #recentMedia .recentMediaInner {
       width: 100%; } }
   figure #btns {
     position: fixed;
