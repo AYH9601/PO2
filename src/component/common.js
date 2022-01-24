@@ -43,8 +43,8 @@ function Header(){
                 </nav>
 
                 <div className="btnCall" onClick={()=>{
-                    btnCall.classList.toggle("on");  
-                    menuMo.classList.toggle("on"); 
+                    btnCall.classList.toggle("on");
+                    menuMo.classList.toggle("on");
                 }}>
                     <span>Call button</span>
                 </div>

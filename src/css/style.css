@@ -81,6 +81,7 @@ figure {
               transition: 0.3s; }
       figure header .inner .btnCall {
         display: none;
+        cursor: pointer;
         width: 40px;
         height: 30px;
         position: absolute;
@@ -1994,7 +1995,103 @@ figure {
       margin-right: 30px;
       margin-left: 30px; }
       figure .gallery .inner {
-        width: 100%; } }
+        width: 100%; }
+        figure .gallery .inner .galleryLower #searchBox {
+          width: 515px;
+          border-bottom: 1px solid #000;
+          margin-bottom: 55px; }
+          figure .gallery .inner .galleryLower #searchBox input[type=text] {
+            border: none;
+            width: 460px;
+            height: 40px; }
+          figure .gallery .inner .galleryLower #searchBox input::placeholder {
+            font: bold 30px/1 "poppins";
+            color: #c8c8c8;
+            letter-spacing: 0.5px; }
+          figure .gallery .inner .galleryLower #searchBox .btnSearch {
+            border: none;
+            font-size: 25px;
+            color: #999;
+            background-color: #fff;
+            transform: translateY(-10px);
+            cursor: pointer;
+            transition: 0.2s; }
+            figure .gallery .inner .galleryLower #searchBox .btnSearch .arrowCircle {
+              width: 55px;
+              height: 55px;
+              border: 2px solid #999;
+              border-radius: 50%;
+              margin-bottom: 5px;
+              transition: 0.2s; }
+              figure .gallery .inner .galleryLower #searchBox .btnSearch .arrowCircle i {
+                transform: translate(1px, 12px); }
+            figure .gallery .inner .galleryLower #searchBox .btnSearch:hover {
+              color: #fff;
+              transition: -0.2s; }
+              figure .gallery .inner .galleryLower #searchBox .btnSearch:hover .arrowCircle {
+                background-color: crimson;
+                border: 2px solid crimson;
+                transition: 0.2s; }
+        figure .gallery .inner .galleryLower #imgBox {
+          position: relative; }
+          figure .gallery .inner .galleryLower #imgBox h2 {
+            font: bold 20px/1 "poppins";
+            color: #000;
+            letter-spacing: 1px;
+            margin-bottom: 20px; }
+          figure .gallery .inner .galleryLower #imgBox .categoryBox ul li {
+            display: inline-block;
+            margin-right: 10px;
+            font: bold 17px/1 "poppins";
+            background-color: #ffd9de;
+            color: #000;
+            padding: 7px 15px 7px 15px;
+            border-radius: 17px;
+            transition: 0.3s;
+            margin-bottom: 40px;
+            cursor: pointer; }
+            figure .gallery .inner .galleryLower #imgBox .categoryBox ul li:hover {
+              background-color: crimson;
+              color: #fff;
+              transition: 0.3s; }
+          figure .gallery .inner .galleryLower #imgBox .loading {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            width: 30%;
+            transform: translateX(-50%); }
+          figure .gallery .inner .galleryLower #imgBox .list {
+            min-height: 500px;
+            opacity: 0;
+            transition: 0.5s; }
+            figure .gallery .inner .galleryLower #imgBox .list::after {
+              content: "";
+              display: block;
+              clear: both; }
+            figure .gallery .inner .galleryLower #imgBox .list.on {
+              opacity: 1;
+              transform: translateX(0px); }
+            figure .gallery .inner .galleryLower #imgBox .list > li {
+              float: left;
+              width: 31%;
+              height: 330px;
+              margin-right: 30px;
+              margin-bottom: 15px;
+              overflow: hidden; }
+              figure .gallery .inner .galleryLower #imgBox .list > li p {
+                text-align: center;
+                font: bold 22px/1.5 "poppins";
+                color: #000;
+                transition: 0.25s; }
+                figure .gallery .inner .galleryLower #imgBox .list > li p:hover {
+                  color: crimson;
+                  transition: 0.25s; }
+              figure .gallery .inner .galleryLower #imgBox .list > li span {
+                display: none; }
+              figure .gallery .inner .galleryLower #imgBox .list > li .tagBox {
+                display: none; }
+              figure .gallery .inner .galleryLower #imgBox .list > li:nth-of-type(3n) {
+                margin-right: 0px; } }
   figure .youtube {
     padding-top: 100px; }
     figure .youtube .inner {
@@ -2949,8 +3046,26 @@ figure {
         width: 100%; }
     figure .latestStories .inner {
       width: 100%; }
-    figure #recentMedia .recentMediaInner {
-      width: 100%; } }
+    figure #recentMedia {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 250px; }
+      figure #recentMedia .recentMediaInner {
+        width: 100%; }
+        figure #recentMedia .recentMediaInner .vidBox {
+          text-align: left;
+          height: 400px;
+          margin-bottom: 70px;
+          padding-bottom: 30px; }
+          figure #recentMedia .recentMediaInner .vidBox img {
+            cursor: pointer;
+            width: calc(100%/2);
+            height: 70%;
+            transition: 0.25s;
+            opacity: 1; }
+            figure #recentMedia .recentMediaInner .vidBox img:hover {
+              opacity: 0.6;
+              transition: 0.25s; } }
   figure #btns {
     position: fixed;
     top: 50%;

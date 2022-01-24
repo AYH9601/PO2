@@ -251,8 +251,28 @@
     }
 
     #recentMedia {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 250px;
         .recentMediaInner {
             width: 100%;
+            .vidBox {
+                text-align: left;
+                height: 400px;
+                margin-bottom: 70px;
+                padding-bottom: 30px;
+                img {
+                    cursor: pointer;
+                    width: calc(100%/2);
+                    height: 70%;
+                    transition: 0.25s;
+                    opacity: 1;
+                    &:hover {
+                        opacity: 0.6;
+                        transition: 0.25s;
+                    }
+                }
+            }
         }
     }
 }
