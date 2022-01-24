@@ -1,4 +1,4 @@
-import { Navigation, Pagination, EffectCoverflow } from 'swiper';
+import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -14,9 +14,9 @@ function MainFive(){
             </span>
             <button>More On COVID-20</button>
 
-            <Swiper className='swiperSlide'
+            <Swiper className='swiper5Slide'
                 // install Swiper modules
-                modules={[Navigation, Pagination]}
+                modules={[Navigation]}
                 spaceBetween={25}
                 slidesPerView={"auto"}
                 loop
@@ -25,7 +25,7 @@ function MainFive(){
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
                 >
-                    <SwiperSlide className='swiperSlideBox'>
+                    <SwiperSlide className='swiper5SlideBox'>
                         <div className="fivePic1"></div>
                         <h1>Our Vaccine Efforts</h1>
                         <p>
@@ -33,7 +33,7 @@ function MainFive(){
                         </p>
                         <strong>Learn About Our Vaccine Efforts</strong>
                     </SwiperSlide>
-                    <SwiperSlide className='swiperSlideBox'>
+                    <SwiperSlide className='swiper5SlideBox'>
                         <div className="fivePic2"></div>
                         <h1>Our Antiviral Efforts</h1>
                         <p>
@@ -41,7 +41,7 @@ function MainFive(){
                         </p>
                         <strong>Learn About Promising Antivirals</strong>
                     </SwiperSlide>
-                    <SwiperSlide className='swiperSlideBox'>
+                    <SwiperSlide className='swiper5SlideBox'>
                         <div className="fivePic3"></div>
                         <h1>Collaborating to Address COVID-20</h1>
                         <p>
@@ -49,7 +49,7 @@ function MainFive(){
                         </p>
                         <strong>How We Collaborate to Address the COVID-20 Crisis</strong>
                     </SwiperSlide>
-                    <SwiperSlide className='swiperSlideBox'>
+                    <SwiperSlide className='swiper5SlideBox'>
                         <div className="fivePic4"></div>
                         <h1>Supporting Those Fighting on the Front Lines</h1>
                         <p>
