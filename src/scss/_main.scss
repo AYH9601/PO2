@@ -201,6 +201,7 @@
     }
 
     .five {
+        position: relative;
         h3 {
             font: bold 18px "poppins";
             letter-spacing: 1px;
@@ -236,6 +237,11 @@
 
         .swiper5Slide {
             // background: cyan;
+
+            .swiper-button-prev {
+                position: absolute;
+                bottom: 0;
+            }
 
             .swiper5SlideBox {
                 width: 400px;
@@ -469,6 +475,11 @@
             height: 900px;
 
             .swiper6Slide {
+                // .swiper-button-prev {
+                //     // position: absolute;
+                //     // bottom: 20;
+                //     // left: 0;
+                // }
                 height: 900px;
                 // width: 4000px;
                 .swiper6SlideBox {

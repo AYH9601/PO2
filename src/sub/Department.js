@@ -1,7 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import LatestStories from "../component/MainParts/LatestStories"
 
+import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 function Department(){
     let [posts,setPosts] = useState([]);
@@ -27,7 +31,7 @@ function Department(){
                 </div>
                 
                 <div className="profileSection">
-                    <div className="profileInner">
+                    {/* <div className="profileInner">
                         {
                             posts.map((data, index)=>{
                                 return (
@@ -40,7 +44,32 @@ function Department(){
                                 )
                             })
                         }
-                    </div>
+                    </div> */}
+
+                    <Swiper className="profileInner"
+                        // install Swiper modules
+                        modules={[Navigation]}
+                        spaceBetween={0}
+                        slidesPerView={"auto"}
+                        // loop
+                        grabCursor
+                        navigation
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}
+                        >
+                        {
+                            posts.map((data, index)=>{
+                                return (
+                                    <SwiperSlide key={index} className="profile">
+                                        <div className="pic"></div>
+                                        <h2>{data.Name}</h2>
+                                        <strong>{data.position}</strong>
+                                        <span>Learn more</span>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
 
                     <div className="pagination">
                         <div className="leftCircle">
@@ -127,7 +156,44 @@ function Department(){
                         <button>To Our Investors</button>
                     </div>
                     <div className="investorsRight">
-                        <ul>
+                        <Swiper className='swiperInvestorSlide'
+                        // install Swiper modules
+                        modules={[Navigation]}
+                        spaceBetween={0}
+                        slidesPerView={"auto"}
+                        loop
+                        grabCursor
+                        navigation
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}
+                        >
+                            <SwiperSlide className="swiperInvestorSlideBox">
+                                <div className="investorsPic1"></div>
+                                <h3>Why Invest</h3>                            
+                            </SwiperSlide>
+                            <SwiperSlide  className="swiperInvestorSlideBox">
+                                <div className="investorsPic2"></div>
+                                <h3>Financial Reports</h3>                            
+                            </SwiperSlide>
+                            <SwiperSlide  className="swiperInvestorSlideBox">
+                                <div className="investorsPic3"></div>
+                                <h3>Events and Presentations</h3>                            
+                            </SwiperSlide>
+                            <SwiperSlide  className="swiperInvestorSlideBox">
+                                <div className="investorsPic4"></div>
+                                <h3>Stock Information</h3>                            
+                            </SwiperSlide>
+                            <SwiperSlide  className="swiperInvestorSlideBox">
+                                <div className="investorsPic5"></div>
+                                <h3>Investor News</h3>                         
+                            </SwiperSlide>
+                            <SwiperSlide  className="swiperInvestorSlideBox">
+                                <div className="investorsPic6"></div>
+                                <h3>Shareholder Services</h3>                       
+                            </SwiperSlide>
+                        </Swiper>
+
+                        {/* <ul>
                             <li>
                                 <div className="investorsPic"></div>
                                 <h3>Why Invest</h3>
@@ -152,7 +218,7 @@ function Department(){
                                 <div className="investorsPic"></div>
                                 <h3>Shareholder Services</h3>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
 
                     <div className="pagination">

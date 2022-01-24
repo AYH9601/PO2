@@ -358,107 +358,112 @@ figure {
             background-color: crimson;
             color: #fff;
             transition: 0.2s; }
-    figure .main .five h3 {
-      font: bold 18px "poppins";
-      letter-spacing: 1px;
-      color: #333;
-      margin-bottom: 40px; }
-    figure .main .five span {
-      display: block;
-      font: bold 40px/1.5 "poppins";
-      color: #000;
-      margin-bottom: 20px; }
-    figure .main .five button {
-      cursor: pointer;
-      width: 250px;
-      height: 70px;
-      background: none;
-      border: 2px solid crimson;
-      border-radius: 35px;
-      font: bold 17px/1 "poppins";
-      color: crimson;
-      transition: 0.2s;
-      margin-bottom: 100px; }
-      figure .main .five button:hover {
-        background-color: crimson;
-        color: #fff;
-        transition: 0.2s; }
-    figure .main .five .swiper5Slide .swiper5SlideBox {
-      width: 400px;
-      height: 600px;
-      font: bold 40px "poppins";
-      color: crimson; }
-      figure .main .five .swiper5Slide .swiper5SlideBox .fivePic1 {
-        background-image: url(../../public/img/covid1.jpg);
-        width: 400px;
-        height: 220px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      figure .main .five .swiper5Slide .swiper5SlideBox .fivePic2 {
-        background-image: url(../../public/img/covid2.jpg);
-        width: 400px;
-        height: 220px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      figure .main .five .swiper5Slide .swiper5SlideBox .fivePic3 {
-        background-image: url(../../public/img/covid3.jpg);
-        width: 400px;
-        height: 220px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      figure .main .five .swiper5Slide .swiper5SlideBox .fivePic4 {
-        background-image: url(../../public/img/covid4.jpg);
-        width: 400px;
-        height: 220px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      figure .main .five .swiper5Slide .swiper5SlideBox h1 {
-        font: bold 30px/1.3 "poppins";
-        color: #000;
-        margin-bottom: 20px; }
-      figure .main .five .swiper5Slide .swiper5SlideBox p {
-        font: bold 20px/1.7 "poppins";
+    figure .main .five {
+      position: relative; }
+      figure .main .five h3 {
+        font: bold 18px "poppins";
+        letter-spacing: 1px;
         color: #333;
-        margin-bottom: 20px; }
-      figure .main .five .swiper5Slide .swiper5SlideBox strong {
-        display: inline-block;
-        font: bold 20px/1 "poppins";
-        color: crimson;
-        cursor: pointer; }
-    figure .main .five .pagination {
-      margin-top: 20px;
-      margin-bottom: 100px;
-      padding-top: 40px;
-      border-top: 3px solid #c9c9c9;
-      width: 100%; }
-      figure .main .five .pagination .leftCircle, figure .main .five .pagination .rightCircle {
-        cursor: pointer;
-        display: inline-block;
-        margin-right: 15px;
-        font-size: 25px;
-        width: 40px;
-        height: 40px;
-        border: 2px solid #000;
+        margin-bottom: 40px; }
+      figure .main .five span {
+        display: block;
+        font: bold 40px/1.5 "poppins";
         color: #000;
-        border-radius: 50%;
+        margin-bottom: 20px; }
+      figure .main .five button {
+        cursor: pointer;
+        width: 250px;
+        height: 70px;
+        background: none;
+        border: 2px solid crimson;
+        border-radius: 35px;
+        font: bold 17px/1 "poppins";
+        color: crimson;
         transition: 0.2s;
-        transform: translateY(3px); }
-        figure .main .five .pagination .leftCircle i, figure .main .five .pagination .rightCircle i {
-          margin-left: 7px; }
-        figure .main .five .pagination .leftCircle:hover, figure .main .five .pagination .rightCircle:hover {
+        margin-bottom: 100px; }
+        figure .main .five button:hover {
+          background-color: crimson;
           color: #fff;
-          border-bottom: none;
-          border: 2px solid #555;
-          background-color: #555;
           transition: 0.2s; }
+      figure .main .five .swiper5Slide .swiper-button-prev {
+        position: absolute;
+        bottom: 0; }
+      figure .main .five .swiper5Slide .swiper5SlideBox {
+        width: 400px;
+        height: 600px;
+        font: bold 40px "poppins";
+        color: crimson; }
+        figure .main .five .swiper5Slide .swiper5SlideBox .fivePic1 {
+          background-image: url(../../public/img/covid1.jpg);
+          width: 400px;
+          height: 220px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          background-repeat: no-repeat;
+          background-size: cover; }
+        figure .main .five .swiper5Slide .swiper5SlideBox .fivePic2 {
+          background-image: url(../../public/img/covid2.jpg);
+          width: 400px;
+          height: 220px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          background-repeat: no-repeat;
+          background-size: cover; }
+        figure .main .five .swiper5Slide .swiper5SlideBox .fivePic3 {
+          background-image: url(../../public/img/covid3.jpg);
+          width: 400px;
+          height: 220px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          background-repeat: no-repeat;
+          background-size: cover; }
+        figure .main .five .swiper5Slide .swiper5SlideBox .fivePic4 {
+          background-image: url(../../public/img/covid4.jpg);
+          width: 400px;
+          height: 220px;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          background-repeat: no-repeat;
+          background-size: cover; }
+        figure .main .five .swiper5Slide .swiper5SlideBox h1 {
+          font: bold 30px/1.3 "poppins";
+          color: #000;
+          margin-bottom: 20px; }
+        figure .main .five .swiper5Slide .swiper5SlideBox p {
+          font: bold 20px/1.7 "poppins";
+          color: #333;
+          margin-bottom: 20px; }
+        figure .main .five .swiper5Slide .swiper5SlideBox strong {
+          display: inline-block;
+          font: bold 20px/1 "poppins";
+          color: crimson;
+          cursor: pointer; }
+      figure .main .five .pagination {
+        margin-top: 20px;
+        margin-bottom: 100px;
+        padding-top: 40px;
+        border-top: 3px solid #c9c9c9;
+        width: 100%; }
+        figure .main .five .pagination .leftCircle, figure .main .five .pagination .rightCircle {
+          cursor: pointer;
+          display: inline-block;
+          margin-right: 15px;
+          font-size: 25px;
+          width: 40px;
+          height: 40px;
+          border: 2px solid #000;
+          color: #000;
+          border-radius: 50%;
+          transition: 0.2s;
+          transform: translateY(3px); }
+          figure .main .five .pagination .leftCircle i, figure .main .five .pagination .rightCircle i {
+            margin-left: 7px; }
+          figure .main .five .pagination .leftCircle:hover, figure .main .five .pagination .rightCircle:hover {
+            color: #fff;
+            border-bottom: none;
+            border: 2px solid #555;
+            background-color: #555;
+            transition: 0.2s; }
     figure .main .six {
       border-bottom: 1px solid #c9c9c9; }
       figure .main .six h3 {
@@ -1045,53 +1050,53 @@ figure {
       width: 1180px;
       overflow: hidden; }
       figure .department .profileSection .profileInner {
-        width: 1576px; }
+        width: 100%; }
         figure .department .profileSection .profileInner::after {
           content: "";
           display: block;
           clear: both; }
-        figure .department .profileSection .profileInner article {
+        figure .department .profileSection .profileInner .profile {
           float: left;
           width: 394px;
           height: 450px; }
-          figure .department .profileSection .profileInner article .pic {
+          figure .department .profileSection .profileInner .profile .pic {
             cursor: pointer;
             width: 393px;
             height: 220px;
             background-repeat: no-repeat;
             background-size: cover;
             margin-bottom: 30px; }
-          figure .department .profileSection .profileInner article:nth-of-type(1) {
+          figure .department .profileSection .profileInner .profile:nth-of-type(1) {
             transition: 0.2s; }
-            figure .department .profileSection .profileInner article:nth-of-type(1) .pic {
+            figure .department .profileSection .profileInner .profile:nth-of-type(1) .pic {
               background-image: url(../../public/img/department1-2.png); }
-            figure .department .profileSection .profileInner article:nth-of-type(1):hover {
+            figure .department .profileSection .profileInner .profile:nth-of-type(1):hover {
               filter: grayscale(0%);
               transition: 0.2s; }
-          figure .department .profileSection .profileInner article:nth-of-type(2) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(2) .pic {
             background-image: url(../../public/img/department2.jpg); }
-          figure .department .profileSection .profileInner article:nth-of-type(3) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(3) .pic {
             background-image: url(../../public/img/department3.jpg); }
-          figure .department .profileSection .profileInner article:nth-of-type(4) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(4) .pic {
             background-image: url(../../public/img/department4.jpg); }
-          figure .department .profileSection .profileInner article:nth-of-type(5) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(5) .pic {
             background-image: url(../../public/img/department5.jpg); }
-          figure .department .profileSection .profileInner article:nth-of-type(6) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(6) .pic {
             background-image: url(../../public/img/department6.jpg); }
-          figure .department .profileSection .profileInner article:nth-of-type(7) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(7) .pic {
             background-image: url(../../public/img/department7.jpg); }
-          figure .department .profileSection .profileInner article:nth-of-type(8) .pic {
+          figure .department .profileSection .profileInner .profile:nth-of-type(8) .pic {
             background-image: url(../../public/img/department8.jpg); }
-          figure .department .profileSection .profileInner article h2 {
+          figure .department .profileSection .profileInner .profile h2 {
             font: bold 30px/1 "poppins";
             color: #000;
             margin-bottom: 15px; }
-          figure .department .profileSection .profileInner article strong {
+          figure .department .profileSection .profileInner .profile strong {
             display: block;
             font: bold 17px/2 "poppins";
             color: #333;
             margin-bottom: 10px; }
-          figure .department .profileSection .profileInner article span {
+          figure .department .profileSection .profileInner .profile span {
             cursor: pointer;
             font: bold 17px/1 "poppins";
             color: crimson; }
@@ -1233,6 +1238,7 @@ figure {
               font: bold 19px/1 "poppins";
               color: crimson; }
     figure .department .investors {
+      position: relative;
       margin-bottom: 100px; }
       figure .department .investors::after {
         content: "";
@@ -1247,6 +1253,7 @@ figure {
       figure .department .investors .investorsLeft {
         float: left;
         width: 50%;
+        height: 850px;
         padding-right: 30px; }
         figure .department .investors .investorsLeft p {
           font: bold 35px/1.5 "poppins";
@@ -1268,41 +1275,69 @@ figure {
             color: #fff;
             transition: 0.2s; }
       figure .department .investors .investorsRight {
+        position: absolute;
+        top: 0;
+        left: 51%;
         float: left;
-        width: 50%;
+        width: 4000px;
         height: 870px; }
-        figure .department .investors .investorsRight ul {
-          height: 900px;
-          width: 4000px; }
-          figure .department .investors .investorsRight ul::after {
+        figure .department .investors .investorsRight .swiperInvestorSlide {
+          height: 870px; }
+          figure .department .investors .investorsRight .swiperInvestorSlide::after {
             content: "";
             display: block;
             clear: both; }
-          figure .department .investors .investorsRight ul li {
+          figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox {
+            width: 590px;
             cursor: pointer;
             float: left;
             margin-right: 25px; }
-            figure .department .investors .investorsRight ul li:hover h3 {
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox:hover h3 {
               display: inline-block;
               border-bottom: 2px solid #000; }
-            figure .department .investors .investorsRight ul li .investorsPic {
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox .investorsPic1 {
               background-image: url(../../public/img/investors1.jpg);
               background-repeat: no-repeat;
               background-size: cover;
               width: 590px;
               height: 750px;
               border-radius: 10px; }
-            figure .department .investors .investorsRight ul li:nth-of-type(2) .investorsPic {
-              background-image: url(../../public/img/investors2.jpg); }
-            figure .department .investors .investorsRight ul li:nth-of-type(3) .investorsPic {
-              background-image: url(../../public/img/investors3.jpg); }
-            figure .department .investors .investorsRight ul li:nth-of-type(4) .investorsPic {
-              background-image: url(../../public/img/investors4.jpg); }
-            figure .department .investors .investorsRight ul li:nth-of-type(5) .investorsPic {
-              background-image: url(../../public/img/investors5.jpg); }
-            figure .department .investors .investorsRight ul li:nth-of-type(6) .investorsPic {
-              background-image: url(../../public/img/investors6.jpg); }
-            figure .department .investors .investorsRight ul li h3 {
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox .investorsPic2 {
+              background-image: url(../../public/img/investors2.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 590px;
+              height: 750px;
+              border-radius: 10px; }
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox .investorsPic3 {
+              background-image: url(../../public/img/investors3.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 590px;
+              height: 750px;
+              border-radius: 10px; }
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox .investorsPic4 {
+              background-image: url(../../public/img/investors4.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 590px;
+              height: 750px;
+              border-radius: 10px; }
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox .investorsPic5 {
+              background-image: url(../../public/img/investors5.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 590px;
+              height: 750px;
+              border-radius: 10px; }
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox .investorsPic6 {
+              background-image: url(../../public/img/investors6.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 590px;
+              height: 750px;
+              border-radius: 10px; }
+            figure .department .investors .investorsRight .swiperInvestorSlide .swiperInvestorSlideBox h3 {
               font: bold 25px/1 "poppins";
               letter-spacing: 1px;
               color: #000;

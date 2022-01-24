@@ -21,17 +21,16 @@
         overflow: hidden;
 
         .profileInner {
-            width: 1576px; // 1개당393px
-
+            width: 100%;
+            // width: 1576px; // 1개당393px
             // background-color: lightpink;
             &::after {content: ""; display: block; clear: both;}
     
-            article {
+            .profile {
                 float: left;
                 width: 394px;
                 height: 450px;
                 
-    
                 .pic {
                     cursor: pointer;
                     width: 393px;
@@ -265,6 +264,7 @@
     }
 
     .investors {
+        position: relative;
         margin-bottom: 100px;
         &::after {content: ""; display: block; clear: both;}
 
@@ -279,6 +279,7 @@
         .investorsLeft {
             float: left;
             width: 50%;
+            height: 850px;
             padding-right: 30px;
             p {
                 font: bold 35px/1.5 "poppins";
@@ -307,16 +308,21 @@
         }
 
         .investorsRight {
+            position: absolute;
+            top: 0;
+            left: 51%;
             float: left;
-            width:50%;
+            width:4000px;
+            // width:50%;
             height: 870px;
 
-            ul {
-                height: 900px;
-                width: 4000px;
+            .swiperInvestorSlide {
+                height: 870px;
+                // width: 4000px;
                 &::after {content: ""; display: block; clear: both;}
 
-                li {
+                .swiperInvestorSlideBox {
+                    width: 590px;
                     cursor: pointer;
                     float: left;
                     margin-right: 25px;
@@ -328,7 +334,7 @@
                         }
                     }
 
-                    .investorsPic{
+                    .investorsPic1{
                         background-image: url(../../public/img/investors1.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -336,11 +342,53 @@
                         height: 750px;
                         border-radius: 10px;
                     }
-                    &:nth-of-type(2){.investorsPic {background-image: url(../../public/img/investors2.jpg);}}
-                    &:nth-of-type(3){.investorsPic {background-image: url(../../public/img/investors3.jpg);}}
-                    &:nth-of-type(4){.investorsPic {background-image: url(../../public/img/investors4.jpg);}}
-                    &:nth-of-type(5){.investorsPic {background-image: url(../../public/img/investors5.jpg);}}
-                    &:nth-of-type(6){.investorsPic {background-image: url(../../public/img/investors6.jpg);}}
+                    .investorsPic2{
+                        background-image: url(../../public/img/investors2.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 590px;
+                        height: 750px;
+                        border-radius: 10px;
+                    }
+                    .investorsPic3{
+                        background-image: url(../../public/img/investors3.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 590px;
+                        height: 750px;
+                        border-radius: 10px;
+                    }
+                    .investorsPic4{
+                        background-image: url(../../public/img/investors4.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 590px;
+                        height: 750px;
+                        border-radius: 10px;
+                    }
+                    .investorsPic5{
+                        background-image: url(../../public/img/investors5.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 590px;
+                        height: 750px;
+                        border-radius: 10px;
+                    }
+                    .investorsPic6{
+                        background-image: url(../../public/img/investors6.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 590px;
+                        height: 750px;
+                        border-radius: 10px;
+                    }
+
+                    // &:nth-of-type(1){.investorsPic2 {background-image: url(../../public/img/investors1.jpg);}}
+                    // &:nth-of-type(2){.investorsPic3 {background-image: url(../../public/img/investors2.jpg);}}
+                    // &:nth-of-type(3){.investorsPic4 {background-image: url(../../public/img/investors3.jpg);}}
+                    // &:nth-of-type(4){.investorsPic5 {background-image: url(../../public/img/investors4.jpg);}}
+                    // &:nth-of-type(5){.investorsPic6 {background-image: url(../../public/img/investors5.jpg);}}
+                    // &:nth-of-type(6){.investorsPic7 {background-image: url(../../public/img/investors6.jpg);}}
 
                     h3 {
                         font: bold 25px/1 "poppins";
