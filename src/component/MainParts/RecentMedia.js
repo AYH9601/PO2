@@ -31,6 +31,11 @@ function RecentMedia(){
             <div className="recentMediaInner">
                 <h3>Recent Media</h3>
                 <h4>Meet Umbrella through various media in everyday life</h4>
+
+                <NavLink exact to="/Youtube">
+                    <button className="recentMediaButton">Show More</button>
+                </NavLink>
+
                 <ul className="boardTag">
                     <li>Vaccine</li>
                     <li>Science</li>
@@ -44,16 +49,14 @@ function RecentMedia(){
                 <div className="vidBox">
                 {
                     vidData.map((vid,index)=>{
-                    return(
-                        <img key={index} src={vid.snippet.thumbnails.medium.url} />
-                    )
+                        if(index<4){
+                            return(
+                                <img key={index} src={vid.snippet.thumbnails.medium.url} />
+                            )
+                        }
                     })
                 }
                 </div>
-
-                <NavLink exact to="/Youtube">
-                    <button className="recentMediaButton">Show More</button>
-                </NavLink>
             </div>
         </section>
     )

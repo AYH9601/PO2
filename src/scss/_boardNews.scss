@@ -150,9 +150,9 @@
 }
 
 #recentMedia {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     .recentMediaInner {
-        text-align: center;
+        // text-align: center;
         h3 {
             font: bold 18px "poppins";
             letter-spacing: 1px;
@@ -164,7 +164,7 @@
         h4 {
             text-align: left;
             font: bold 40px/1.2 "poppins";
-            color: crimson;
+            color: #000;
             margin-bottom: 50px;
         }
 
@@ -214,8 +214,9 @@
         }
 
         .recentMediaButton {
+            margin-bottom: 50px;
             cursor: pointer;
-            width: 200px;
+            width: 180px;
             height: 70px;
             background: none;
             border: 2px solid crimson;
