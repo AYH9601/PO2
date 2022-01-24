@@ -383,6 +383,56 @@ figure {
         background-color: crimson;
         color: #fff;
         transition: 0.2s; }
+    figure .main .five .swiperSlide .swiperSlideBox {
+      width: 400px;
+      height: 600px;
+      font: bold 40px "poppins";
+      color: crimson; }
+      figure .main .five .swiperSlide .swiperSlideBox .fivePic1 {
+        background-image: url(../../public/img/covid1.jpg);
+        width: 400px;
+        height: 220px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .five .swiperSlide .swiperSlideBox .fivePic2 {
+        background-image: url(../../public/img/covid2.jpg);
+        width: 400px;
+        height: 220px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .five .swiperSlide .swiperSlideBox .fivePic3 {
+        background-image: url(../../public/img/covid3.jpg);
+        width: 400px;
+        height: 220px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .five .swiperSlide .swiperSlideBox .fivePic4 {
+        background-image: url(../../public/img/covid4.jpg);
+        width: 400px;
+        height: 220px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .main .five .swiperSlide .swiperSlideBox h1 {
+        font: bold 30px/1.3 "poppins";
+        color: #000;
+        margin-bottom: 20px; }
+      figure .main .five .swiperSlide .swiperSlideBox p {
+        font: bold 20px/1.7 "poppins";
+        color: #333;
+        margin-bottom: 20px; }
+      figure .main .five .swiperSlide .swiperSlideBox strong {
+        display: inline-block;
+        font: bold 20px/1 "poppins";
+        color: crimson;
+        cursor: pointer; }
     figure .main .five .fiveLower {
       overflow: hidden; }
       figure .main .five .fiveLower ul {
