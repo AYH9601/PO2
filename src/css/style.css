@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap");
 * {
   margin: 0;
@@ -2475,54 +2474,102 @@ figure {
     padding-top: 200px;
     margin: 0 auto;
     width: 1180px; }
-    figure .join .inner table {
-      width: 100%;
-      border-top: 2px solid #555;
-      border-bottom: 2px solid #333; }
-      figure .join .inner table th, figure .join .inner table td {
-        border-bottom: 1px solid #ddd;
-        padding: 10px 30px; }
-      figure .join .inner table th {
-        width: 20%;
-        border-right: 1px solid #ddd;
-        text-align: left;
-        font: bold 14px/1 "arial";
-        color: #555; }
-        figure .join .inner table th.btnSet {
-          text-align: center;
-          border-right: none; }
-          figure .join .inner table th.btnSet input[type=reset], figure .join .inner table th.btnSet input[type=submit] {
-            cursor: pointer;
-            width: 150px;
-            height: 32px;
-            margin: 10px;
-            border: 1px solid #555;
+    figure .join .inner .membershipInner {
+      width: 700px;
+      margin-bottom: 100px; }
+      figure .join .inner .membershipInner fieldset {
+        border: none; }
+      figure .join .inner .membershipInner table {
+        width: 100%;
+        height: 800px; }
+        figure .join .inner .membershipInner table th, figure .join .inner .membershipInner table td {
+          padding: 10px 30px; }
+        figure .join .inner .membershipInner table th {
+          width: 20%;
+          border-right: 1px solid #ddd;
+          text-align: left;
+          font: bold 20px/1 "poppins";
+          color: #555; }
+          figure .join .inner .membershipInner table th.btnSet {
             text-align: center;
-            transition: 0.3s; }
-            figure .join .inner table th.btnSet input[type=reset]:hover, figure .join .inner table th.btnSet input[type=submit]:hover {
-              transition: 0.3s;
-              background-color: #555;
-              color: #fff; }
-      figure .join .inner table td input[type=text], figure .join .inner table td input[type=password], figure .join .inner table td select {
-        width: 60%;
-        padding: 10px 20px;
-        border: 1px solid #aaa; }
-      figure .join .inner table td textarea {
-        width: 60%;
-        height: 150px;
-        padding: 10px 20px;
-        border: 1px solid #aaa;
-        resize: none; }
-      figure .join .inner table td label {
-        font: 12px/1 "arial";
-        color: #777;
-        margin-right: 5px; }
-      figure .join .inner table td input[type=radio], figure .join .inner table td input[type=checkbox] {
-        margin-right: 20px; }
-    figure .join .inner .err {
-      font: 11px/1 "맑은고딕";
+            border-right: none; }
+            figure .join .inner .membershipInner table th.btnSet input[type=reset], figure .join .inner .membershipInner table th.btnSet input[type=submit] {
+              cursor: pointer;
+              width: 150px;
+              height: 60px;
+              border: 2px solid crimson;
+              border-radius: 30px;
+              font: bold 18px/1.2 "poppins";
+              letter-spacing: 1px;
+              background-color: #fff;
+              color: crimson;
+              text-align: center;
+              transition: 0.3s; }
+              figure .join .inner .membershipInner table th.btnSet input[type=reset]:hover, figure .join .inner .membershipInner table th.btnSet input[type=submit]:hover {
+                transition: 0.3s;
+                background-color: crimson;
+                color: #fff; }
+        figure .join .inner .membershipInner table td {
+          height: 95px; }
+          figure .join .inner .membershipInner table td input[type=text], figure .join .inner .membershipInner table td input[type=password], figure .join .inner .membershipInner table td select {
+            width: 100%;
+            height: 50px;
+            padding: 10px 20px;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            font: bold 25px/1 "poppins"; }
+          figure .join .inner .membershipInner table td input::placeholder {
+            color: #c8c8c8; }
+          figure .join .inner .membershipInner table td label {
+            cursor: pointer;
+            font: bold 18px/1 "poppins";
+            color: #777;
+            margin-right: 30px; }
+          figure .join .inner .membershipInner table td input[type=radio], figure .join .inner .membershipInner table td input[type=checkbox] {
+            margin-right: 20px;
+            margin-bottom: 10px; }
+          figure .join .inner .membershipInner table td select {
+            border: none;
+            height: 50px;
+            border-bottom: 1px solid #aaa; }
+      figure .join .inner .membershipInner .err {
+        font: bold 11px/1 "poppins";
+        color: crimson;
+        margin-left: 10px; }
+      figure .join .inner .membershipInner .errSelect {
+        transform: translateY(14px); }
+    figure .join .inner h1 {
+      font: bold 18px/1 "poppins";
+      margin-bottom: 60px; }
+    figure .join .inner h2 {
+      font: bold 40px/1.3 "poppins";
+      letter-spacing: 0.5px;
+      color: #000;
+      margin-bottom: 50px; }
+    figure .join .inner > button {
+      cursor: pointer;
+      display: inline-block;
+      background-color: #fff;
+      border: 2px solid crimson;
+      border-radius: 40px;
+      width: 420px;
+      letter-spacing: 1px;
+      height: 80px;
+      font: bold 18px/1.2 "poppins";
       color: crimson;
-      margin-left: 10px; }
+      transition: 0.3s;
+      margin-bottom: 100px; }
+      figure .join .inner > button:hover {
+        background-color: crimson;
+        color: #fff;
+        transition: 0.3s; }
+    figure .join .inner .membershipLower h3 {
+      font: bold 18px/1 "poppins";
+      color: crimson;
+      margin-bottom: 60px; }
+    figure .join .inner .membershipLower h4 {
+      font: bold 15px/2 "poppins";
+      margin-bottom: 80px; }
   figure .location .inner {
     margin: 0 auto;
     text-align: center; }

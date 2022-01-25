@@ -3,72 +3,138 @@
         padding-top: 200px;
         margin: 0 auto;
         width: 1180px;
-        table {
-            width: 100%;
-            border-top: 2px solid #555;
-            border-bottom: 2px solid #333;
 
-            th, td {
-                border-bottom: 1px solid #ddd;
-                padding: 10px 30px;
+        .membershipInner {
+            width: 700px;
+            margin-bottom: 100px;
+            fieldset {
+                border: none;
             }
 
-            th {
-                width: 20%;
-                border-right: 1px solid #ddd;
-                text-align: left;
-                font: bold 14px/1 "arial";
-                color: #555;
-
-                &.btnSet {
-                    text-align: center;
-                    border-right: none;
-
-                    input[type=reset], input[type=submit] {
-                        cursor: pointer;
-                        width: 150px; height: 32px;
-                        margin: 10px;
-                        border: 1px solid #555;
+            table {
+                width: 100%;
+                height: 800px;
+                th, td {
+                    padding: 10px 30px;
+                }
+    
+                th {
+                    width: 20%;
+                    border-right: 1px solid #ddd;
+                    text-align: left;
+                    font: bold 20px/1 "poppins";
+                    color: #555;
+    
+                    &.btnSet {
                         text-align: center;
-                        transition: 0.3s;
-
-                        &:hover {
+                        border-right: none;
+                        input[type=reset], input[type=submit] {
+                            cursor: pointer;
+                            width: 150px; height: 60px;
+                            border: 2px solid crimson;
+                            border-radius: 30px;
+                            font: bold 18px/1.2 "poppins";
+                            letter-spacing: 1px;
+                            background-color: #fff;
+                            color: crimson;
+                            text-align: center;
                             transition: 0.3s;
-                            background-color: #555;
-                            color: #fff;
+    
+                            &:hover {
+                                transition: 0.3s;
+                                background-color: crimson;
+                                color: #fff;
+                            }
                         }
                     }
                 }
+    
+                td {
+                    height: 95px;
+                    input[type=text], input[type=password], select {
+                        width: 100%;
+                        height: 50px;
+                        padding: 10px 20px;
+                        border: none;
+                        border-bottom: 1px solid #aaa;
+                        font: bold 25px/1 "poppins";
+                    }
+                    
+                    input::placeholder {
+                        color: rgb(200,200,200);
+                    }
+    
+                    label {
+                        cursor: pointer;
+                        font: bold 18px/1 "poppins";
+                        color: #777;
+                        margin-right: 30px;
+                    }
+                    input[type=radio], input[type=checkbox] {
+                        // transform: translateY(14px);
+                        margin-right: 20px;
+                        margin-bottom: 10px;
+                    }
+                    select {
+                        border: none;
+                        height: 50px;
+                        border-bottom: 1px solid #aaa;
+                    }
+                }
+    
             }
-
-            td {
-                input[type=text], input[type=password], select {
-                    width: 60%;
-                    padding: 10px 20px;
-                    border: 1px solid #aaa;
-                    // box-shadow: inset 3px 3px 10px rgba(0,0,0,0.05);
-                }
-                textarea {
-                    width: 60%;
-                    height: 150px;
-                    padding: 10px 20px;
-                    border: 1px solid #aaa;
-                    resize: none;
-                }
-                label {
-                    font: 12px/1 "arial";
-                    color: #777;
-                    margin-right: 5px;
-                }
-                input[type=radio], input[type=checkbox] {
-                    margin-right: 20px;
-                }
+            .err {
+                font: bold 11px/1 "poppins";
+                color: crimson;
+                margin-left: 10px;
+            }
+            .errSelect {
+                transform: translateY(14px);
             }
         }
-        .err {
-            font: 11px/1 "맑은고딕";
+
+        h1 {
+            font: bold 18px/1 "poppins";
+            margin-bottom: 60px;
+        }
+        h2 {
+            font: bold 40px/1.3 "poppins";
+            letter-spacing: 0.5px;
+            color: #000;
+            margin-bottom: 50px;
+        }
+        >button {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid crimson;
+            border-radius: 40px;
+            width: 420px;
+            letter-spacing: 1px;
+            height: 80px;
+            font: bold 18px/1.2 "poppins";
             color: crimson;
-            margin-left: 10px;
+            transition: 0.3s;
+            margin-bottom: 100px;
+
+            &:hover {
+                background-color: crimson;
+                color: #fff;
+                transition: 0.3s;
+            }
+        }
+        
+        .membershipLower {
+            h3 {
+                font: bold 18px/1 "poppins";
+                color: crimson;
+                margin-bottom: 60px;
+            }
+
+            h4 {
+                font: bold 15px/2 "poppins";
+                margin-bottom: 80px;
+            }
         }
     }
 }
