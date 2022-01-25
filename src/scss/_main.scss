@@ -217,6 +217,7 @@
         }
 
         button {
+            z-index: 2;
             cursor: pointer;
             width: 250px;
             height: 70px;
@@ -239,8 +240,21 @@
             // background: cyan;
 
             .swiper-button-prev {
+                z-index: 1;
+                top: auto;
                 position: absolute;
-                bottom: 0;
+                bottom: 95px;
+                left: 0;
+                opacity: 0;
+            }
+
+            .swiper-button-next {
+                z-index: 1;
+                top: auto;
+                position: absolute;
+                bottom: 95px;
+                left: 65px;
+                opacity: 0;
             }
 
             .swiper5SlideBox {
@@ -475,13 +489,8 @@
             height: 900px;
 
             .swiper6Slide {
-                // .swiper-button-prev {
-                //     // position: absolute;
-                //     // bottom: 20;
-                //     // left: 0;
-                // }
+                // position: relative;
                 height: 900px;
-                // width: 4000px;
                 .swiper6SlideBox {
                     width: 590px;
                     cursor: pointer;
@@ -552,15 +561,25 @@
                         border-radius: 10px;
                     }
                 }
+                
+                .swiper-button-prev {
+                    z-index: 1;
+                    top: auto;
+                    position: absolute;
+                    bottom: 95px;
+                    left: 0;
+                    opacity: 0;
+                }
     
+                .swiper-button-next {
+                    z-index: 1;
+                    top: auto;
+                    position: absolute;
+                    bottom: 95px;
+                    left: 65px;
+                    opacity: 0;
+                }
             }
-
-
-
-
-
-
-
 
             ul {
                 height: 900px;
@@ -608,6 +627,9 @@
         }
 
         .pagination {
+            // position: absolute;
+            // left: 0;
+            // bottom: 0;
             float: left;
             width: 100%;
             border-top: 3px solid rgb(201, 201, 201);

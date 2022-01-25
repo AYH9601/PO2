@@ -26,6 +26,24 @@
             // background-color: lightpink;
             &::after {content: ""; display: block; clear: both;}
     
+            .swiper-button-prev {
+                z-index: 1;
+                top: auto;
+                position: absolute;
+                bottom: 75px;
+                left: 0;
+                opacity: 0;
+            }
+
+            .swiper-button-next {
+                z-index: 1;
+                top: auto;
+                position: absolute;
+                bottom: 75px;
+                left: 65px;
+                opacity: 0;
+            }
+
             .profile {
                 float: left;
                 width: 394px;

@@ -57,6 +57,15 @@ function MainFive(){
                         </p>
                         <strong>Learn About The Umbrella Foundation</strong>
                     </SwiperSlide>
+
+                    <div className="pagination">
+                        <div className="leftCircle">
+                            <i className="fas fa-arrow-left"></i>
+                        </div>
+                        <div className="rightCircle">
+                            <i className="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
             </Swiper>
 
 {/* 
@@ -91,14 +100,7 @@ function MainFive(){
                 </ul>
             </div>
  */}
-            <div className="pagination">
-                <div className="leftCircle">
-                    <i className="fas fa-arrow-left"></i>
-                </div>
-                <div className="rightCircle">
-                    <i className="fas fa-arrow-right"></i>
-                </div>
-            </div>
+
         </div>
     )
 }

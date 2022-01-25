@@ -377,6 +377,7 @@ figure {
         color: #000;
         margin-bottom: 20px; }
       figure .main .five button {
+        z-index: 2;
         cursor: pointer;
         width: 250px;
         height: 70px;
@@ -392,8 +393,19 @@ figure {
           color: #fff;
           transition: 0.2s; }
       figure .main .five .swiper5Slide .swiper-button-prev {
+        z-index: 1;
+        top: auto;
         position: absolute;
-        bottom: 0; }
+        bottom: 95px;
+        left: 0;
+        opacity: 0; }
+      figure .main .five .swiper5Slide .swiper-button-next {
+        z-index: 1;
+        top: auto;
+        position: absolute;
+        bottom: 95px;
+        left: 65px;
+        opacity: 0; }
       figure .main .five .swiper5Slide .swiper5SlideBox {
         width: 400px;
         height: 600px;
@@ -598,6 +610,20 @@ figure {
               width: 590px;
               height: 750px;
               border-radius: 10px; }
+          figure .main .seven .sevenRight .swiper6Slide .swiper-button-prev {
+            z-index: 1;
+            top: auto;
+            position: absolute;
+            bottom: 95px;
+            left: 0;
+            opacity: 0; }
+          figure .main .seven .sevenRight .swiper6Slide .swiper-button-next {
+            z-index: 1;
+            top: auto;
+            position: absolute;
+            bottom: 95px;
+            left: 65px;
+            opacity: 0; }
         figure .main .seven .sevenRight ul {
           height: 900px;
           width: 4000px; }
@@ -1061,6 +1087,20 @@ figure {
           content: "";
           display: block;
           clear: both; }
+        figure .department .profileSection .profileInner .swiper-button-prev {
+          z-index: 1;
+          top: auto;
+          position: absolute;
+          bottom: 75px;
+          left: 0;
+          opacity: 0; }
+        figure .department .profileSection .profileInner .swiper-button-next {
+          z-index: 1;
+          top: auto;
+          position: absolute;
+          bottom: 75px;
+          left: 65px;
+          opacity: 0; }
         figure .department .profileSection .profileInner .profile {
           float: left;
           width: 394px;

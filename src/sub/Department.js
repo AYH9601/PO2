@@ -69,16 +69,18 @@ function Department(){
                                 )
                             })
                         }
+
+                        <div className="pagination">
+                            <div className="leftCircle">
+                                <i className="fas fa-arrow-left"></i>
+                            </div>
+                            <div className="rightCircle">
+                                <i className="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
                     </Swiper>
 
-                    <div className="pagination">
-                        <div className="leftCircle">
-                            <i className="fas fa-arrow-left"></i>
-                        </div>
-                        <div className="rightCircle">
-                            <i className="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
+
                 </div>
                 
                 <div className="know">
