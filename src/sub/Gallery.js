@@ -207,7 +207,7 @@ function Gallery(){
                             }
                         </ul>
 
-                        <div className="pagination">
+                        {/* <div className="pagination">
                             <p>
                                 <div className="leftCircle">
                                     <i className="fas fa-arrow-left"></i>
@@ -223,7 +223,7 @@ function Gallery(){
                                     <i className="fas fa-arrow-right"></i>
                                 </div>
                             </p>
-                        </div>
+                        </div> */}
                     </article>
                 </div>
 

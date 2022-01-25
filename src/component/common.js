@@ -30,7 +30,8 @@ function Header(){
                     <ul>
                         <li>
                             <NavLink activeStyle={active} exact to="/Location">
-                                <i className="fas fa-map-marker-alt"></i>
+                                Office
+                                {/* <i className="fas fa-map-marker-alt"></i> */}
                             </NavLink>
                         </li>
                         <li>

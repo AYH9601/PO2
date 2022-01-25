@@ -91,7 +91,7 @@ function Location(){
                     <h1>Umbrella BioTechnoloy Center & Hospital</h1>
                     <h2>Need biotech and medical assistance? We always with you.</h2>
 
-                    <div className="locationSearchBox">
+                    {/* <div className="locationSearchBox">
                         <input type="text" id="search" placeholder="Search for Location"/>
 
                         <button className="btnSearch">
@@ -99,9 +99,9 @@ function Location(){
                                 <i className="fas fa-arrow-right"></i>
                             </div>
                         </button>
-                    </div>
+                    </div> */}
 
-                    <ul>
+                    {/* <ul>
                         <li>USA</li>
                         <li>ENGLAND</li>
                         <li>FRANCE</li>
@@ -111,7 +111,7 @@ function Location(){
                         <li className="active">KOREA</li>
                         <li>CHINA</li>
                         <li>JAPAN</li>
-                    </ul>
+                    </ul> */}
                 </div>
 
                 <ul className="dot" ref={btnBranch}>

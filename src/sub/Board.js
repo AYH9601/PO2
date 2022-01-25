@@ -108,6 +108,70 @@ function Board(){
     return (
         <section className="content board">
             <div className="inner">
+                {/* CRUD */}
+                <div className="boardCRUD">
+                    <h1>Notice Board</h1>
+                    <h2>The earliest information on important Announcements or significant Biological threats</h2>
+                    <section className="inputBox">
+                        <input type="text" placeholder='Please enter a Title.' ref={input}/><br />
+                        <textarea cols="30" rows="5" placeholder='Please enter a Contents' ref={textarea}></textarea><br />
+
+                        <div className="CRUDBtn">
+                            <button onClick={()=>{
+                                input.current.value='';
+                                textarea.current.value='';
+                            }}>Reset</button>
+
+                            <button onClick={createPost}>Post</button>
+                        </div>
+
+                        <p className="CRUDcopy"> &copy; copy 2022 Umbrella Inc. All rights reserved</p>
+                    </section>
+
+                    <section className="showBox" ref={showBox}>
+                        <div className="showNotice">
+                            <p>Notice List</p>
+                        </div>
+                        {
+                            posts.map((post, index)=>{
+                                return (
+                                    <article key={index}>
+                                        {
+                                            post.enableUpdate
+                                            ?
+                                            //수정하기
+                                            <>
+                                                <div className="post">
+                                                    <input type="text" defaultValue={post.title} ref={updateInput}/><br></br>
+                                                    <textarea defaultValue={post.content} ref={updateTextarea}></textarea>
+                                                </div>
+
+                                                <ul className="btns">
+                                                    <li onClick={()=>updatePost(index)}>Enter</li>
+                                                    <li onClick={()=>disableUpdate(index)}>Cancel</li>
+                                                </ul>
+                                            </>
+                                            :
+                                            //출력모드
+                                            <>
+                                                <div className="post">
+                                                    <h2>{post.title}</h2>
+                                                    <p>{post.content}</p>
+                                                </div>
+
+                                                <ul className="btns">
+                                                    <li onClick={()=>enableUpdate(index)}><i className="fas fa-wrench"></i></li>
+                                                    <li onClick={()=>deletePost(index)}><i className="fas fa-times-circle"></i></li>
+                                                </ul>
+                                            </>
+                                        }
+                                    </article>
+                                )
+                            })
+                        }
+                    </section>
+                </div>
+
                 <p>Information Board</p>
                 
                 <div className="boardInner">
@@ -116,14 +180,14 @@ function Board(){
                         Browse our community and find information about the products that are best for you.
                         </h1>
 
-                        <article id="BoardSearchBox">
+                        {/* <article id="BoardSearchBox">
                             <input type="text" id="search" placeholder="Looking for a Symptoms?"/>
                             <button className="btnSearch">
                                 <div className="arrowCircle">
                                     <i className="fas fa-arrow-right"></i>
                                 </div>
                             </button>
-                        </article>
+                        </article> */}
 
                         <ul className="boardTag">
                             <li>Vaccine</li>
@@ -194,7 +258,7 @@ function Board(){
                         </tbody>
                     </table>
 
-                    <div className="pagination">
+                    {/* <div className="pagination">
                         <p>
                             <div className="leftCircle">
                                 <i className="fas fa-arrow-left"></i>
@@ -210,70 +274,7 @@ function Board(){
                                 <i className="fas fa-arrow-right"></i>
                             </div>
                         </p>
-                    </div>
-                </div>
-
-                {/* CRUD */}
-                <div className="boardCRUD">
-                    <h1>Notice</h1>
-                    <section className="inputBox">
-                        <input type="text" placeholder='Please enter a Title.' ref={input}/><br />
-                        <textarea cols="30" rows="5" placeholder='Please enter a Contents' ref={textarea}></textarea><br />
-
-                        <div className="CRUDBtn">
-                            <button onClick={()=>{
-                                input.current.value='';
-                                textarea.current.value='';
-                            }}>Reset</button>
-
-                            <button onClick={createPost}>Post</button>
-                        </div>
-
-                        <p className="CRUDcopy"> &copy; copy 2022 Umbrella Inc. All rights reserved</p>
-                    </section>
-
-                    <section className="showBox" ref={showBox}>
-                        <div className="showNotice">
-                            <p>Notice List</p>
-                        </div>
-                        {
-                            posts.map((post, index)=>{
-                                return (
-                                    <article key={index}>
-                                        {
-                                            post.enableUpdate
-                                            ?
-                                            //수정하기
-                                            <>
-                                                <div className="post">
-                                                    <input type="text" defaultValue={post.title} ref={updateInput}/><br></br>
-                                                    <textarea defaultValue={post.content} ref={updateTextarea}></textarea>
-                                                </div>
-
-                                                <ul className="btns">
-                                                    <li onClick={()=>updatePost(index)}>Enter</li>
-                                                    <li onClick={()=>disableUpdate(index)}>Cancel</li>
-                                                </ul>
-                                            </>
-                                            :
-                                            //출력모드
-                                            <>
-                                                <div className="post">
-                                                    <h2>{post.title}</h2>
-                                                    <p>{post.content}</p>
-                                                </div>
-
-                                                <ul className="btns">
-                                                    <li onClick={()=>enableUpdate(index)}><i className="fas fa-wrench"></i></li>
-                                                    <li onClick={()=>deletePost(index)}><i className="fas fa-times-circle"></i></li>
-                                                </ul>
-                                            </>
-                                        }
-                                    </article>
-                                )
-                            })
-                        }
-                    </section>
+                    </div> */}
                 </div>
             </div>
         </section>

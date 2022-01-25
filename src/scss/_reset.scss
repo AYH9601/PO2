@@ -1,7 +1,8 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul,ol,li {list-style: none;}
 a {text-decoration: none;}
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@200&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap');
 
 .content {
     overflow: hidden;
@@ -18,3 +19,8 @@ a {text-decoration: none;}
     }
 }
 
+.access {
+	position: absolute;
+	top: -9999px;
+	opacity: 0;
+}
