@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PO2/static/css/main.3ba5e973.css",
-    "main.js": "/PO2/static/js/main.9a68b91c.js",
+    "main.css": "/PO2/static/css/main.a05b78ad.css",
+    "main.js": "/PO2/static/js/main.235055b8.js",
     "static/media/goods.jpg": "/PO2/static/media/goods.ca9a5613acc105cb1b8c.jpg",
     "static/media/youtubeLoading.gif": "/PO2/static/media/youtubeLoading.7517415e575521b3249f.gif",
     "static/media/Art.png": "/PO2/static/media/Art.d76224f3f4a4ec6e32e7.png",
@@ -12,6 +12,7 @@
     "static/media/umbrella.png": "/PO2/static/media/umbrella.deff0f5fffafc1d45d7f.png",
     "static/media/investors4.jpg": "/PO2/static/media/investors4.18470a72f9d512dc5bc9.jpg",
     "static/media/investors2.jpg": "/PO2/static/media/investors2.3c96b94a3c246b969962.jpg",
+    "static/media/membership2.jpg": "/PO2/static/media/membership2.c2b5af4397610ec4bb5e.jpg",
     "static/media/investors3.jpg": "/PO2/static/media/investors3.207ecaa4e112f5c884f3.jpg",
     "static/media/hos2.jpg": "/PO2/static/media/hos2.f3dc46aba1ba1aa1eaf7.jpg",
     "static/media/career2.jpg": "/PO2/static/media/career2.f2a106d0408a2a84cd26.jpg",
@@ -41,11 +42,11 @@
     "static/media/department8.jpg": "/PO2/static/media/department8.785395894d45fce5ebbc.jpg",
     "static/media/hos1.jpg": "/PO2/static/media/hos1.00ab90979215e9647c50.jpg",
     "index.html": "/PO2/index.html",
-    "main.3ba5e973.css.map": "/PO2/static/css/main.3ba5e973.css.map",
-    "main.9a68b91c.js.map": "/PO2/static/js/main.9a68b91c.js.map"
+    "main.a05b78ad.css.map": "/PO2/static/css/main.a05b78ad.css.map",
+    "main.235055b8.js.map": "/PO2/static/js/main.235055b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ba5e973.css",
-    "static/js/main.9a68b91c.js"
+    "static/css/main.a05b78ad.css",
+    "static/js/main.235055b8.js"
   ]
 }
