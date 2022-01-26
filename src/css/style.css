@@ -1522,146 +1522,7 @@ figure {
               color: #fff;
               transition: 0.2s; }
         figure .main .seven .sevenRight {
-          width: 100%;
-          height: 500px; }
-          figure .main .seven .sevenRight .swiper6Slide {
-            width: 450px;
-            height: 500px; }
-            figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox {
-              width: 590px;
-              cursor: pointer; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox:hover h4 {
-                display: inline-block;
-                border-bottom: 2px solid crimson; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox h3 {
-                font: bold 18px/1 "poppins";
-                letter-spacing: 1px;
-                color: crimson;
-                margin-top: 30px; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox h4 {
-                font: bold 25px/1 "poppins";
-                color: crimson; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox .sevenPic1 {
-                background-image: url(../../public/img/virus.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox .sevenPic2 {
-                background-image: url(../../public/img/virus7.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox .sevenPic3 {
-                background-image: url(../../public/img/virus3.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox .sevenPic4 {
-                background-image: url(../../public/img/virus6.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox .sevenPic5 {
-                background-image: url(../../public/img/virus5.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-              figure .main .seven .sevenRight .swiper6Slide .swiper6SlideBox .sevenPic6 {
-                background-image: url(../../public/img/virus8.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-            figure .main .seven .sevenRight .swiper6Slide .swiper-button-prev {
-              z-index: 1;
-              top: auto;
-              right: auto;
-              position: absolute;
-              bottom: 0px;
-              left: 1000;
-              opacity: 1; }
-            figure .main .seven .sevenRight .swiper6Slide .swiper-button-next {
-              top: auto;
-              position: absolute;
-              left: 550px;
-              bottom: 0px; }
-          figure .main .seven .sevenRight ul {
-            height: 900px;
-            width: 4000px; }
-            figure .main .seven .sevenRight ul::after {
-              content: "";
-              display: block;
-              clear: both; }
-            figure .main .seven .sevenRight ul li {
-              cursor: pointer;
-              float: left;
-              margin-right: 25px; }
-              figure .main .seven .sevenRight ul li:hover h4 {
-                display: inline-block;
-                border-bottom: 2px solid #000; }
-              figure .main .seven .sevenRight ul li .sevenPic {
-                background-image: url(../../public/img/virus2.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 590px;
-                height: 750px;
-                border-radius: 10px; }
-              figure .main .seven .sevenRight ul li:nth-of-type(2) .sevenPic {
-                background-image: url(../../public/img/virus7.png); }
-              figure .main .seven .sevenRight ul li:nth-of-type(3) .sevenPic {
-                background-image: url(../../public/img/virus3.jpg); }
-              figure .main .seven .sevenRight ul li:nth-of-type(4) .sevenPic {
-                background-image: url(../../public/img/virus6.jpg); }
-              figure .main .seven .sevenRight ul li:nth-of-type(5) .sevenPic {
-                background-image: url(../../public/img/virus5.jpg); }
-              figure .main .seven .sevenRight ul li:nth-of-type(6) .sevenPic {
-                background-image: url(../../public/img/virus8.png); }
-              figure .main .seven .sevenRight ul li h3 {
-                font: bold 18px/1 "poppins";
-                letter-spacing: 1px;
-                color: #333;
-                margin-top: 30px; }
-              figure .main .seven .sevenRight ul li h4 {
-                font: bold 25px/1 "poppins";
-                color: #000; }
-        figure .main .seven .pagination {
-          float: left;
-          width: 100%;
-          border-top: 3px solid #c9c9c9;
-          margin-top: 10px;
-          padding-top: 40px;
-          margin-bottom: 80px; }
-          figure .main .seven .pagination .leftCircle, figure .main .seven .pagination .rightCircle {
-            cursor: pointer;
-            display: inline-block;
-            margin-right: 15px;
-            font-size: 25px;
-            width: 40px;
-            height: 40px;
-            border: 2px solid #000;
-            color: #000;
-            border-radius: 50%;
-            transition: 0.2s;
-            transform: translateY(3px); }
-            figure .main .seven .pagination .leftCircle i, figure .main .seven .pagination .rightCircle i {
-              margin-left: 7px; }
-            figure .main .seven .pagination .leftCircle:hover, figure .main .seven .pagination .rightCircle:hover {
-              color: #fff;
-              border-bottom: none;
-              border: 2px solid #555;
-              background-color: #555;
-              transition: 0.2s; } }
+          display: none; } }
   figure .department {
     padding-top: 100px;
     overflow: hidden; }
@@ -3866,5 +3727,34 @@ figure {
         width: 100%;
         padding-right: 30px;
         padding-left: 30px; } }
+  @media screen and (max-width: 539px) {
+    figure footer {
+      padding-top: 0px; }
+      figure footer .inner {
+        width: 100%; }
+        figure footer .inner .upper {
+          display: none; }
+        figure footer .inner .lower {
+          background: crimson;
+          width: 100%;
+          height: 150px;
+          padding-top: 30px;
+          padding-right: 30px;
+          padding-left: 30px; }
+          figure footer .inner .lower ul .lowerLeft {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px; }
+            figure footer .inner .lower ul .lowerLeft a {
+              display: none; }
+            figure footer .inner .lower ul .lowerLeft span {
+              color: #fff; }
+          figure footer .inner .lower ul .lowerRight {
+            display: block;
+            width: 100%;
+            text-align: center; }
+            figure footer .inner .lower ul .lowerRight i {
+              color: #fff; } }
 
 /*# sourceMappingURL=style.css.map */
