@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 function Join(){
-    const frame = useRef(null);
     const initVal={
         userid : '',
         pwd1 : '',
@@ -73,7 +72,6 @@ function Join(){
     }
 
     useEffect(()=>{    
-        frame.current.classList.add('on');    
         console.log(err);
         const len =  Object.keys(err).length;
         if(len === 0 && isSubmit){
@@ -86,7 +84,7 @@ function Join(){
     },[err]);
 
 return (
-    <main className='join' ref={frame}>
+    <main className='join'>
         <div className="inner">
             <h1>Umbrella Membership</h1>
             <h2>Join Umbrella and Discover our Education and Technology</h2>

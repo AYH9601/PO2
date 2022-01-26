@@ -165,7 +165,7 @@ function Department(){
                         slidesPerView={"auto"}
                         loop
                         grabCursor
-                        navigation
+                        // navigation
                         onSwiper={(swiper) => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}
                         >
@@ -224,12 +224,12 @@ function Department(){
                     </div>
 
                     <div className="pagination">
-                        <div className="leftCircle">
+                        {/* <div className="leftCircle">
                             <i className="fas fa-arrow-left"></i>
                         </div>
                         <div className="rightCircle">
                             <i className="fas fa-arrow-right"></i>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
