@@ -90,8 +90,43 @@ return (
         <div className="inner">
             <h1>Umbrella Membership</h1>
             <h2>Join Umbrella and Discover our Education and Technology</h2>
-            <button>Click here for Patient registration <br></br>at Umbrella General Hospital</button>
+            
             {success ? <div>Welcome to Umbrella.</div> : null }
+
+            <div className="membershipUpper">
+                <h3>Umbrella Hospital</h3>
+                <div className="upperLeft"></div>
+                <div className="upperRight">
+                    <h4>We Never drop the Patient</h4>
+                    <p>The best choice for treating illness and managing our health is with Umbrella Hospital. We guide you into the future with our latest medical technology.</p>
+                    <button>Click here for Patient registration <br></br>at Umbrella General Hospital</button>
+                </div>
+            </div>
+
+            <div className="membershipPlan">
+                <h3>Membership Plan</h3>
+                <div className="planBox">
+                    <h1>Basic</h1>
+                    <h2>
+                        Basic services are available. <br></br>Sign up for simple inquiry, Recruitment
+                    </h2>
+                    <p>More Info</p>
+                </div>
+                <div className="planBox">
+                <h1>Standard</h1>
+                    <h2>
+                        Members looking for information <br></br>on education, technology and healthcare
+                    </h2>
+                    <p>More Info</p>
+                </div>
+                <div className="planBox">
+                <h1>Hyper</h1>
+                    <h2>
+                        Corporate members <br></br> Please contact B2B for details
+                    </h2>
+                    <p>More Info</p>
+                </div>
+            </div>
 
             <div className="membershipInner">
                 <form onSubmit={handleSubmit} >
@@ -273,6 +308,9 @@ return (
             </div>
 
             <div className="membershipLower">
+                <h1>Membership Policy</h1>
+                <p>You can check various laws and protections that apply to Umbrella members.</p>
+                <button>View more detailed legal documents</button>
                 <h3>SSN Protection Policy</h3>
                 <h4>
                     In the ordinary course of business, sometimes we have to collect your Social Security number to fulfill legal or regulatory obligations, or for other administrative purposes. It is our policy to avoid the unnecessary collection of Social Security numbers. We limit access to your Social Security number in order to protect tyour privacy  and to prohibit the unlawful disclosure of your Social Security number.

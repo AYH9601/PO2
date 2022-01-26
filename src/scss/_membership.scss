@@ -4,6 +4,134 @@
         margin: 0 auto;
         width: 1180px;
 
+        h1 {
+            font: bold 18px/1 "poppins";
+            margin-bottom: 60px;
+        }
+        h2 {
+            font: bold 40px/1.3 "poppins";
+            letter-spacing: 0.5px;
+            color: #000;
+            margin-bottom: 200px;
+        }
+
+        .membershipUpper {
+            margin-bottom: 100px;
+            &::after{content: ""; display: block; clear: both;}
+
+            h3 {
+                font: bold 18px/1 "poppins";
+                margin-bottom: 60px;
+            }
+            .upperLeft {
+                float: left;
+                width: 50%;
+                height: 400px;
+                background: cadetblue;
+                background-image: url(../../public/img/membership2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .upperRight {
+                float: left;
+                padding: 0px 30px;
+                width: 50%;
+                height: 400px;
+
+                h4 {
+                    font: bold 40px/1.2 "poppins";
+                    color: #000;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font: bold 18px/1.8 "poppins";
+                    color: #000;
+                    margin-bottom: 50px;
+                }
+
+                >button {
+                    cursor: pointer;
+                    display: inline-block;
+                    background-color: #fff;
+                    border: 2px solid crimson;
+                    border-radius: 40px;
+                    width: 420px;
+                    letter-spacing: 1px;
+                    height: 80px;
+                    font: bold 18px/1.2 "poppins";
+                    color: crimson;
+                    transition: 0.3s;
+                    // margin-bottom: 100px;
+        
+                    &:hover {
+                        background-color: crimson;
+                        color: #fff;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+
+        .membershipPlan {
+            &::after{content: ""; display: block; clear: both;}
+            margin-bottom: 100px;
+
+            h3 {
+                font: bold 18px/1 "poppins";
+                margin-bottom: 60px;
+            }
+
+            .planBox {
+                border-top: 5px solid crimson;
+                border-bottom: 5px solid crimson;
+                // border-left: 5px solid crimson;
+                background-color: #fff;
+                float: left;
+                width: calc(99%/3);
+                height: 250px;
+                padding: 20px 30px;
+                letter-spacing: 0.5px;
+                position: relative;
+                margin-right: 3px;
+                &:last-child {
+                    margin-right: 0px;
+                    border-top: 5px solid darkred;
+                    border-bottom: 5px solid darkred;
+                    h1 {
+                        color: darkred;
+                    }
+                    p {
+                        &:hover {color: darkred;}
+                    }
+                }
+                h1 {
+                    font: bold 20px/1 "poppins";
+                    color: crimson;
+                    letter-spacing: 0.5px;
+                }
+                h2 {
+                    font: bold 18px/1.3 "poppins";
+                    letter-spacing: 0.5px;
+                    margin-bottom: 0px;
+                    color: #aaa;
+                }
+                p {
+                    cursor: pointer;
+                    font: bold 18px/1 "poppins";
+                    letter-spacing: 0.5px;
+                    position: absolute;
+                    bottom: 10px;
+                    color: #000;
+                    transition: 0.25s;
+                    &:hover {
+                        color: crimson;
+                        transition: 0.25s;
+                    }
+                }
+            }
+        }
+
         .membershipInner {
             width: 700px;
             margin-bottom: 100px;
@@ -93,38 +221,35 @@
             }
         }
 
-        h1 {
-            font: bold 18px/1 "poppins";
-            margin-bottom: 60px;
-        }
-        h2 {
-            font: bold 40px/1.3 "poppins";
-            letter-spacing: 0.5px;
-            color: #000;
-            margin-bottom: 50px;
-        }
-        >button {
-            cursor: pointer;
-            display: inline-block;
-            background-color: #fff;
-            border: 2px solid crimson;
-            border-radius: 40px;
-            width: 420px;
-            letter-spacing: 1px;
-            height: 80px;
-            font: bold 18px/1.2 "poppins";
-            color: crimson;
-            transition: 0.3s;
-            margin-bottom: 100px;
-
-            &:hover {
-                background-color: crimson;
-                color: #fff;
-                transition: 0.3s;
-            }
-        }
-        
         .membershipLower {
+
+            p {
+                font: bold 40px/1.3 "poppins";
+                letter-spacing: 0.5px;
+                color: #000;
+                margin-bottom: 50px;
+            }
+
+            >button {
+                cursor: pointer;
+                display: inline-block;
+                background-color: #fff;
+                border: 2px solid crimson;
+                border-radius: 40px;
+                width: 450px;
+                letter-spacing: 1px;
+                height: 80px;
+                font: bold 18px/1.2 "poppins";
+                color: crimson;
+                transition: 0.3s;
+                margin-bottom: 100px;
+
+                &:hover {
+                    background-color: crimson;
+                    color: #fff;
+                    transition: 0.3s;
+                }
+            }
             h3 {
                 font: bold 18px/1 "poppins";
                 color: crimson;

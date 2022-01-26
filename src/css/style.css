@@ -2514,6 +2514,108 @@ figure {
     padding-top: 200px;
     margin: 0 auto;
     width: 1180px; }
+    figure .join .inner h1 {
+      font: bold 18px/1 "poppins";
+      margin-bottom: 60px; }
+    figure .join .inner h2 {
+      font: bold 40px/1.3 "poppins";
+      letter-spacing: 0.5px;
+      color: #000;
+      margin-bottom: 200px; }
+    figure .join .inner .membershipUpper {
+      margin-bottom: 100px; }
+      figure .join .inner .membershipUpper::after {
+        content: "";
+        display: block;
+        clear: both; }
+      figure .join .inner .membershipUpper h3 {
+        font: bold 18px/1 "poppins";
+        margin-bottom: 60px; }
+      figure .join .inner .membershipUpper .upperLeft {
+        float: left;
+        width: 50%;
+        height: 400px;
+        background: cadetblue;
+        background-image: url(../../public/img/membership2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure .join .inner .membershipUpper .upperRight {
+        float: left;
+        padding: 0px 30px;
+        width: 50%;
+        height: 400px; }
+        figure .join .inner .membershipUpper .upperRight h4 {
+          font: bold 40px/1.2 "poppins";
+          color: #000;
+          margin-bottom: 30px; }
+        figure .join .inner .membershipUpper .upperRight p {
+          font: bold 18px/1.8 "poppins";
+          color: #000;
+          margin-bottom: 50px; }
+        figure .join .inner .membershipUpper .upperRight > button {
+          cursor: pointer;
+          display: inline-block;
+          background-color: #fff;
+          border: 2px solid crimson;
+          border-radius: 40px;
+          width: 420px;
+          letter-spacing: 1px;
+          height: 80px;
+          font: bold 18px/1.2 "poppins";
+          color: crimson;
+          transition: 0.3s; }
+          figure .join .inner .membershipUpper .upperRight > button:hover {
+            background-color: crimson;
+            color: #fff;
+            transition: 0.3s; }
+    figure .join .inner .membershipPlan {
+      margin-bottom: 100px; }
+      figure .join .inner .membershipPlan::after {
+        content: "";
+        display: block;
+        clear: both; }
+      figure .join .inner .membershipPlan h3 {
+        font: bold 18px/1 "poppins";
+        margin-bottom: 60px; }
+      figure .join .inner .membershipPlan .planBox {
+        border-top: 5px solid crimson;
+        border-bottom: 5px solid crimson;
+        background-color: #fff;
+        float: left;
+        width: calc(99%/3);
+        height: 250px;
+        padding: 20px 30px;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin-right: 3px; }
+        figure .join .inner .membershipPlan .planBox:last-child {
+          margin-right: 0px;
+          border-top: 5px solid darkred;
+          border-bottom: 5px solid darkred; }
+          figure .join .inner .membershipPlan .planBox:last-child h1 {
+            color: darkred; }
+          figure .join .inner .membershipPlan .planBox:last-child p:hover {
+            color: darkred; }
+        figure .join .inner .membershipPlan .planBox h1 {
+          font: bold 20px/1 "poppins";
+          color: crimson;
+          letter-spacing: 0.5px; }
+        figure .join .inner .membershipPlan .planBox h2 {
+          font: bold 18px/1.3 "poppins";
+          letter-spacing: 0.5px;
+          margin-bottom: 0px;
+          color: #aaa; }
+        figure .join .inner .membershipPlan .planBox p {
+          cursor: pointer;
+          font: bold 18px/1 "poppins";
+          letter-spacing: 0.5px;
+          position: absolute;
+          bottom: 10px;
+          color: #000;
+          transition: 0.25s; }
+          figure .join .inner .membershipPlan .planBox p:hover {
+            color: crimson;
+            transition: 0.25s; }
     figure .join .inner .membershipInner {
       width: 700px;
       margin-bottom: 100px; }
@@ -2578,28 +2680,25 @@ figure {
         margin-left: 10px; }
       figure .join .inner .membershipInner .errSelect {
         transform: translateY(14px); }
-    figure .join .inner h1 {
-      font: bold 18px/1 "poppins";
-      margin-bottom: 60px; }
-    figure .join .inner h2 {
+    figure .join .inner .membershipLower p {
       font: bold 40px/1.3 "poppins";
       letter-spacing: 0.5px;
       color: #000;
       margin-bottom: 50px; }
-    figure .join .inner > button {
+    figure .join .inner .membershipLower > button {
       cursor: pointer;
       display: inline-block;
       background-color: #fff;
       border: 2px solid crimson;
       border-radius: 40px;
-      width: 420px;
+      width: 450px;
       letter-spacing: 1px;
       height: 80px;
       font: bold 18px/1.2 "poppins";
       color: crimson;
       transition: 0.3s;
       margin-bottom: 100px; }
-      figure .join .inner > button:hover {
+      figure .join .inner .membershipLower > button:hover {
         background-color: crimson;
         color: #fff;
         transition: 0.3s; }
