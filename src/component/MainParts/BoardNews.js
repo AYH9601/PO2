@@ -7,12 +7,10 @@ function BoardNews(){
 
         if(data){
             let result = JSON.parse(data)
-            result = result.splice(0,7);
+            result = result.splice(0,8);
             return result;
         }else {
             return [
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
-                {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
                 {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
                 {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
                 {title:"Covid-20 Warning", content:"Very Lethal Biohazard"},
