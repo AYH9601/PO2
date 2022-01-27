@@ -484,3 +484,23 @@
         }
     }
 }
+
+@media screen and (max-width: $mobile){
+    .youtube {
+        .inner {
+            h1 {
+                font-size: 20px;
+            }
+
+            .frame {
+                h4 {
+                    font-size: 25px;
+                }
+            }
+
+            .data {
+                display: none;
+            }
+        }
+    }
+}

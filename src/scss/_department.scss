@@ -467,13 +467,68 @@
             .careers {
                 .careersLower {
                     ul {
-                        
                         li {
                             text-align: center;
                             width: 31%;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .department {
+        .inner {
+            .departmentUpper {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+
+            .know {
+                .knowLeft {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    h2 {
+                        font-size: 25px;
+                    }
+                }
+
+                .knowRight{
+                    width: 100%;
+                    ul {
+                        li {
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .careers {
+                .careersUpper {
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+
+                .careersLower {
+                    ul {
+                        li {
+                            width: 100%;
+                            margin-bottom: 30px;
+                            padding-bottom: 30px;
+                            border-bottom: 2px solid crimson;
+                        }
+                    }
+                }
+            }
+
+            .investors {
+                display: none;
             }
         }
     }
