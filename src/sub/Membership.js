@@ -118,7 +118,7 @@ return (
                     <p>More Info</p>
                 </div>
                 <div className="planBox">
-                <h1>Hyper</h1>
+                    <h1>Hyper</h1>
                     <h2>
                         Corporate members <br></br> Please contact B2B for details
                     </h2>

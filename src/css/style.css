@@ -2266,7 +2266,14 @@ figure {
     figure .board .inner .boardInner {
       display: none; }
     figure .board .inner .boarLower p {
-      display: block; } }
+      display: block; }
+    figure .board .inner .boarLower table th:nth-of-type(4) {
+      display: none; }
+    figure .board .inner .boarLower table td {
+      font-size: 13px; }
+      figure .board .inner .boarLower table td:nth-of-type(1) {
+        width: 0%;
+        display: none; } }
   figure .gallery {
     padding-top: 100px; }
     figure .gallery .galleryUpper p {
@@ -2604,6 +2611,42 @@ figure {
                 display: none; }
               figure .gallery .inner .galleryLower #imgBox .list > li:nth-of-type(3n) {
                 margin-right: 0px; } }
+  @media screen and (max-width: 539px) {
+    figure .gallery .inner .galleryUpper h1 {
+      font-size: 25px;
+      margin-bottom: 50px; }
+    figure .gallery .inner .galleryLower #searchBox {
+      width: 100%;
+      border-bottom: none; }
+      figure .gallery .inner .galleryLower #searchBox input[type=text] {
+        width: 80%;
+        border-bottom: 1px solid #000; }
+      figure .gallery .inner .galleryLower #searchBox input::placeholder {
+        font-size: 21px; }
+    figure .gallery .inner .galleryLower #imgBox h2 {
+      font-size: 18px;
+      margin-bottom: 50px; }
+    figure .gallery .inner .galleryLower #imgBox .categoryBox ul {
+      margin-bottom: 50px; }
+      figure .gallery .inner .galleryLower #imgBox .categoryBox ul li {
+        margin-bottom: 10px; }
+    figure .gallery .inner .galleryLower #imgBox .loading {
+      width: 60%;
+      top: 200px; }
+    figure .gallery .inner .galleryLower #imgBox .list li {
+      width: 100%; }
+    figure .gallery .inner .media .mediaLeft {
+      width: 100%;
+      margin-bottom: 50px; }
+      figure .gallery .inner .media .mediaLeft ul li {
+        font-size: 30px; }
+        figure .gallery .inner .media .mediaLeft ul li i {
+          display: none; }
+    figure .gallery .inner .media .mediaRight {
+      width: 100%;
+      padding-left: 0; }
+      figure .gallery .inner .media .mediaRight h2 {
+        font-size: 20px; } }
   figure .youtube {
     padding-top: 100px; }
     figure .youtube .inner {
@@ -3188,7 +3231,41 @@ figure {
     figure .join .inner {
       width: 100%;
       margin-left: 30px;
-      margin-right: 30px; } }
+      margin-right: 30px; }
+      figure .join .inner h2 {
+        font-size: 25px;
+        margin-bottom: 100px; }
+      figure .join .inner .membershipUpper .upperLeft {
+        width: 100%;
+        margin-bottom: 30px; }
+      figure .join .inner .membershipUpper .upperRight {
+        width: 100%;
+        padding: 0px 0px; }
+        figure .join .inner .membershipUpper .upperRight h4 {
+          font-size: 25px; }
+      figure .join .inner .membershipPlan .planBox {
+        width: 30%;
+        height: 70px;
+        text-align: center;
+        cursor: pointer; }
+        figure .join .inner .membershipPlan .planBox:nth-of-type(1) {
+          background-color: crimson; }
+        figure .join .inner .membershipPlan .planBox:nth-of-type(2) {
+          background-color: crimson; }
+        figure .join .inner .membershipPlan .planBox:nth-of-type(3) {
+          background-color: darkred; }
+          figure .join .inner .membershipPlan .planBox:nth-of-type(3) h1 {
+            color: #fff; }
+        figure .join .inner .membershipPlan .planBox h1 {
+          color: #fff; }
+        figure .join .inner .membershipPlan .planBox h2 {
+          display: none; }
+        figure .join .inner .membershipPlan .planBox p {
+          display: none; }
+      figure .join .inner .membershipInner {
+        width: 100%; }
+      figure .join .inner .membershipLower p {
+        font-size: 25px; } }
   figure .location .inner {
     margin: 0 auto;
     text-align: center; }
