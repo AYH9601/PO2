@@ -3230,8 +3230,7 @@ figure {
   @media screen and (max-width: 539px) {
     figure .join .inner {
       width: 100%;
-      margin-left: 30px;
-      margin-right: 30px; }
+      margin: 0px 30px 0px 30px; }
       figure .join .inner h2 {
         font-size: 25px;
         margin-bottom: 100px; }
@@ -3264,6 +3263,41 @@ figure {
           display: none; }
       figure .join .inner .membershipInner {
         width: 100%; }
+        figure .join .inner .membershipInner table {
+          width: 100%;
+          text-align: center; }
+          figure .join .inner .membershipInner table th, figure .join .inner .membershipInner table td {
+            padding: 10px 0px; }
+          figure .join .inner .membershipInner table th {
+            display: none; }
+            figure .join .inner .membershipInner table th.btnSet {
+              display: block;
+              text-align: center; }
+          figure .join .inner .membershipInner table td {
+            height: 95px; }
+            figure .join .inner .membershipInner table td input[type=text], figure .join .inner .membershipInner table td input[type=password], figure .join .inner .membershipInner table td select {
+              width: 100%;
+              height: 50px;
+              padding: 10px 10px;
+              border: none;
+              border-bottom: 1px solid #aaa;
+              font: bold 25px/1 "poppins"; }
+            figure .join .inner .membershipInner table td input::placeholder {
+              color: #c8c8c8; }
+            figure .join .inner .membershipInner table td label {
+              cursor: pointer;
+              font: bold 18px/1 "poppins";
+              color: #777;
+              margin-right: 30px; }
+            figure .join .inner .membershipInner table td input[type=radio], figure .join .inner .membershipInner table td input[type=checkbox] {
+              margin-right: 20px;
+              margin-bottom: 10px; }
+            figure .join .inner .membershipInner table td select {
+              border: none;
+              height: 50px;
+              border-bottom: 1px solid #aaa; }
+        figure .join .inner .membershipInner .err {
+          display: block; }
       figure .join .inner .membershipLower p {
         font-size: 25px; } }
   figure .location .inner {
@@ -3357,7 +3391,7 @@ figure {
               border-radius: 10px 10px 0 0;
               width: 100%;
               height: 150px;
-              background: lightskyblue;
+              background: #fff;
               margin-bottom: 20px; }
             figure .location .inner .dot li .box .hos .hos1 {
               background-image: url(../../public/img/hos1.jpg);
@@ -3513,6 +3547,62 @@ figure {
       margin-right: 30px; }
       figure .location .inner {
         width: 100%; } }
+  @media screen and (max-width: 539px) {
+    figure .location .inner {
+      width: 100%; }
+      figure .location .inner .locationHeader h1 {
+        font-size: 25px; }
+      figure .location .inner .locationHeader h2 {
+        font-size: 15px;
+        line-height: 30px; }
+      figure .location .inner .dot {
+        display: block;
+        height: 700px; }
+        figure .location .inner .dot ::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .location .inner .dot > li {
+          float: left;
+          width: 50%;
+          height: 300px;
+          margin-bottom: 50px;
+          position: relative; }
+          figure .location .inner .dot > li .hos em {
+            position: absolute;
+            bottom: 20px;
+            left: 28%; }
+      figure .location .inner .kakaomap #map {
+        height: 300px; }
+      figure .location .inner .hospital {
+        height: 800px; }
+        figure .location .inner .hospital .hospitalLeft {
+          width: 100%;
+          margin-bottom: 30px; }
+        figure .location .inner .hospital .hospitalRight {
+          width: 100%; }
+          figure .location .inner .hospital .hospitalRight h4 {
+            font-size: 25px; }
+      figure .location .inner .hosBox {
+        height: 800px;
+        display: block; }
+        figure .location .inner .hosBox ::after {
+          content: "";
+          display: block;
+          clear: both; }
+        figure .location .inner .hosBox > li {
+          float: left;
+          width: 100%;
+          height: 200px;
+          margin-bottom: 30px; }
+          figure .location .inner .hosBox > li .box {
+            height: 200px; }
+            figure .location .inner .hosBox > li .box .hos {
+              padding: 10px 20px 10px 20px; }
+              figure .location .inner .hosBox > li .box .hos h3 {
+                margin-bottom: 20px; }
+      figure .location .inner .hosBtn {
+        margin-top: 100px; } }
   figure #boardNews {
     margin-bottom: 150px; }
     figure #boardNews .inner h3 {
