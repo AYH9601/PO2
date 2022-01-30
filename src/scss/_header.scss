@@ -24,57 +24,26 @@ header {
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            
-
-            a {
-                font: bold 30px/1 "arial";
-                color: #000;
-            }
         }
 
-        .menu {
+        #gnb {
             position: absolute;
-            top: 40px; left: 220px;
-
-            ul {
-                float: right;
-
-                li {
-                    float: left;
-
-                    a {
-                        padding: 20px 30px;
-                        font: bold 17px/1 "arial";
-                        color: #000;
-                        transition: 0.3s;
-
-                        &:hover {
-                            color: crimson;
-                            transition: 0.3s;
-                        }
-                    }
-                }
-            }
-        }
-
-        .three {
-            position: absolute;
-            top: 40px; right: 0;
-
+            bottom: 0; right: 0;
             li {
                 float: left;
-                padding-left: 40px;
-
                 a {
-                    font: bold 16px/1 "arial";
+                    display: inline-block; 
+                    padding: 40px 30px;
+                    font: bold 18px/1 "poppins"; 
                     color: #000;
-                    transition: 0.3s;
-
-                    
+                    transition: 0.25s;
                     &:hover {
                         color: crimson;
-                        transition: 0.3s;
+                        transition: 0.25s;
                     }
+                }
+                &:first-child, &:last-child {
+                    display: none;
                 }
             }
         }
@@ -86,8 +55,9 @@ header {
             font-size: 50px; 
             color: #000; 
             cursor: pointer;
+            display: none;
         }
-
+        //origin part
         .btnCall {
             display: none;
             cursor: pointer;
@@ -147,17 +117,120 @@ header {
                 }
             }
         }
-
+        //origin part
         .munuMo {
             display: none;
         }
-
+        //origin part
         .gnbMo {
             display: none;
         }
-
+        //origin part
         .gnbMo2 {
             display: none;
+        }
+        //origin part
+        .menu {
+            position: absolute;
+            top: 40px; left: 220px;
+
+            ul {
+                float: right;
+
+                li {
+                    float: left;
+
+                    a {
+                        padding: 20px 30px;
+                        font: bold 17px/1 "arial";
+                        color: #000;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: crimson;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+        //origin part
+        .three {
+            position: absolute;
+            top: 40px; right: 0;
+
+            li {
+                float: left;
+                padding-left: 40px;
+
+                a {
+                    font: bold 16px/1 "arial";
+                    color: #000;
+                    transition: 0.3s;
+
+                    
+                    &:hover {
+                        color: crimson;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//수정본 part
+nav {
+    padding: 20px 0px 0px 20px;
+    width: 100vw; 
+    height: 100vh; 
+    background: #fff; 
+    position: fixed; 
+    top: 0px; 
+    left: -100vw; 
+    z-index: 10; 
+    transition: 0.5s;
+
+    &.on {
+        left: 0vw;
+    }
+
+    #gnb {
+        li {
+            .headerPic {
+                width: 200px;
+                height: 50px;
+                background-image: url(../../public/img/headerLogo3.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            height: 80px;
+            a {
+                font: bold 40px/1 "poppins";
+                color: #000;
+            }
+            &:last-child {
+                position: absolute;
+                bottom: 0;
+                transform: translateX(-20px);
+                width: 100vw;
+                background-color: crimson;
+                text-align: center;
+                padding-top: 30px;
+                span {
+                    font: bold 18px/1 "poppins";
+                    color: #fff;
+                }
+            }
+        }
+        .fa-bars {
+            position: absolute; 
+            right: 40px; 
+            top: 20px; 
+            font-size: 50px; 
+            color: #000; 
+            cursor: pointer;
         }
     }
 }
@@ -172,6 +245,14 @@ header {
         z-index: 10;
     
         .inner {
+            .fa-bars {
+                display: block;
+            }
+
+            #gnb {
+                display: none;
+            }
+
             width: 100%;
             height: 100%;
             margin: 0 auto;

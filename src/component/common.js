@@ -1,79 +1,68 @@
 import {NavLink} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {useRef, useState, useEffect} from 'react';
 
-function Header(){
-    const active = {color:"crimson"}
-    const btnCall = document.querySelector(".btnCall"); 
-    const menuMo = document.querySelector(".menuMo");
+function Header(){ 
+    let nav = useRef(null);
+    const [isOn, setIsOn] = useState(false);
+    const toggleNav = () =>setIsOn(!isOn);
+    const closeNav = () => window.innerWidth > 1200 && setIsOn(false);
+
+    useEffect(()=>{
+        window.addEventListener('resize', closeNav);
+        return ()=> window.removeEventListener('resize', closeNav);  
+    },[])
 
     return (
-        <header>
+        <>
+        <header className={' myScroll'}>
             <div className="inner">
-                <h1>
-                    <NavLink exact to="/main">
+                {/* <h1>
+                    <NavLink exact to="/main" onClick={toggleNav}>
                         <div className="headerPic"></div>
-                        {/* <span>UMBRELLA</span> */}
                     </NavLink>
-                </h1>
+                </h1> */}
 
-                <nav className="menu">
-                    <ul>
-                        <li><NavLink activeStyle={active} exact to="/Department">Department</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/Board">Board</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/Gallery">Gallery</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/Youtube">Youtube</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/Membership">Membership</NavLink></li>
-                    </ul>
-                </nav>
-
-                <nav className="three">
-                    <ul>
-                        <li>
-                            <NavLink activeStyle={active} exact to="/Location">
-                                Office
-                                {/* <i className="fas fa-map-marker-alt"></i> */}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink activeStyle={active} exact to="/Contact">Contact Us</NavLink>
-                        </li>
-                        <li>
-                            <a href="#"><i className="fas fa-globe-americas"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <FontAwesomeIcon icon={faBars} />
-
-                <div className="btnCall" onClick={e=>{
-                    e.currentTarget.classList.toggle("on");
-                    menuMo.classList.toggle("on");
-                    }}>
-                    <span>Call button</span>
-                </div>
-
-                <nav className="menuMo">
-                    <h1>
-                        <NavLink exact to="/main">
-                            <div className="headerPic"></div>
-                        </NavLink>
-                    </h1>
-                    <nav className="gnbMo">
-                        <ul>
-                            <li><NavLink activeStyle={active} exact to="/Department">Department</NavLink></li>
-                            <li><NavLink activeStyle={active} exact to="/Board">Board</NavLink></li>
-                            <li><NavLink activeStyle={active} exact to="/Gallery">Gallery</NavLink></li>
-                            <li><NavLink activeStyle={active} exact to="/Youtube">Youtube</NavLink></li>
-                            <li><NavLink activeStyle={active} exact to="/Membership">Membership</NavLink></li>
-                            <li><NavLink activeStyle={active} exact to="/Location">Location</NavLink></li>
-                        </ul>
-                    </nav>
-
-                    <span className="gnbMo2">&copy; 2022 Umbrella Inc. All rights reserved</span>
-                </nav>
+                <Gnb />  
+                
+                <FontAwesomeIcon icon={faBars} onClick={toggleNav} />
             </div>
         </header>
+
+        <nav ref={nav} className={isOn ? 'on' : null}>
+            <Gnb toggleNav={toggleNav} />
+        </nav>
+        </>
+    )
+}
+
+function Gnb(props){
+    const active = {color: "crimson"};
+    return (
+        <>
+        <h1>
+            <NavLink exact to="/main" onClick={props.toggleNav}>
+                <div className="headerPic"></div>
+            </NavLink>
+        </h1>
+        <ul id="gnb" onClick={props.toggleNav}>
+            <li><NavLink clasname="gnbMain" to="/main">
+                <div className="headerPic"></div>
+                </NavLink>
+            </li>
+
+            <li><NavLink activeStyle={active} to="/department">Department</NavLink></li>
+            <li><NavLink activeStyle={active} to="/board">Board</NavLink></li>
+            <li><NavLink activeStyle={active} to="/gallery">Gallery</NavLink></li>
+            <li><NavLink activeStyle={active} to="/youtube">Media</NavLink></li>
+            <li><NavLink activeStyle={active} to="/location">Location</NavLink></li>
+            <li><NavLink activeStyle={active} to="/membership">Member</NavLink></li>
+            <FontAwesomeIcon icon={faBars} />
+
+            <li><span>&copy; 2022 Umbrella Inc. All rights reserved</span></li>
+        </ul>
+        </>
     )
 }
 

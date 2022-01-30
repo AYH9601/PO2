@@ -51,46 +51,31 @@ figure {
           background-image: url(../../public/img/headerLogo3.png);
           background-repeat: no-repeat;
           background-size: cover; }
-        figure header .inner h1 a {
-          font: bold 30px/1 "arial";
-          color: #000; }
-      figure header .inner .menu {
+      figure header .inner #gnb {
         position: absolute;
-        top: 40px;
-        left: 220px; }
-        figure header .inner .menu ul {
-          float: right; }
-          figure header .inner .menu ul li {
-            float: left; }
-            figure header .inner .menu ul li a {
-              padding: 20px 30px;
-              font: bold 17px/1 "arial";
-              color: #000;
-              transition: 0.3s; }
-              figure header .inner .menu ul li a:hover {
-                color: crimson;
-                transition: 0.3s; }
-      figure header .inner .three {
-        position: absolute;
-        top: 40px;
+        bottom: 0;
         right: 0; }
-        figure header .inner .three li {
-          float: left;
-          padding-left: 40px; }
-          figure header .inner .three li a {
-            font: bold 16px/1 "arial";
+        figure header .inner #gnb li {
+          float: left; }
+          figure header .inner #gnb li a {
+            display: inline-block;
+            padding: 40px 30px;
+            font: bold 18px/1 "poppins";
             color: #000;
-            transition: 0.3s; }
-            figure header .inner .three li a:hover {
+            transition: 0.25s; }
+            figure header .inner #gnb li a:hover {
               color: crimson;
-              transition: 0.3s; }
+              transition: 0.25s; }
+          figure header .inner #gnb li:first-child, figure header .inner #gnb li:last-child {
+            display: none; }
       figure header .inner .fa-bars {
         position: absolute;
         right: 4vw;
         top: 26%;
         font-size: 50px;
         color: #000;
-        cursor: pointer; }
+        cursor: pointer;
+        display: none; }
       figure header .inner .btnCall {
         display: none;
         cursor: pointer;
@@ -141,6 +126,77 @@ figure {
         display: none; }
       figure header .inner .gnbMo2 {
         display: none; }
+      figure header .inner .menu {
+        position: absolute;
+        top: 40px;
+        left: 220px; }
+        figure header .inner .menu ul {
+          float: right; }
+          figure header .inner .menu ul li {
+            float: left; }
+            figure header .inner .menu ul li a {
+              padding: 20px 30px;
+              font: bold 17px/1 "arial";
+              color: #000;
+              transition: 0.3s; }
+              figure header .inner .menu ul li a:hover {
+                color: crimson;
+                transition: 0.3s; }
+      figure header .inner .three {
+        position: absolute;
+        top: 40px;
+        right: 0; }
+        figure header .inner .three li {
+          float: left;
+          padding-left: 40px; }
+          figure header .inner .three li a {
+            font: bold 16px/1 "arial";
+            color: #000;
+            transition: 0.3s; }
+            figure header .inner .three li a:hover {
+              color: crimson;
+              transition: 0.3s; }
+  figure nav {
+    padding: 20px 0px 0px 20px;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0px;
+    left: -100vw;
+    z-index: 10;
+    transition: 0.5s; }
+    figure nav.on {
+      left: 0vw; }
+    figure nav #gnb li {
+      height: 80px; }
+      figure nav #gnb li .headerPic {
+        width: 200px;
+        height: 50px;
+        background-image: url(../../public/img/headerLogo3.png);
+        background-repeat: no-repeat;
+        background-size: cover; }
+      figure nav #gnb li a {
+        font: bold 40px/1 "poppins";
+        color: #000; }
+      figure nav #gnb li:last-child {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-20px);
+        width: 100vw;
+        background-color: crimson;
+        text-align: center;
+        padding-top: 30px; }
+        figure nav #gnb li:last-child span {
+          font: bold 18px/1 "poppins";
+          color: #fff; }
+    figure nav #gnb .fa-bars {
+      position: absolute;
+      right: 40px;
+      top: 20px;
+      font-size: 50px;
+      color: #000;
+      cursor: pointer; }
   @media screen and (max-width: 1179px) {
     figure header {
       width: 100%;
@@ -154,6 +210,10 @@ figure {
         height: 100%;
         margin: 0 auto;
         position: relative; }
+        figure header .inner .fa-bars {
+          display: block; }
+        figure header .inner #gnb {
+          display: none; }
         figure header .inner h1 {
           text-align: center;
           position: absolute;
