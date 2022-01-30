@@ -84,6 +84,13 @@ figure {
             figure header .inner .three li a:hover {
               color: crimson;
               transition: 0.3s; }
+      figure header .inner .fa-bars {
+        position: absolute;
+        right: 4vw;
+        top: 26%;
+        font-size: 50px;
+        color: #000;
+        cursor: pointer; }
       figure header .inner .btnCall {
         display: none;
         cursor: pointer;

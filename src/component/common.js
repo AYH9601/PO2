@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
-// import { useState } from "react/cjs/react.development";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Header(){
     const active = {color:"crimson"}
@@ -42,6 +43,8 @@ function Header(){
                         </li>
                     </ul>
                 </nav>
+
+                <FontAwesomeIcon icon={faBars} />
 
                 <div className="btnCall" onClick={e=>{
                     e.currentTarget.classList.toggle("on");
