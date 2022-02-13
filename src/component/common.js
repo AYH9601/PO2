@@ -57,7 +57,7 @@ function Gnb(props){
             <li><NavLink activeStyle={active} to="/gallery">Gallery</NavLink></li>
             <li><NavLink activeStyle={active} to="/youtube">Media</NavLink></li>
             <li><NavLink activeStyle={active} to="/location">Location</NavLink></li>
-            <li><NavLink activeStyle={active} to="/membership">Member</NavLink></li>
+            <li><NavLink activeStyle={active} to="/membership">Membership</NavLink></li>
             <FontAwesomeIcon icon={faBars} />
 
             <li><span>&copy; 2022 Umbrella Inc. All rights reserved</span></li>
